@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapshots</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="snaps.css">
+    <link rel="stylesheet" href="navigation.css">
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <!-- HEADER -->
+        <div id="header">
+            <div id="headerContent">
+                <div id="leftHeader">
+                    <a href="home.html"><img src="logo.jpg" alt="robot" width="200px" height="55px"></a>
+                </div>
+                <div id="rightHeader">
+
+                    <form action="#">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="search" placeholder="Search..." id="searchBar">
+                                </td>
+                                <td>
+                                    <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                                </td>
+                            </tr>
+                            <tr id="tr2">
+                                <td>
+                                    <input type="submit"> &nbsp;
+                                    <input type="radio" name="options">Web &nbsp;
+                                    <input type="radio" name="options">People
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- responsive search -->
+        <div id="responsiveSearch">
+            <form action="#">
+                <dialog open id="d1" style="display:none">
+                    <h4>RCAI LAB SEARCH</h4>
+                    <input type="search" placeholder="Search..." id="searchBar">
+                    <br>
+                    <input type="submit"> &nbsp;
+                    <input type="radio" name="options">Web &nbsp;
+                    <input type="radio" name="options">People
+                    <br>
+                    <button onclick="closed()">Close</button>
+                </dialog>
+            </form>
+        </div>
+
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="visions.html">The RCAI</a>
+            <a href="researchareas.html">Research</a>
+            <a href="director.html">Leadership/Organization</a>
+            <a href="blogs.html">Newsletters</a>
+        </div>
+
+        <div id="responsiveNavbar">
+            <a href="#" style="width:90%" id="resnav">Navigation</a>
+            <img src="search1.png" alt="search" width="20px" height="20px" id="resSearch">
+        </div>
+        <div id="resDiv" style="display:none;">
+            <div>
+                <a href="visions.html">The RCAI</a>
+            </div>
+            <div>
+                <a href="researchareas.html">Research Areas</a>
+            </div>
+            <div>
+                <a href="director.html">Leadership/Organization</a>
+            </div>
+            <div>
+                <a href="blogs.html">Newsletters</a>
+            </div>
+        </div>
+
+
+
+             <!-- navbar for rcai -->
+             <div id="rcaiNavbar">
+                <table id="rcaiTable" cellpadding="10px" cellspacing="3px">
+                    <tr>
+                        <td>
+                            <a href="visions.html" id="rn1">Our Technology</a>
+                        </td>
+                        <td>
+                            <a href="missions.html" id="rn2">Mission</a>
+                        </td>
+                        <td>
+                            <a href="snapshots.html" id="rn3">Snapshots</a>
+                        </td>
+                        <td>
+                            <a href="researchareas.html" id="rn4">Research Areas</a>
+                        </td>
+                        <td>
+                            <a href="trial.html" id="rn5">In Focus</a>
+                        </td>
+                        <td>
+                            <a href="index.html" id="rn6">National Solutions</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+    
+            <div id="responsiveSnaps">
+                <form action="#">
+                    <select name="select" id="select" onchange="location=this.value">
+                        <option value="visions.html">Our Technology</option>
+                        <option value="missions.html">Mission</option>
+                        <option value="snapshots.html">Snapshots</option>
+                        <option value="researchareas.html">Research Areas</option>
+                        <option value="trial.html">In Focus</option>
+                        <option value="index.html">National Solutions</option>
+                    </select>
+                </form>
+            </div>
+    
+            <div id="tooltips">
+                <div id="t1" class="tools">Technology</div>
+                <div id="t2" class="tools">Mission</div>
+                <div id="t3" class="tools">Snapshots</div>
+                <div id="t4" class="tools">Research Areas</div>
+                <div id="t5" class="tools">In Focus</div>
+                <div id="t6" class="tools">National Solutions</div>
+            </div>
+
+        <!-- snapshot content -->
+        <div id="snapshotcontent">
+            <div id="snapshotFlex">
+                <div id="content1">
+                    <h1>Nearly<br>3<br>Working in Economic</h1>
+                    <h3>Sectors</h3>
+                </div>
+                <div id="content2">
+                    <h1>50</h1>
+                    <h3>People dedicated<br> to research</h3>
+                </div>
+                <div id="content3">
+                    <h1>2</h1>
+                    <h3>Research <br>laboratories in <br>NED University of <br>Engineering & Technology</h3>
+                </div>
+            </div>
+
+            <div id="snapshotstatus">
+                <div id="status">
+                    <h3>Status : </h3>
+                    <p> Public Scientific and Technological Establishment (EPST)</p>
+                </div>
+                <div id="date">
+                    <h3>Date of creation : </h3>
+                    <p>January 01, 2016</p>
+                </div>
+                <div id="president">
+                    <h3>Director : </h3>
+                    <p>Dr Muhammad Khurram</p>
+                </div>
+                <div id="headquarters">
+                    <h3>Headquarters : </h3>
+                    <p>NED University, Karachi, Sindh</p>
+                </div>
+            </div>
+            <div id="researchFields">
+                <h3>Research fields:</h3>
+                <ul type="square">
+                    <li><span>Precision Agriculture </span></li>
+                    <li><span>Smart Healthcare</span></li>
+                    <li><span>Robotics</span></li>
+                    <li><span>Intelligent Cyber-Physical Systems- IoT
+                    </span></li>
+                    <li><span>Intelligent Transport</span></li>
+                    <li><span>Social  and Environment Innovation </span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <hr id="footerRuler">
+    <div id="footer">
+        <div id="footerLogo">
+            <img src="ned.png" alt="bot1" width="70px">
+            <img src="ncai.png" alt="bot1" width="150px">
+        </div>
+
+        <div id="footerDetails">
+            <div id="address">
+                <i class="fa-solid fa-location-pin"></i>
+                <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+            </div>
+            <div id="emailContact">
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>smartcity@neduet.edu.pk</p>
+                </div>
+                <div id="contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>+92 335 3046110</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footerLinks">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script>
+        let search1 = document.getElementById("rightHeader");
+        search1.onmouseenter = function () {
+            let searchbar = document.getElementById("searchBar");
+            let tr2 = document.getElementById("tr2");
+            searchbar.style.visibility = "visible";
+            tr2.style.visibility = "visible";
+            tr2.style.animationName = "second";
+            tr2.style.animationDuration = "2s";
+            tr2.style.animationTimingFunction = "ease";
+            searchbar.style.animationName = "second";
+            searchbar.style.animationDuration = "2s";
+            searchbar.style.animationTimingFunction = "ease";
+        }
+        search1.onmouseleave = function () {
+            let searchbar = document.getElementById("searchBar");
+            let tr2 = document.getElementById("tr2");
+            searchbar.style.visibility = "hidden";
+            tr2.style.visibility = "hidden";
+
+            tr2.style.animationName = "third";
+            tr2.style.animationDuration = "4s";
+            tr2.style.animationTimingFunction = "ease-in";
+            searchbar.style.animationName = "third";
+            searchbar.style.animationDuration = "4s";
+            searchbar.style.animationTimingFunction = "ease-in";
+        }
+
+        let rn1 = document.getElementById("rn1");
+        let rn2 = document.getElementById("rn2");
+        let rn3 = document.getElementById("rn3");
+        let rn4 = document.getElementById("rn4");
+        let rn5 = document.getElementById("rn5");
+        let rn6 = document.getElementById("rn6");
+        let rn7 = document.getElementById("rn7");
+        rn1.onmouseenter = function () {
+            let t1 = document.getElementById("t1");
+            t1.style.visibility = "visible";
+        }
+        rn1.onmouseleave = function () {
+            let t1 = document.getElementById("t1");
+            t1.style.visibility = "hidden";
+        }
+        rn2.onmouseenter = function () {
+            let t2 = document.getElementById("t2");
+            t2.style.visibility = "visible";
+        }
+        rn2.onmouseleave = function () {
+            let t2 = document.getElementById("t2");
+            t2.style.visibility = "hidden";
+        }
+        rn3.onmouseenter = function () {
+            let t3 = document.getElementById("t3");
+            t3.style.visibility = "visible";
+        }
+        rn3.onmouseleave = function () {
+            let t3 = document.getElementById("t3");
+            t3.style.visibility = "hidden";
+        }
+        rn4.onmouseenter = function () {
+            let t4 = document.getElementById("t4");
+            t4.style.visibility = "visible";
+        }
+        rn4.onmouseleave = function () {
+            let t4 = document.getElementById("t4");
+            t4.style.visibility = "hidden";
+        }
+        rn5.onmouseenter = function () {
+            let t5 = document.getElementById("t5");
+            t5.style.visibility = "visible";
+        }
+        rn5.onmouseleave = function () {
+            let t5 = document.getElementById("t5");
+            t5.style.visibility = "hidden";
+        }
+        rn6.onmouseenter = function () {
+            let t6 = document.getElementById("t6");
+            t6.style.visibility = "visible";
+        }
+        rn6.onmouseleave = function () {
+            let t6 = document.getElementById("t6");
+            t6.style.visibility = "hidden";
+        }
+
+        let res = document.getElementById("resnav");
+        kcount = 0
+        res.onclick = function () {
+            if (kcount == 0) {
+                let resdiv = document.getElementById("resDiv")
+                resdiv.style.display = "block";
+                kcount = 1;
+            }
+            else if (kcount == 1) {
+                let resdiv = document.getElementById("resDiv")
+                resdiv.style.display = "none";
+                kcount = 0;
+            }
+        }
+        // responsive search
+        let resSearch = document.getElementById("resSearch");
+        resSearch.onclick = function () {
+            let d1 = document.getElementById("d1");
+            let nav = document.getElementById("responsiveNavbar");
+            let h = document.getElementById("header");
+
+            d1.style.display = "block";
+            nav.style.opacity = "0.6";
+            h.style.opacity = "0.6";
+        }
+        function closed() {
+            let dialog = document.getElementById("d1");
+            let Header = document.getElementById("header");
+            let nav = document.getElementById("responsiveNavbar");
+            let main = document.getElementById("snapshotcontent");
+            d1.style.display = "none";
+            main.style.opacity = "1";
+            header.style.opacity = "1";
+            nav.style.opacity = "1";
+        }
+    </script>
+</body>
+
+</html>

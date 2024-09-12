@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://kit.fontawesome.com/93d0f16795.js" crossorigin="anonymous"></script>
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+     crossorigin="anonymous"></script>
+
+ <!-- css links -->
+ <link rel="stylesheet" href="styling.css">
+ <link rel="stylesheet" href="bars.css">
+ <link rel="stylesheet" href="nav.css">
+    <title>Senior RAs</title>
+    <style>
+        #navbar a:nth-child(3){
+    border-bottom: 4px solid #00313C;
+}
+
+    </style>
+
+</head>
+<body>
+      <!-- HEADER -->
+      <div id="header">
+        <div id="leftHeader">
+            <a href="home.html"><img src="images/logo.jpg" alt="robot" width="200px" height="55px"></a>
+        </div>
+        <div id="rightHeader">
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="search" placeholder="Search..." id="searchBar">
+                        </td>
+                        <td>
+                            <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                        </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>
+                            <input type="submit"> &nbsp;
+                            <input type="radio" name="options">Web &nbsp;
+                            <input type="radio" name="options">People
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- responsive search -->
+    <div id="responsiveSearch">
+        <form action="#">
+            <dialog open id="d1" style="display:none;">
+                <h4>RCAI LAB SEARCH</h4>
+                <input type="search" placeholder="Search..." id="searchBar">
+                <br>
+                <input type="submit"> &nbsp;
+                <input type="radio" name="options">Web &nbsp;
+                <input type="radio" name="options">People
+                <br>
+                <button onclick="closed()">Close</button>
+            </dialog>
+        </form>
+    </div>
+  
+    <nav>
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="visions.html">The Rcai</a>
+            <a href="researchareas.html">Research</a>
+            <a href="director.html">Leadership/Organization</a>
+            <a href="blogs.html">Newsletters</a>
+        </div>
+        
+        <div id="responsiveNavbar">
+        <a href="#" style="width:90%" id="resnav">Navigation</a>
+        <img src="images/search.png" alt="search" width="20px" height="20px" id="resSearch">
+    </div>
+    <div id="resDiv" style="display:none;">
+        <a href="visions.html">The Rcai</a>
+        <hr>
+        <a href="researchareas.html">Research Areas</a>
+        <hr>
+        <a href="director.html">Leadership/Organization</a>
+        <hr>
+        <a href="blogs.html">Newsletters</a>
+        <hr>
+    </div>
+   </nav>
+
+    <nav class="navbar navbar-expand-lg  " >
+       
+        <div class="container-fluid ">
+    
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <p id="head">Research Assistants</p>
+                <span style="margin-top: 5px;" ><i class="fa fa-thin fa-chevron-down"></i></span>
+            </button>
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-lg-0">
+                    <li class="nav-item " onclick=" change_text()">
+                        <a id="rn1" class="nav-link " aria-current="page" href="director.html">Director</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn2" class="nav-link " aria-current="page" href="teamLead.html">Team Lead</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn3" class="nav-link" href="ResearchAssociates.html">Research Associates</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn4" class="nav-link activen" href="SeniorRAs.html">Research Assistants</a>
+                    </li>
+                   
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn5" class="nav-link" href="orgChart.html">Organizational Chart</a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+    </nav>
+    <div id="tooltips">
+        <div id="t1" class="tools">Director</div>
+        <div id="t2" class="tools">Team Lead</div>
+        <div id="t3" class="tools">Research Associates</div>
+        <div id="t4" class="tools">Senior Research Assistants</div>
+        <div id="t5" class="tools">Organizational Chart</div>
+       
+    </div>
+
+    <div class="container ra-box mt-5" >
+       
+
+          <div class="container boxx" style="border: 1px solid #787878;">
+            
+            <div class="leftbox">
+                <h2>name</h2>
+                <span  style="display: block;margin-left: 12px;  font-style: italic;"><i class="fa-solid fa-id-card-clip me-2" ></i>Scientific Data Division Interim Director</span>
+                <img src="https://www.lbl.gov/wp-content/uploads/2018/03/Brandt.jpg" alt="">
+                <div class="text" style="  padding-left:280px; padding-right:70px;">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam minima sit quas similique vel ipsam quam eaque adipisci commodi ex, velit nostrum maiores! Pariatur fugiat nihil eaque, assumenda iusto eveniet?</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora distinctio odio in quae natus blanditiis nostrum veritatis at? Iure, ex voluptates ipsum dignissimos suscipit quasi officia obcaecati temporibus architecto fugit maiores accusantium natus perferendis nisi vitae atque minima. Reprehenderit dolores laboriosam iusto excepturi, porro ex voluptatibus, explicabo voluptates eos quam est similique ad, aperiam assumenda quia? Quos, adipisci mollitia? Sint eligendi at tenetur molestias, maiores explicabo maxime fugiat dolore, esse quam, rerum magni architecto voluptatibus voluptates nam incidunt. Facere maxime numquam commodi error! Rem fuga inventore quis quia illo.</p>
+                </div>
+            </div>
+          </div>
+          <div class="container boxx" style="border: 1px solid #787878;">
+         
+            <div class="leftbox" >
+                <h2>name</h2>
+                <span  style="display: block;margin-left: 12px;  font-style: italic;"><i class="fa-solid fa-id-card-clip me-2" ></i>Scientific Data Division Interim Director</span>
+
+                <img src="https://www.lbl.gov/wp-content/uploads/2018/03/Brandt.jpg" alt="">
+                <div class="text" style="  padding-left:280px; padding-right:70px;">
+                
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam minima sit quas similique vel ipsam quam eaque adipisci commodi ex, velit nostrum maiores! Pariatur fugiat nihil eaque, assumenda iusto eveniet?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora distinctio odio in quae natus blanditiis nostrum veritatis at? Iure, ex voluptates ipsum dignissimos suscipit quasi officia obcaecati temporibus architecto fugit maiores accusantium natus perferendis nisi vitae atque minima. Reprehenderit dolores laboriosam iusto excepturi, porro ex voluptatibus, explicabo voluptates eos quam est similique ad, aperiam assumenda quia? Quos, adipisci mollitia? Sint eligendi at tenetur molestias, maiores explicabo maxime fugiat dolore, esse quam, rerum magni architecto voluptatibus voluptates nam incidunt. Facere maxime numquam commodi error! Rem fuga inventore quis quia illo.</p>
+            </div>
+                
+            </div>
+          </div>
+        
+    </div>
+    <!-- footer -->
+    <hr id="footerRuler" class="mt-5">
+    <div id="footer">
+        <div id="footerLogo">
+            <img src="ned.png" alt="bot1" width="70px">
+            <img src="ncai.png" alt="bot1" width="150px">
+        </div>
+
+        <div id="footerDetails">
+            <div id="address">
+                <i class="fa-solid fa-location-pin"></i>
+                <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+            </div>
+            <div id="emailContact">
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>smartcity@neduet.edu.pk</p>
+                </div>
+                <div id="contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>+92 335 3046110</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footerLinks">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("ul.navbar-nav > li>a").click(function (e) {
+                $("ul.navbar-nav > li>a").removeClass("activen");
+                $(this).addClass("activen");
+            });
+        });
+  
+  
+        function change_text() {
+            var text = $(event.target).text();
+            document.getElementById('head').innerHTML = text;
+        }
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>      
+</body>
+</html>

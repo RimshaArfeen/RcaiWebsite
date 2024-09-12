@@ -1,0 +1,410 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="navigation.css">
+    <style>
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
+        @import url(fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+        body {
+            font-family: 'Open Sans Hebrew Condensed', sans-serif;
+        }
+
+        #parent-div {
+            width: 75%;
+            margin-right: 17%;
+            margin-left: 17%;
+            margin-top: 7%;
+            margin-bottom: 7%;
+        }
+
+        #boxes {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            grid-gap: 37px;
+        }
+
+        #header {
+            grid-column: 1 / 3;
+            grid-row: 1;
+            height: 50px;
+        }
+
+        #img {
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+            width: 400px;
+        }
+
+
+
+        #desc {
+            grid-column: 1;
+            grid-row: 2 / 5;
+        }
+
+        #features {
+            grid-column: 2;
+            grid-row: 3;
+            width: 380px;
+            background-color: rgb(194, 194, 218, 0.3);
+            font-family: 'Open Sans Hebrew Condensed', sans-serif;
+        }
+
+        p {
+
+            text-align: justify;
+            text-justify: inter-word;
+            word-spacing: 0.08cm;
+
+
+            font-family: 'Open Sans Hebrew Condensed', sans-serif;
+            font-size: 14px;
+
+            color: #333333;
+
+        }
+
+        img {
+            width: 100%;
+            max-width: 90%;
+            box-shadow: 10px 10px 5px #555555;
+            height: 250px;
+        }
+
+        @media only screen and (max-width:817px) {
+            #parent-div {
+                width: 85%;
+                margin-right: 10%;
+                margin-left: 10%;
+                margin-top: 7%;
+                margin-bottom: 7%;
+            }
+
+        }
+
+        @media only screen and (max-width:441px) {
+            #boxes {
+                display: block;
+
+            }
+
+            #header {
+
+                height: 50px;
+            }
+        }
+
+
+
+
+        @media only screen and (max-width:440px) {
+            #parent-div {
+                margin-right: 5%;
+                margin-left: 5%;
+
+            }
+
+            #boxes {
+                display: block;
+
+            }
+
+            #header {
+
+                height: 50px;
+            }
+
+            p {
+                width: 100%;
+            }
+
+            #desc {
+                width: 380px;
+            }
+
+
+
+        }
+
+        @media only screen and (max-width:361px) {
+            #parent-div {
+                margin-right: 5%;
+                margin-left: 5%;
+
+            }
+
+            #boxes {
+                display: block;
+
+            }
+
+            #header {
+
+                height: 50px;
+            }
+
+            #desc {
+                width: 360px;
+            }
+
+
+
+        }
+
+        @media only screen and (max-width:1008px) {
+            #header {
+                width: 300px;
+            }
+        }
+
+        @media only screen and (max-width:870px) {
+            #header {
+                width: 300px;
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (max-width:852px) {
+            #header {
+                width: 280px;
+
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width:740px) {
+            #header {
+                width: 170px;
+
+                height: 80px;
+            }
+        }
+
+        @media only screen and (max-width:651px) {
+            #boxes {
+                display: block;
+
+            }
+
+            #header {
+                width: 500px;
+                height: 50px;
+            }
+
+            #img {
+                width: 550px;
+            }
+
+            #features {
+                width: 500px;
+            }
+        }
+
+        @media only screen and (max-width:546px) {
+            #boxes {
+                display: block;
+
+            }
+
+            #header {
+                width: 500px;
+                height: 50px;
+            }
+
+            #img {
+                width: 550px;
+            }
+
+            #features {
+                width: 500px;
+            }
+
+            #desc {
+                width: 500px;
+            }
+        }
+
+        .container {
+            background-color: rgb(194, 194, 218, 0.3);
+            margin-left: 200px;
+            width: 65%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center mx-auto" id="navbarNavDropdown">
+            <div class="container">
+                <ul class="navbar-nav ">
+
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            IOT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="smart.html">Smart Irrigation System</a>
+                            <a class="dropdown-item" href="water.html">Water Resource Management</a>
+                            <a class="dropdown-item" href="smartparking.html">Smart RFID Parking</a>
+                            <a class="dropdown-item" href="Intelligent.html">Intelligent Hearing Assistant</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Social projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="reverse.html">Reverse Vending Machine</a>
+                            <a class="dropdown-item" href="greenspace.html">Green Area App</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Agriculture
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="RiceQuality.html">Rice Quality Analyzer</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Autonomous Vehicle
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="autonomous.html">Autonomous Vehicle</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Health Care
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="PredictiveAnalysis.html">Predictive Analysis of Fetal
+                                Cardiovascular</a>
+                            <a class="dropdown-item" href="PatientMonitoring.html">Patient Monitoring System</a>
+                            <a class="dropdown-item" href="Radiological.html">Radiological Diagnosis of Cerebral
+                                Tuberculosis</a>
+                            <a class="dropdown-item" href="User_engagement.html">User Engagement Prediction</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Computer Vision
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="AIkits.html">AI kit for Kids</a>
+                            <a class="dropdown-item" href="AIprocter.html">AI proctor</a>
+                            <a class="dropdown-item" href="ThirdEmpire.html">Intelligent Third Umpire</a>
+                            <a class="dropdown-item" href="visualposition.html">Visual Positioning System</a>
+                        </div>
+                    </li>
+            </div>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <div id="parent-div">
+        <div id="boxes">
+            <div id="header">
+                <h1>Smart Irrigation System</h1>
+            </div>
+            <div id="img">
+                <img src="https://smartcitylab.neduet.edu.pk/images/projects/smart-irrigation-system.jpg" alt="">
+            </div>
+            <div id="desc">
+                <p> Smart Irrigation System is the latest IoT technology which is helpful and leads to ease of farming.
+                    The engineers at the Smart City Lab has developed the IoT devices that will improve the process of
+                    Smart
+                    Irrigation. Approximately, 70% of the water withdrawn from various fresh water sources is used for
+                    agricultural activities.
+                    Majority of the water is wasted due to over watering caused by inefficiencies in traditional
+                    irrigation
+                    methods and systems.
+                    Adopting the smart irrigation will be a best solution. This system monitors soil conditions and
+                    plant
+                    water
+                    use. By using this smart irrigation concept we can bring back the greenery which is going to be
+                    vanish
+                    because
+                    of the rapid urbanization. The system will help to get farmers good yield.
+                </p>
+            </div>
+            <div id="features">
+
+
+                <li><i class="fa-solid fa-star"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iusto,
+                    provident ipsa quae corrupti, illo nesciunt commodi officia fugit laborum deserunt veniam optio
+                    error esse?</li>
+                <li><i class="fa-solid fa-star"></i>F2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                    iusto, provident ipsa quae corrupti, illo nesciunt commodi officia fugit laborum deserunt veniam
+                    optio error esse?</li>
+                <li><i class="fa-solid fa-star"></i>F3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                    iusto, provident ipsa quae corrupti, illo nesciunt commodi officia fugit laborum deserunt veniam
+                    optio error esse?</li>
+                <li><i class="fa-solid fa-star"></i>F4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                    iusto, provident ipsa quae corrupti, illo nesciunt commodi officia fugit laborum deserunt veniam
+                    optio error esse?</li>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

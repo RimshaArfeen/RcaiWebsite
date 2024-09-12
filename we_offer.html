@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/93d0f16795.js" crossorigin="anonymous"></script>
+    <!-- style sheets -->
+    <link rel="stylesheet" href="bars.css">
+    <link rel="stylesheet" href="newsCenter.css">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <title>We Offer</title>
+</head>
+<style>
+    .features-in-products {
+        margin-top: 1rem;
+    }
+
+    body {
+        overflow-x: hidden;
+        box-sizing: border-box;
+
+    }
+
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .head-btn {
+        margin-top: 10px;
+    }
+
+    .carddd {
+        width: 320px;
+        height: 240px;
+        margin: 1em;
+        margin-bottom: 120px !important;
+        perspective: 1500px;
+    }
+
+    .carddd .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+    }
+
+    .more {
+        display: none;
+    }
+
+    .more:checked~.content {
+        transform: rotateY(180deg);
+    }
+
+    .front,
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        border-radius: 6px;
+    }
+
+    .front .inner,
+    .back .inner {
+        height: 100%;
+        display: grid;
+        padding: 1.5em;
+        transform: translateZ(80px) scale(0.94);
+    }
+
+    .front {
+        background-color: #fff;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .front:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 6px;
+        backface-visibility: hidden;
+        /* background: linear-gradient(40deg, rgb(152, 182, 173), rgba(165, 163, 151, 0.7)); */
+    }
+
+    .front .inner {
+        grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
+        justify-items: center;
+    }
+
+    .front h2 {
+        grid-row: 2;
+        margin-bottom: 0.3em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #fff;
+        font-weight: 500;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .front .rating {
+        grid-row: 3;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .front .rating i {
+        margin: 0 1px;
+    }
+
+    .back {
+        transform: rotateY(180deg);
+        background-color: #fff;
+        border: 2px solid #f0f0f0;
+    }
+
+    .back .inner {
+        grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 0.8em;
+        justify-items: center;
+    }
+
+    .back .info {
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: black;
+        grid-row: 3;
+    }
+
+    .back .info:not(:first-of-type):before {
+        content: "";
+        position: absolute;
+        left: -0.9em;
+        height: 18px;
+        width: 1px;
+        background-color: #ccc;
+    }
+
+    .back .info span {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .back .info i {
+        font-size: 1.2em;
+    }
+
+    .back .info i:before {
+        background: linear-gradient(40deg, rgb(62, 205, 160), #438af3);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .back .info .icon {
+        margin-left: 0.3em;
+    }
+
+    .back .info .icon span {
+        display: block;
+        margin-top: -0.25em;
+        font-size: 0.8em;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .back .description {
+        grid-row: 5;
+        grid-column: 1/-1;
+        font-size: 0.86em;
+        border-radius: 5px;
+
+        line-height: 1.4em;
+        overflow: auto;
+        color: black;
+        margin-top: 11px !important;
+        padding: 10px !important;
+        padding-right: 10px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .back .location,
+    .back .price {
+        font-weight: 600;
+        color: black;
+        grid-row: 1;
+        font-size: 0.86em;
+    }
+
+    .back .location {
+        grid-column: 1/3;
+        justify-self: left;
+    }
+
+    .back .price {
+        grid-column: 3/-1;
+        justify-self: right;
+    }
+
+    .back .buttonn {
+        grid-column: 1/-1;
+        justify-self: center;
+        color: black !important;
+    }
+
+    .buttonn {
+        grid-row: -1;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        cursor: pointer;
+        display: block;
+        padding: 0 1.5em;
+        height: 3em;
+        line-height: 2.9em;
+        min-width: 3em;
+        background-color: transparent;
+        border: solid 2px #fff;
+        color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        left: 50%;
+        backface-visibility: hidden;
+        transition: 0.3s ease-in-out;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .buttonn:hover {
+        background-color: #fff;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        text-shadow: none;
+        color: rgb(62, 205, 160);
+    }
+
+    .buttonn.return {
+        line-height: 3em;
+        color: rgb(62, 205, 160);
+        border-color: rgb(62, 205, 160);
+        text-shadow: none;
+    }
+
+    .buttonn.return:hover {
+        background-color: rgb(62, 205, 160);
+        color: #fff;
+        box-shadow: none;
+    }
+
+    .hidee {
+        display: none;
+    }
+
+    .activee {
+        display: block !important;
+    }
+
+    #navbar a:nth-child(4) {
+        border-bottom: 4px solid #00313C;
+    }
+
+
+    .btn {
+        background-color: #98b2c9;
+        border-radius: 50%;
+        text-align: center;
+        border: none;
+        color: white;
+        display: inline;
+        right: 1px;
+        top: 245px;
+        position: absolute;
+    }
+
+    .btn:hover {}
+
+    .crd-head {
+        display: inline;
+        margin-left: 0;
+
+        font-size: 1.4rem;
+    }
+</style>
+
+<body>
+    <div id="header">
+        <div id="leftHeader">
+            <a href="home.html"><img src="images/logo.jpg" alt="robot" width="200px" height="55px"></a>
+        </div>
+        <div id="rightHeader">
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="search" placeholder="Search..." id="searchBar">
+                        </td>
+                        <td>
+                            <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                        </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>
+                            <input type="submit"> &nbsp;
+                            <input type="radio" name="options">Web &nbsp;
+                            <input type="radio" name="options">People
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- responsive search -->
+    <div id="responsiveSearch">
+        <form action="#">
+            <dialog open id="d1" style="display:none;">
+                <h4>RCAI LAB SEARCH</h4>
+                <input type="search" placeholder="Search..." id="searchBar">
+                <br>
+                <input type="submit"> &nbsp;
+                <input type="radio" name="options">Web &nbsp;
+                <input type="radio" name="options">People
+                <br>
+                <button onclick="closed()">Close</button>
+            </dialog>
+        </form>
+    </div>
+    <nav>
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="visions.html">The RCAI</a>
+            <a href="researchareas.html">Research</a>
+            <a href="director.html">Leadership/Organization</a>
+            <a href="blogs.html">Newsletters</a>
+        </div>
+
+        <div id="responsiveNavbar">
+            <a href="#" style="width:90%" id="resnav">Navigation</a>
+            <img src="images/search.png" alt="search" width="20px" height="20px" id="resSearch">
+        </div>
+        <div id="resDiv" style="display:none;">
+            <a href="visions.html">The Rcai</a>
+            <hr>
+            <a href="researchareas.html">Research Areas</a>
+            <hr>
+            <a href="director.html">Leadership/Organization</a>
+            <hr>
+            <a href="blogs.html">Newsletters</a>
+            <hr>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <p id="head">We Offer</p>
+                <span style="margin-top: 5px;"><i class="fa fa-thin fa-chevron-down"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav naving mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="blogs.html">CaseStudies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="publication.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link activen" href="we_offer.html">We Offer</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar  navbar-expand-lg ">
+        <div class="container-fluid mt-5">
+
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupported"
+                aria-controls="navbarSupported" aria-expanded="false" aria-label="Toggle navigation">
+                <p id="headd">Workshops</p>
+                <span style="margin-top: 5px;"><i class="fa fa-thin fa-chevron-down"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupported">
+                <ul class="navbar-nav navv  mb-lg-0">
+                    <li class="nav-item " onclick=" change_text()">
+                        <a class="ws activen nav-link" id="nav-link" onclick=" addClas(this.className)"
+                            aria-current="page" href="#">Workshops</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a class="courses nav-link" id="nav-link" onclick=" addClas(this.className)" aria-current="page"
+                            href="#">Courses</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text() ">
+                        <a class="webinars nav-link" onclick=" addClas(this.className)" href="#"
+                            id="nav-link">Webinars</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="ws" class="ws hidee activee">
+        <h2 class="text-center mt-5">Worshops</h2>
+        <section class="features-in-products mb-5" id="feature">
+
+
+
+
+            <div class="wrapper ">
+
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/1.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart city lab gets the opportunity to explore the avenues of stream learning through
+                                    imparting the knowledge of artificial intelligence among the home schooling
+                                    students.</p>
+
+                            </div>
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">AI WORKSHOP FOR HOME <br> SCHOOLING STUDENTS
+                        </h3>
+
+                        <label for="card" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 7th
+                            March 2022 </i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card2" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/2.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab - NCAI, NED UET is offering a golden opportunity to those who are
+                                    keenly interested in 3D printing and Rapid Prototyping where Introduction to
+                                    Solidworks, CAD and 3D modelling will be discussed.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">3D PRINTING WORKSHOP</h3>
+
+                        <label for="card2" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 15th
+                            january 2022</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card3" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/3.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab - NCAI, NED UET is offering a golden opportunity to those students who
+                                    are keenly interested in Autonomous vehicle and Robotics. We are offering 4 days’
+                                    workshop on Autonomous Vehicle in AI Festival 3.0, where we will be working on CARLA
+                                    simulator, ROS (Robot Operating System) and other state of the art computer vision
+                                    and embedded algorithms guidelines to implement AI & Computer Vision techniques in
+                                    self driving cars.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">AUTONOMOUS VEHICLE WORKSHOP</h3>
+
+                        <label for="card3" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"> </i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 28th -
+                            31st december 2021</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card4" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/4.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Motivation is the fuel, necessary to keep the human engine running. ~Zig Ziglar Dr.
+                                    #Muhammad #Khurram conducted a motivational session with the Team of Smart City Lab
+                                    - NCAI, NED UET to guide them, inspire them and encourage them to achieve personal
+                                    and professional goals efficiently.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">MOTIVATIONAL SESSION</h3>
+
+                        <label for="card4" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;">
+                            22-dec-2021</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card5" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/5.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab - NCAI, NED UET is offering 1 day certified workshop on
+                                    "Instrumentation & Control", designed for engineering students and young
+                                    professionals who are interested in exploring the field of Instrumentation &
+                                    Controls (I&C) essential in Power Sector, Oil & Gas and Process Industries.</p>
+
+                            </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">INSTRUMENTATION AND CONTROL WORKSHOP</h3>
+
+                        <label for="card5" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 10th
+                            december 2021 </i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card6" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/6.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab - NCAI, NED UET organized successful workshop under the Competence
+                                    Development Program. The main objective of our team was to familiarize students with
+                                    the basic and most important step of Data labelling i.e., Data Annotations.</p>
+
+                            </div>
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">DATA ANNOTATION <br> WORKSHOP</h3>
+
+                        <label for="card6" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 9th
+                            december 2021 </i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card7" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/7.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab - NCAI, NED UET is offering 1 day certified workshop on
+                                    "Instrumentation & Control", designed for engineering students and young
+                                    professionals who are interested in exploring the field of Instrumentation &
+                                    Controls (I&C) essential in Power Sector, Oil & Gas and Process Industries.</p>
+
+                            </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">INSTRUMENTATION AND CONTROL WORKSHOP</h3>
+
+                        <label for="card7" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 3rd
+                            december 2021 </i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card8" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/8.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab - NCAI, NED UET will be presenting their vision in Smart City
+                                    Innovation Bootcamp session in the event Envision organized by IEEE Neduet Student
+                                    Branch NED university, on a self driving car project which is an ongoing project in
+                                    smart city lab. The purpose of this session is to promote and encourage students
+                                    towards research.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">AUTONOMOUS VEHICLE <br> SESSION</h3>
+
+                        <label for="card8" class="btn" aria-hidden="true">
+                            <i class="fa  fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 2nd
+                            december 2021</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card9" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/9.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Director of Smart City Lab NCAI, NED, Prof. Dr. Muhammad Khurram aims to promote STEM
+                                    learning. In this regard., the Robotics workshop is designed especially for students
+                                    from grades 8th–12th And O/A-Levels.
+
+                                </p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">ROBOTICS WORKSHOP</h3>
+
+                        <label for="card9" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;">6th
+                            november 2021 </i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card10" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/10.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab NCAI NEDUET organized Smart Agriculture Workshop 2021 in a village
+                                    Darsano Chhano District Malir, Karachi.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">SMART AGRICULTURE WORKSHOP</h3>
+
+                        <label for="card10" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 20th
+                            October 2021 </i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card11" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/11.png')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>We are pleased to welcome you to the Introduction to ROS - Robot Operating System
+                                    workshop by Smart City Lab – NCAI, NEDUET. This 8 weeks workshop is formulated to
+                                    kick start from absolute basics and build up the knowledge base all the way to
+                                    intermediate-advanced ROS utility.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">ROBOT OPERATING SYSTEM <br> WORKSHOP</h3>
+
+                        <label for="card11" class="btn" aria-hidden="true">
+                            <i class="fa  fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 29th
+                            May 2021 </i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card12" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/12.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Workshop on Artificial Intelligence with Python by Smart City Lab NCAI, with
+                                    collaboration of CERD.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">AI WORKSHOP</h3>
+
+                        <label for="card12" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 13th
+                            march 2021</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card13" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/13.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City lab, bring IOT for Smart Cities which was one Month certificate online
+                                    hands-on workshop which held every Saturday
+                                </p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">IOT FOR SMART CITIES</h3>
+
+                        <label for="card13" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 2nd
+                            ,9th,16th,23rd,30th January 2021</i>
+                    </span>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+    </div>
+    <div id="courses" class="courses hidee ">
+        <h2 class="text-center mt-5">Courses</h2>
+        <section class="features-in-products mb-5" id="feature">
+
+
+            <div class="wrapper ">
+
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card14" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/c1.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab, NCAI presents 4 months course ( 4 hours/week)on Mendix.If you are
+                                    still not sure about whether you should attend this course on Mendix, Smart City Lab
+                                    - NCAI, NED UET in collaboration with Systems Limited and IEEE Neduet Student Branch
+                                    bring you first 4 hour session on Saturday (11th June) absolutely free. Tune in by
+                                    clicking the Google meet link in description and experience it for yourself!
+                                    https://meet.google.com/uyd-qxvq-usp</p>
+
+                            </div>
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">CERTIFIED MENDIX COURSE</h3>
+
+                        <label for="card14" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 11th
+                            June 2022</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card15" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/c2.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Flutter is an open-source UI software development kit created by Google. It is used
+                                    to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google
+                                    Fuchsia, and the web from a single codebase. The course is designed for engineering
+                                    students and young professionals to teach them how to use Flutter for quickly
+                                    developing high-quality, interactive mobile applications for iOS and Android
+                                    devices.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">ANDROID/IOS/WEB APPLICATION DEVELOPMENT USING
+                            FLUTTER</h3>
+
+                        <label for="card15" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 19th
+                            dec 2021</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card16" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/c3.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab, NCAI presents 12 weeks course ( 3 hours/week) 0n Embedded System
+                                    Design with Xilinx VIVADO and FPGA.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">EMBEDDED SYSTEM DESIGN WITH <br> XILINX
+                            VIVADO AND FPGA</h3>
+
+                        <label for="card16" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"> </i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 22nd
+                            may 2021</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card17" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/c4.png')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab, NCAI, NED are launching Artificial Intelligence with a Python Course
+                                    at NED University! Top students from this course will get Internship opportunities
+                                    at Smart City Lab, NCAI.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">AI WITH PYTHON COURSE (COLLABORATION WITH
+                            CERD)</h3>
+
+                        <label for="card17" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 13th
+                            feb 2021</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card18" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/5.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Smart City Lab NED brings FPGA Certified Course and hands-on training for Nedians.
+                                </p>
+
+                            </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">FPGA COURSE & HANDS-ON <br> TRAINING
+                        </h3>
+
+                        <label for="card18" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 4th
+                            June 2016</i>
+                    </span>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </section>
+    </div>
+    <div id="webinars" class="webinars hidee ">
+        <h2 class="text-center mt-5">Webinars</h2>
+        <section class="features-in-products mb-5" id="feature">
+
+
+            <div class="wrapper ">
+
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card19" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/w1.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>The Smart City lab, NCAI brings an online webinar on “IOT” to know how IoT solutions
+                                    can ease our life? Learn how IoT can help us in various domains personally and
+                                    professionally.Honorable Speaker is Dr. Muhammad Khurram.
+
+                                </p>
+
+                            </div>
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">IOT WEBINAR</h3>
+
+                        <label for="card19" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;">
+                            11-april-2022</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card20" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/w2.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>The Smart City lab, NCAI brings an online webinar on “Booming trends in AI” for those
+                                    who are interested in gaining technical expertise and building their professional
+                                    career in AI domain. Our aim is to groom young professionals and make them qualified
+                                    individuals as a part of Competence Development Program.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">BOOMING TRENDS IN AI WEBINAR</h3>
+
+                        <label for="card20" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 20th
+                            November 2021</i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card21" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/w3.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>The perspective on Artificial intelligence research and modern paper writings; Smart
+                                    City Lab, NCAI, came up with a webinar, "Scientific Manuscripts for international
+                                    journals on 20th August 2021 11:00am to 12:00 pm. Presenting you the Speaker "Dr
+                                    Huma Zia" PhD. Computer Science, University of Southampton, UK Assistant Professor,
+                                    College of Engineering, AbuDhabi University, UAE for the webinar, "Scientific
+                                    Manuscripts for international journals on 20th August 2021 11:00am to 12:00 pm.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">SCIENTIFIC MANUSCRIPTS FOR INTERNATIONAL
+                            JOURNALS WEBINAR</h3>
+
+                        <label for="card21" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"> </i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar fa-xs" style="text-transform: lowercase !important;"> 20th
+                            August 2021 </i>
+                    </span>
+
+
+                </div>
+                <div class="carddd ">
+
+                    <input type="checkbox" id="card22" class="more">
+                    <div class="content">
+                        <div class="front" style="background-image: url('images/w4.jpg')">
+                        </div>
+                        <div class="back">
+
+                            <div class="description" style="padding: 30px; margin-top: 20px; text-align: center; ">
+                                <p>Cryptocurrency is definitely a hot topic of 2021. As most of our lives exist on the
+                                    internet now. From baking information to our addresses, to our shopping habits, we
+                                    entrust the internet with a lot of information. And cryptocurrency is yet another
+                                    thing that relies on the internet, with so much buzz around cryptocurrency, it’s
+                                    even more essential to know the basics of this new market. So, Smart City Lab, NCAI,
+                                    NEDUET is here with a webinar that will explain all important aspects you need to
+                                    know about blockchain and cryptocurrencies. Sir Fahad Shahab will be joining us as a
+                                    guest speaker.</p>
+
+                            </div>
+
+
+
+
+
+
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="head-btn">
+                        <h3 style="text-align: baseline;" class="crd-head">BLOCKCHAIN & CRYPTOCURRENCY WEBINAR</h3>
+
+                        <label for="card22" class="btn" aria-hidden="true">
+                            <i class="fa fa-solid fa-arrow-rotate-right"></i>
+                        </label>
+                    </div>
+                    <span style="color: grey !important;">
+
+                        <i class=" fa fa-solid fa-calendar  fa-xs" style="text-transform: lowercase !important;"> 28th
+                            may 2021 </i>
+                    </span>
+
+
+                </div>
+
+            </div>
+
+    </div>
+
+
+    </section>
+    </div>
+
+
+
+
+
+
+    <hr id="footerRuler " class="mt-5
+    ">
+    <div id="footer">
+        <div id="footerLogo">
+            <img src="ned.png" alt="bot1" width="70px">
+            <img src="ncai.png" alt="bot1" width="150px">
+        </div>
+
+        <div id="footerDetails">
+            <div id="address">
+                <i class="fa-solid fa-location-pin"></i>
+                <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+            </div>
+            <div id="emailContact">
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>smartcity@neduet.edu.pk</p>
+                </div>
+                <div id="contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>+92 335 3046110</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footerLinks">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            var zindex = 10;
+
+            $("div.crd").click(function (e) {
+                e.preventDefault();
+
+                var isShowing = false;
+
+                if ($(this).hasClass("show")) {
+                    isShowing = true
+                }
+
+                if ($("div.crds").hasClass("showing")) {
+                    // a card is already in view
+                    $("div.crd.show")
+                        .removeClass("show");
+
+                    if (isShowing) {
+                        // this card was showing - reset the grid
+                        $("div.crds")
+                            .removeClass("showing");
+                    } else {
+                        // this card isn't showing - get in with it
+                        $(this)
+                            .css({ zIndex: zindex })
+                            .addClass("show");
+
+                    }
+
+                    zindex++;
+
+                } else {
+                    // no cards in view
+                    $("div.crds")
+                        .addClass("showing");
+                    $(this)
+                        .css({ zIndex: zindex })
+                        .addClass("show");
+
+                    zindex++;
+                }
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("ul.naving > li>a").click(function (e) {
+                $("ul.naving > li>a").removeClass("activen");
+                $(this).addClass("activen");
+            });
+        });
+
+        $(document).ready(function () {
+            $("ul.navv > li>a").click(function (e) {
+                $("ul.navv > li>a").removeClass("activen");
+                $(this).addClass("activen");
+            });
+        });
+
+
+        function change_text() {
+            var textt = $(event.target).text().trim();
+
+            var elementt = document.getElementById('headd')
+            elementt.innerHTML = textt;
+
+        }
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+    <script>
+
+
+
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+        function addClas(e) {
+
+            var elems = document.querySelector(".activee");
+            if (elems !== null) {
+                elems.classList.remove("activee");
+            }
+            var lengt = e.length
+            const mye = e.split(" ");
+            console.log(mye)
+
+            var ele = document.getElementsByClassName(mye[0])
+
+
+
+
+
+            $(ele[1]).addClass("activee");
+
+        }
+    </script>
+</body>
+
+</html>

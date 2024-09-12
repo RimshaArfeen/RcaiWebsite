@@ -1,0 +1,200 @@
+@media only screen and (min-width:768px) and (max-width:1700px){
+
+   
+    /* vision */
+    #navbar a:first-child {
+        border-bottom: 4px solid #00313C;
+    }
+    #rcaiTable td:first-child {
+        background-color:rgb(177, 176, 176);
+    }
+    #vision {
+       width:100%;
+       text-align: justify;
+    }
+    #visionMain{
+        background: url("/Projects/bg-img2.png") no-repeat center/cover;
+        z-index:-1;
+        width:100%;
+        height:80vh;
+    }
+    #visionContent>h1{
+        margin-bottom: 25px;
+    }
+    #visionContent>h3{
+        color:grey;
+    }
+    #visionContent{
+        width: 50%;
+        margin: auto;
+        line-height: 30px;
+        padding:40px;
+        margin-top: -120px;
+        border-bottom: 1px solid grey;
+        background-color: white;
+        margin-bottom: 70px;
+    }
+    #visionContent::before{
+        content: "";
+        position: absolute;
+        border: 1px solid  grey;
+        width: 3px;
+        background-color:  gray;
+        margin-left: -40px;
+        margin-top: -40px;
+        height: 120px;
+    }
+    #visionFlex{
+        display:flex;
+        width:85%;
+        margin: auto;
+        padding:10px;
+    }
+    #rightContent{
+        margin-left:30px;
+        width:60%;
+    }
+    #anchors{
+        margin-left:10px;
+        line-height: 30px;
+        width:100%;
+        color:grey;
+    }
+    #anchors a:hover{
+        text-decoration: underline;
+    }
+    
+    #leftNav h3{
+        margin-bottom:10px;
+    }
+    .vdivs{
+        display: flex;
+        margin-bottom:40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .vdivs img{
+        width:200px;
+        height:150px;
+    }
+    .rdcontent{
+        margin-left:20px;
+        line-height:30px;
+    }
+    .vdivs h2::before{
+        content: "";
+        position: absolute;
+        border: 1px solid  #00313C;
+        width: 60px;
+        background-color:  #00313C;
+        margin-left: -70px;
+        height: 1px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px){
+   
+
+    /* main */
+    /* #main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+
+    
+
+    /* vision */
+    #vision {
+        width: 95%;
+        margin: auto;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+  
+    #responsiveVision{
+        width:90%;
+        margin:20px auto;
+        /* margin-bottom: 20px; */
+    }
+
+     /* vision */
+     #vision {
+        width:100%;
+     }
+     #visionMain{
+         background: url("visionBack.jpg") no-repeat center/cover;
+         z-index:-1;
+         width:100%;
+         height:80vh;
+     }
+     #visionContent>h1{
+         margin-bottom: 25px;
+     }
+     #visionContent>h3{
+         color:grey;
+     }
+     #visionContent{
+         width: 55%;
+         margin: auto;
+         line-height: 30px;
+         padding:40px;
+         margin-top: -120px;
+         border-bottom: 1px solid grey;
+         background-color: white;
+         margin-bottom: 70px;
+     }
+     #visionFlex{
+         /* display:flex; */
+         width:90%;
+         margin: auto;
+         padding:5px;
+     }
+     #leftNav{
+        display: none;
+     }
+     .vdivs{
+         display: flex;
+         margin-bottom:40px;
+     }
+     .vdivs img{
+         width:150px;
+         height:100px;
+     }
+     .rdcontent{
+         margin-left:20px;
+         line-height:30px;
+     }
+     .vdivs h2::before{
+         content: "";
+         position: absolute;
+         border: 1px solid  #00313C;
+         width: 50px;
+         background-color:  #00313C;
+         margin-left: -60px;
+         margin-top: 10px;
+         height: 1px;
+     }
+     
+}

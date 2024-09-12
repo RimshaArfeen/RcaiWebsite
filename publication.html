@@ -1,0 +1,3401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bars.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+  <script src="https://kit.fontawesome.com/93d0f16795.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <title>Publications</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Publications</title>
+</head>
+
+<body>
+ 
+  <style>
+    label{
+      z-index: 111;
+    }
+    .btnnnn {
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+.btnnnn:hover {
+  color: #222222
+}
+
+/* Dropdown */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: #ffffff;
+  z-index: 11;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* .dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+} */
+
+.dd-button:hover {
+  background-color: #eeeeee;
+}
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+.hidee{
+      display: none !important;
+    }
+.activee{
+      display: block
+    }
+   
+.hide{
+  display: none;
+}
+.active{
+  display: block !important;
+}
+    html,
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    .no-scroll {
+      overflow: hidden;
+    }
+
+    .container {
+height: auto;
+      padding: 2em;
+     
+      display: flex;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 1em;
+      color: #666;
+      height: 1em;
+      stroke-width: 0;
+      stroke: currentColor;
+      fill: currentColor;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      color: #333;
+    }
+
+    .blend-image,
+    .card__background img {
+      filter: brightness(250%) grayscale(100%);
+      mix-blend-mode: screen;
+    }
+
+    .center-image,
+    .card__background img {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .slick-slide {
+      padding: 2em 0.5em;
+    }
+
+    .card-slider {
+      margin: auto;
+      width: 100%;
+    }
+
+    .card {
+      border: 1px solid #abb8c3;
+      background: #fff;
+      display: flex;
+      padding: 2em;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      height: 350px;
+      box-shadow: 0 30px 50px -25px rgba(0, 0, 0, 0.25);
+    }
+
+    .card>* {
+      transition: opacity 350ms;
+    }
+
+    .card--opened>* {
+      opacity: 0;
+    }
+
+    .card__background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      background: #abb8c3;
+      z-index: -1;
+      text-align: left;
+    }
+
+    .card__background::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 70%);
+    }
+  
+
+
+.modall::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+.modall::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2px grey; 
+        border-radius: inherit;
+       
+    }
+
+    /* Handle */
+.modall::-webkit-scrollbar-thumb {
+        background: #abb8c3; 
+        border-radius: 10px;
+        
+    }
+    .card__category {
+      text-transform: uppercase;
+      color: #fff;
+      background: #98b2c9;
+      font-size: 0.85em;
+      font-weight: 600;
+      padding: 0.2em 0.5em 0.25em;
+    }
+
+    .card__title {
+      text-transform: uppercase;
+      margin: 0.5em 0;
+      color: #98b2c9
+    }
+
+    .card__duration {
+      color: #6f7070;
+    }
+
+    .modall-wrapper,
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .modall-wrapper {
+      display: flex;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      transition: opacity 150ms ease;
+    }
+
+    .modall {
+      overflow-y: scroll;
+      position: relative;
+      margin: auto;
+      width: 90vw;
+      height: 90vh;
+      max-width: 500px;
+      background: #fff;
+      
+    }
+
+    .modall__scroll-area {
+      height: inherit;
+      overflow: auto;
+      border-radius: inherit;
+     
+      position: relative;
+      z-index: 1;
+    }
+
+    .modall__close-button {
+      background: transparent;
+      border: none;
+      margin-bottom: auto;
+      color: #2e5f80;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 2em;
+      z-index: 2;
+    }
+
+    .modall__header {
+      text-align: center;
+      position: relative;
+      display: flex;
+      padding: 0.5em;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: 300px;
+      z-index: 1;
+    }
+
+    .modall__content {
+      padding: 2em;
+      color: #666;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    [data-modal-state=closed] .modall-wrapper {
+      pointer-events: none;
+    }
+
+    [data-modal-state=closed] .overlay {
+      pointer-events: none;
+    }
+
+    [data-modal-state=closed] .modall {
+      opacity: 0;
+    }
+
+    [data-modal-state=closed] .overlay {
+      opacity: 0;
+    }
+
+    [data-modal-state=opening] .modall__header,
+    [data-modal-state=opening] .modall__content,
+    [data-modal-state=opening] .modall__close-button,
+    [data-modal-state=closing] .modall__header,
+    [data-modal-state=closing] .modall__content,
+    [data-modal-state=closing] .modall__close-button {
+      opacity: 0;
+    }
+
+    [data-modal-state=opening] .overlay {
+      transition: opacity 500ms ease;
+    }
+
+    [data-modal-state=closing] .overlay {
+      opacity: 0;
+      transition: opacity 500ms ease;
+    }
+
+    [data-modal-state=open] .modall__header,
+    [data-modal-state=open] .modall__content {
+      transition: opacity 450ms;
+    }
+    #navbar a {
+      margin: 0 auto;
+      font-size: 18px !important;
+      font-family: 'Open Sans Hebrew Condensed', sans-serif !important;
+      /* padding: 0; */
+      padding: 5px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-right: 100px; */
+    color: black;
+    }
+   
+  </style>
+  <!-- HEADER -->
+  <div id="header">
+    <div id="leftHeader">
+      <a href="home.html"><img src="images/logo.jpg" alt="robot" width="200px" height="55px"></a>
+    </div>
+    <div id="rightHeader">
+
+      <form action="#">
+        <table>
+          <tr>
+            <td>
+              <input type="search" placeholder="Search..." id="searchBar">
+            </td>
+            <td>
+              <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+            </td>
+          </tr>
+          <tr id="tr2">
+            <td>
+              <input type="submit"> &nbsp;
+              <input type="radio" name="options">Web &nbsp;
+              <input type="radio" name="options">People
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+  <!-- responsive search -->
+  <div id="responsiveSearch">
+    <form action="#">
+      <dialog open id="d1" style="display:none;">
+        <h4>RCAI LAB SEARCH</h4>
+        <input type="search" placeholder="Search..." id="searchBar">
+        <br>
+        <input type="submit"> &nbsp;
+        <input type="radio" name="options">Web &nbsp;
+        <input type="radio" name="options">People
+        <br>
+        <button onclick="closed()">Close</button>
+      </dialog>
+    </form>
+  </div>
+
+  <nav>
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <a href="visions.html">The RCAI</a>
+        <a href="researchareas.html">Research</a>
+        <a href="director.html">Leadership/Organization</a>
+        <a href="blogs.html">Newsletters</a>
+    </div>
+    
+    <div id="responsiveNavbar">
+    <a href="#" style="width:90%" id="resnav">Navigation</a>
+    <img src="images/search.png" alt="search" width="20px" height="20px" id="resSearch">
+</div>
+<div id="resDiv" style="display:none;">
+    <a href="visions.html">The Rcai</a>
+    <hr>
+    <a href="researchareas.html">Research Areas</a>
+    <hr>
+    <a href="director.html">Leadership/Organization</a>
+    <hr>
+    <a href="blogs.html">Newsletters</a>
+    <hr>
+</div>
+</nav>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <p id="head">Publications</p>
+        <span style="margin-top: 5px;"><i class="fa fa-thin fa-chevron-down"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-lg-0">
+          <li class="nav-item " onclick=" change_text()">
+            <a class="nav-link " aria-current="page" href="blogs.html">CaseStudies</a>
+          </li>
+          <li class="nav-item" onclick="change_text()">
+            <a class="nav-link activen" aria-current="page" href="publication.html">Publications</a>
+          </li>
+          <li class="nav-item" onclick="change_text()">
+            <a class="nav-link" href="we_offer.html">We Offer</a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container d-flex ">
+  
+  <label class="dropdown ms-1 ">
+
+    <div class="dd-button">
+      Filter <i class="ms-2 fa-solid fa-filter"></i>
+    </div>
+  
+    <input type="checkbox" class="dd-input" id="test">
+  
+    <ul class="dd-menu">
+      
+      
+      <li class="a2022" onclick="filter(this.className)">2022</li>
+      <li class="a2021" onclick="filter(this.className)">2021</li>
+      <li class="a2020" onclick="filter(this.className)">2020</li>
+      <li class="a2019" onclick="filter(this.className)">2019</li>
+      
+      <li class="a2017" onclick="filter(this.className)">2017</li>
+      <li class="a2016" onclick="filter(this.className)">2016</li>
+      <li class="a2015" onclick="filter(this.className)">2015</li>
+      <li class="a2014" onclick="filter(this.className)">2014</li>
+      <li class="a2013" onclick="filter(this.className)">2013</li>
+      <li class="a2012" onclick="filter(this.className)">2012</li>
+      <li class="a2011" onclick="filter(this.className)">2011</li>
+      <li class="a2010" onclick="filter(this.className)">2010</li>
+      <li class="a2006" onclick="filter(this.className)">2006</li>
+      <li></li>
+      <li class="divider"></li>
+      
+    </ul>
+    
+  </label>
+  <div onclick="removing()" class="dd-button  ms-1"style="width:fit-content;">
+    Remove Fitler <i class="ms-2 fa-solid fa-filter-circle-xmark"></i>
+   </div>
+</div>
+ 
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-cross" viewBox="0 0 32 32">
+        <title>close</title>
+        <path
+          d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="page" data-modal-state="closed">
+    <div class="container ">
+      <div class="card-slider main" >
+        <div class="card-wrapper a2006" onclick="myfunc('a')"id="a">
+          <article  class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2006</h3>
+            <div class="card__duration">
+              Duration: 1 hour
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="b" onclick="myfunc('b')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020 " id="c" onclick="myfunc('c')">
+          <article class="card">
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration 1.5
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="d" onclick="myfunc('d')">
+          <article class="card">
+            <picture class="card__background">
+              <img src="images/agr.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2019" id="e" onclick="myfunc('e')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2019</h3>
+            <div class="card__duration">
+              Duration: 0.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2019" id="f" onclick="myfunc('f')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2019</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+      
+      
+        <div class="card-wrapper a2017" id="i" onclick="myfunc('i')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+         
+            <h3 class="card__title">PUBLISHED IN: 2017</h3>
+            <div class="card__duration">
+              Duration: 1.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2017" id="j" onclick="myfunc('j')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2017</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2017" id="k" onclick="myfunc('k')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2017</h3>
+            <div class="card__duration">
+              Duration: 1.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="l" onclick="myfunc('l')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+      
+     
+        <div class="card-wrapper a2014" id="o" onclick="myfunc('o')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2014</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2011" id="p" onclick="myfunc('p')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2011</h3>
+            <div class="card__duration">
+              Duration: 1.5 hour 
+            </div>
+          </article>
+        </div>
+        
+        <div class="card-wrapper a2013" id="r" onclick="myfunc('r')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2013</h3>
+            <div class="card__duration">
+              Duration: 1.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2012" id="s" onclick="myfunc('s')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2012</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2011" id="t" onclick="myfunc('t')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2011</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2011" id="u" onclick="myfunc('u')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2011</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="v" onclick="myfunc('v')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2012" id="w" onclick="myfunc('w')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2012</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="x" onclick="myfunc('x')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="y" onclick="myfunc('y')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/agr.jpg">
+            </picture>
+
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="z" onclick="myfunc('z')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="az" onclick="myfunc('az')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="bz" onclick="myfunc('bz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+       
+        <div class="card-wrapper a2022" id="dz" onclick="myfunc('dz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="ez" onclick="myfunc('ez')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="fz" onclick="myfunc('fz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2021" id="gz" onclick="myfunc('gz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2021</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2021" id="hz" onclick="myfunc('hz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2021</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2021" id="iz" onclick="myfunc('iz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2021</h3>
+            <div class="card__duration">
+              Duration: 0.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2021" id="kz" onclick="myfunc('kz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+
+            <h3 class="card__title">PUBLISHED IN: 2021</h3>
+            <div class="card__duration">
+              Duration: 0.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="lz" onclick="myfunc('lz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+        
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="mz" onclick="myfunc('mz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2019" id="nz" onclick="myfunc('nz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2019</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2019" id="oz" onclick="myfunc('oz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2019</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2017" id="pz" onclick="myfunc('pz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2017</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        
+        <div class="card-wrapper a2016" id="qz" onclick="myfunc('qz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="rz" onclick="myfunc('rz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="sz" onclick="myfunc('sz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="tz" onclick="myfunc('tz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2015" id="uz" onclick="myfunc('uz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2015</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2015" id="vz" onclick="myfunc('vz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2015</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2011" id="wz" onclick="myfunc('wz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2011</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper 'a2010" id="xz" onclick="myfunc('xz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2010</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="yz" onclick="myfunc('yz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="zz" onclick="myfunc('zz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/agr.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="aaz" onclick="myfunc('aaz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/agr.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+       
+         
+      </div>
+      <div class="card-slider  hidee " >
+        <h2>2020</h2>
+        <div class="card-wrapper a2006" onclick="myfunc('a')"id="a">
+          <article  class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2006</h3>
+            <div class="card__duration">
+              Duration: 1 hour
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="b" onclick="myfunc('b')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020 " id="c" onclick="myfunc('c')">
+          <article class="card">
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration 1.5
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="d" onclick="myfunc('d')">
+          <article class="card">
+            <picture class="card__background">
+              <img src="images/agr.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2019" id="e" onclick="myfunc('e')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2019</h3>
+            <div class="card__duration">
+              Duration: 0.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2019" id="f" onclick="myfunc('f')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2019</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+      
+      
+        <div class="card-wrapper a2017" id="i" onclick="myfunc('i')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+         
+            <h3 class="card__title">PUBLISHED IN: 2017</h3>
+            <div class="card__duration">
+              Duration: 1.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2017" id="j" onclick="myfunc('j')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2017</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2017" id="k" onclick="myfunc('k')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2017</h3>
+            <div class="card__duration">
+              Duration: 1.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="l" onclick="myfunc('l')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+      
+     
+        <div class="card-wrapper a2014" id="o" onclick="myfunc('o')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2014</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2011" id="p" onclick="myfunc('p')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2011</h3>
+            <div class="card__duration">
+              Duration: 1.5 hour 
+            </div>
+          </article>
+        </div>
+        
+        <div class="card-wrapper a2013" id="r" onclick="myfunc('r')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2013</h3>
+            <div class="card__duration">
+              Duration: 1.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2012" id="s" onclick="myfunc('s')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2012</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2011" id="t" onclick="myfunc('t')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2011</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2011" id="u" onclick="myfunc('u')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2011</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="v" onclick="myfunc('v')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2012" id="w" onclick="myfunc('w')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2012</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="x" onclick="myfunc('x')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="y" onclick="myfunc('y')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/agr.jpg">
+            </picture>
+
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="z" onclick="myfunc('z')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="az" onclick="myfunc('az')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="bz" onclick="myfunc('bz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+       
+        <div class="card-wrapper a2022" id="dz" onclick="myfunc('dz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="ez" onclick="myfunc('ez')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2022" id="fz" onclick="myfunc('fz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2022</h3>
+            <div class="card__duration">
+              Duration: 2 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2021" id="gz" onclick="myfunc('gz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2021</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2021" id="hz" onclick="myfunc('hz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+          
+            <h3 class="card__title">PUBLISHED IN: 2021</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2021" id="iz" onclick="myfunc('iz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2021</h3>
+            <div class="card__duration">
+              Duration: 0.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2021" id="kz" onclick="myfunc('kz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+
+            <h3 class="card__title">PUBLISHED IN: 2021</h3>
+            <div class="card__duration">
+              Duration: 0.5 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="lz" onclick="myfunc('lz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+        
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="mz" onclick="myfunc('mz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2019" id="nz" onclick="myfunc('nz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2019</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2019" id="oz" onclick="myfunc('oz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2019</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2017" id="pz" onclick="myfunc('pz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2017</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        
+        <div class="card-wrapper a2016" id="qz" onclick="myfunc('qz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="rz" onclick="myfunc('rz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+            
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="sz" onclick="myfunc('sz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="tz" onclick="myfunc('tz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2015" id="uz" onclick="myfunc('uz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2015</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2015" id="vz" onclick="myfunc('vz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2015</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2011" id="wz" onclick="myfunc('wz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/social.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2011</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper 'a2010" id="xz" onclick="myfunc('xz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/ai.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2010</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2020" id="yz" onclick="myfunc('yz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/computer vision.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2020</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="zz" onclick="myfunc('zz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/agr.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+        <div class="card-wrapper a2016" id="aaz" onclick="myfunc('aaz')">
+          <article class="card" >
+            <picture class="card__background">
+              <img src="images/agr.jpg">
+            </picture>
+           
+            <h3 class="card__title">PUBLISHED IN: 2016</h3>
+            <div class="card__duration">
+              Duration: 1 hour 
+            </div>
+          </article>
+        </div>
+       
+         
+      </div>
+     
+    </div>
+    
+    <div class="overlay"></div>
+
+    <div class="modall-wrapper"  style="z-index: 1000;">
+
+      <div class="modall" style="z-index: 1000;"> 
+
+        <button class="modall__close-button" type="button">
+          <svg class="icon icon-cross">
+            <use xlink:href="#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="a hide active"  \>
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+           
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                A General Purpose Processor Based IEEE802.11a Compatible 
+OFDM Receiver Design
+              </span>
+              <div class="card__duration">
+             
+              </div>
+            </header>
+            <main class="modall__content" style="text-align: justify;">
+              <p>Using the processing power of multi-gigahertz 
+                general purpose processors (GPP) to perform radio functions 
+                can be a better and economical option to design a software 
+                defined radio (SDR) system. An efficient SDR system with 
+                multiple protocol support can be designed by identifying 
+                different blocks in the channel processing stream of different 
+                wireless protocols that can be mapped on GPP and field 
+                programmable gate arrays (FPGAs) processing platforms 
+                depending on throughput requirements of the corresponding 
+                protocol. This paper presents the ongoing research work in 
+                designing a novel architecture to prototype and develop 
+                efficient SDR systems using GPP as main digital signal 
+                processing (DSP) platform along with FPGAs to perform realtime signal processing tasks that can not be handled by GPPs. 
+                In this research project, a software defined radio is designed 
+                for the physical layer of WLAN standard IEEE 802.11a 
+                receiver. Different sub-systems of the channel processing 
+                stream of IEEE 802.11a OFDM receiver are mapped on GPP of 
+                a PC and a PCI board containing fast ADCs to receive the 
+                received analog signal from the RF front-end. The software 
+                radio architecture discussed in this paper is a scaled down 
+                version of the software radio that has to be developed as the 
+                research project for M.Engg. by research at NED University by 
+                the principal author.
+                </p> <a target="_blank" href="1.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="b hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Visual Landmarks Recognition of Urban
+                Structures using Convolutional Neural Network 
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>The
+                landmark Recognition of any urban structure is a
+                frustrating task to accomplish. This paper presents a
+                deep learning based approach for recognition of the
+                urban structures. Urban structures are basically the
+                usual offices, houses, apartments etc. A generalized word
+                for all these buildings can be urban structures. This
+                classification problem was identified by our team while
+                making our way into the visual positioning system, we
+                saw that the visual landmark recognition of urban
+                structures was an unexplored domain by using deep
+                learning approaches. We also Identified that unlike the
+                landmarks such as the Eiffel Tower, Statue Of Liberty
+                etc, urban structures were difficult to learn by a neural
+                network, the data requirements were quite distinct
+                compared to the ones mentioned for all these famous
+                landmarks around the globe. Most of all the landmark
+                database was created, augmented, labelled and preprocessed in lab. The transfer learning based
+                approaches were not that useful since the overall size of
+                the model would always be so enormous and integration
+                of a transfer learning based model would be meaningless
+                for any deployed web app or even for a local mobile
+                based app. By collecting and engineering our own data
+                using a data collection app, we have proposed a neural
+                architecture which can be configured to learn multiple
+                number of urban landmarks while retaining its overall
+                size under 60MBs. This was achieved by a Convolutional
+                Neural Network based binary classification model
+                trained on landmarks existing in our university. Later
+                this was deployed on a web based application and
+                further on it is being made into an app. Keywords—Deep Learning, Landmarks Recognition,
+                Urban Structure, Convolutional Neural Network. </p><a target="_blank" href="https://smartcitylab.neduet.edu.pk/r_papers/1.pdf">Read More</a>
+            </main>
+          </div>
+        </div>
+        <div class="c hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>Frequency-dependent synaptic plasticity model for
+                neurocomputing applications </span>
+            </header>
+            <main class="modall__content">
+              <p>In neuroscience, there is substantial evidence that suggests temporal filtering of
+                stimulus by synaptic connections. In this paper, a novel frequency-dependent plasticity
+                mechanism (FDSP) for neurocomputing applications is presented. It is proposed that synaptic
+                junctions could be used to perform bandpass filtering on the input stimulus. The unique transfer
+                function of a bandpass filter replaces the conventional weight value associated with synaptic
+                connections. The proposed model has been simulated and rigorously tested with standard
+                machine learning benchmarks such as XOR and multivariate IRIS dataset while utilising
+                minimum resources. The proposed model offers a unique advantage and has the potential to
+                overcome the burden of hidden layer neurons from the network. Exclusion of hidden layer from
+                the network significantly reduces the size of the network and hence the computational effort
+                required for classification tasks. The proposed FDSP mechanism allows for complete analogue
+                system design with a frequency multiplexed communication scheme. The main goal of this study
+                is to establish frequency-dependent plasticity as an alternative to existing time-domain-based
+                techniques. The proposed method has a number of applications in neurocomputing, low power
+                IoT devices and compute-efficient deep convolutional neural networks (DCNNs).</p> <a target="_blank"  href="https://smartcitylab.neduet.edu.pk/r_papers/2.pdf">Read More</a>
+            </main>
+          </div>
+        </div>
+        <div class="d hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Prediction of Soil Macronutrients Using Machine
+Learning Algorithm
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>In this research work, machine learning algorithms were applied to find the relationship between independent
+                variables and dependent variables for soil data analysis. The independent variables include moisture,
+                temperature, soil pH, Cation Exchange Capacity(CEC) whereas, the dependent variables include Nitrogen,
+                Phosphorus and Potassium (NPK). This research concludes relationships between Phosphorus, Potassium, soil
+                pH and CEC; Nitrogen and soil moisture and temperature using machine learning(ML) algorithms so as to
+                deduce NPK content of soil. A comparative analysis with obtained results from each ML method is also
+                presented. Machine learning algorithms are best performed on data with multiple independent variables. The
+                values computed for nitrogen relationship were more accurate than PK relationship values. The accuracy of data
+                set I was less than data set II. A large data set would produce more accurate results for both data sets.</p> <a target="_blank" href="https://core.ac.uk/download/pdf/322530342.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="e hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                On the Use of ON/OFF Traffic Models for Spatio-Temporal
+Analysis of Wireless Networks
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>— The spatial and temporal distribution of active
+                users across a given region greatly affects the activity of
+                base stations (BSs) and the cumulative interference in a wireless network. In this letter, we propose a new approach for
+                spatio-temporal analysis of wireless networks wherein stochastic
+                geometry is used for the spatial domain and ON/OFF traffic
+                models are used for the temporal domain. We illustrate the
+                proposed approach through a mix of file transfer protocol (FTP)
+                and video streaming (VS) traffic. With the aid of semi-Markov
+                process, we derive the stationary probability for a given service
+                request. Further, we develop a joint spatio-temporal model for
+                the distribution of active users under a random BS.</p> <a target="_blank" href="papers/5.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="f hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <div class="card__duration">
+                Duration: 1 hour
+              </div>
+            </header>
+            <main class="modall__content">
+              <p>With changing climate, heatstroke has proved
+                to be disastrous for few countries especially. The dwellers of
+                different areas are not warned of the consequences to come
+                specifically in their areas as they are told the average of the
+                whole city, while temperature varies at different altitudes and
+                over short distances. The solution provided in the paper, is a
+                smart weather station that not only monitor weather data but
+                also predict it and generate instant alerts for dwellers of
+                different areas, to help them be warned of the future hazard,
+                using the combination of Internet of things and Machine
+                Learning. It is deployed with different sensors that collect
+                weather data from the environment, which are sent to cloud,
+                where predictions are made, for which certain neural network
+                models have been compared to find out which gives the most
+                accurate results. Those values, as well as the real-time values
+                can be displayed on the mobile Application 24/7. Also, alerts
+                are generated in the form of Tweets, which are accessible to
+                everyone, as shown in Figure-1. It is also discovered that Nonlinear Autoregressive Exogenous Neural Network
+                (NARXNET) Algorithm is the best to be implemented for
+                prediction of Weather, with the mean squared error of
+                0.084% in 1.55 seconds for training a model and producing
+                predictions for next 24 hours.</p> <a target="_blank" href="papers/6.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+      
+        
+        <div class="i hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Name Spotting Over Low Signal-to-Noise Ratio 
+(SNR) using Blind Source Separation and 
+Connectionist Temporal Classification
+
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>— Speech recognition in a signal with low SNR is a
+                very challenging task. When the distance between the mic and the
+                source is large, the mic records a mixture of Speech and Noise.
+                This paper presents a Speech recognition system which performs
+                Blind Source Separation using Degenerate Unmixing Estimation
+                Technique to separate speech from noise. This system uses a Deep
+                Recurrent Neural Network based method in order to achieve
+                robust speech recognition. An experiment comparing the
+                efficiency of the aforementioned system with an already
+                established Speech Recognition system is presented at the end. </p> <a target="_blank" href="papers/9.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="j hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/computer vision.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Bio-cellular processes modeling on silicon substrate:
+receptor–ligand binding and Michaelis Menten reaction
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>There has been a growing interest and motivation in analog electronic circuit modeling of bio-cellular networks, which forms the basis of cellular functions of all living organisms. The complexity and size of such networks has made this task arduous, while opening up new opportunities as well. A number of modeling techniques, from mathematical models to computer simulations, have been used in this domain to aid the interpretation of such complex and sophisticated networks. This research article focuses on modeling of bio-cellular structures and processes on silicon substrate using transistors in analog domain. MOS transistor analogies for some very commonly found bio-cellular reactions namely receptor–ligand kinetics and Michaelis Menten kinetics have been presented, which are based on previously established ordinary differential equation representation models of these bio-cellular processes. It has been shown mathematically and through simulations that a number of bio-chemical entities in the kinetic processes map naturally to some electronic entities, and exploiting these similarities can drastically reduce the size of the corresponding silicon mimetics. The suggested circuits use lesser number of transistors than the existing approaches in this domain, while producing the same behavior satisfactorily. This can to some extent ease the development of larger networks with more complex interactions, hence mitigating the intricacy involved in cellular processes when viewed as a complete system and can contribute positively to multiple disciplines like genetics, bio-informatics, medical sciences, and even computer science and engineering.</p> <a target="_blank" href="papers/10.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="k hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Population coding for neuromorphic hardware
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Population coding has been established as the key mechanism for decoding sensory information received
+                from periphery organs such as retinas and cochlear. In this paper a novel architecture is presented to
+                embed population coding in neuromorphic hardware. A resonance based mechanism between two layers
+                of neuron is utilized in the presented work. The mechanism discussed in this paper facilitates selective
+                triggering of higher layer neurons which serves as target ensemble for evaluation of a particular input
+                of interest. It has been shown that presented model can be used to detect any physical quantity (light
+                intensity, temperature, etc.) feed to the sensor on the basis of population coding</p> <a target="_blank" href="papers/11.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="l hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Smart Safety Belt Design to Avoid Accidents in Hazardous 
+Industrial Environment
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Warehouse is one of the most dangerous places to work because of many
+                potential dangers. The accidents caused by heavy vehicles result in serious
+                injuries and even death. This paper proposes a solution to this problem.
+                When a worker happens to be in any of such hazardous situations inside or
+                outside workplace, he will press the emergency button (or pull a magnetic
+                cord) placed in the smart safety belt which will not only stop the vehicles
+                within 15 meters circle but also inform the workers within 250 meters circle
+                through an indicator. In this technical paper, the outcome of first design
+                phase has been reported. In the first design phase, we have successfully
+                implemented a reliable and accurate ranging mechanism with ±0.3m
+                maximum error. This ranging mechanism is based on wellknown RF Timeof-Flight (TOF) method. The maximum achievable transmit range of this
+                solution is 300m.
+                </p> <a target="_blank" href="papers/12.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+    
+    
+        <div class="o hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Performance Analysis of MAC Layer Protocols 
+in Wireless Sensor Network
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>—Media Access Control (MAC) layer protocols
+                have a critical role in making a typical Wireless Sensor
+                Network (WSN) more reliable and efficient. Choice of
+                MAC layer protocol and other factors including number
+                of nodes, mobility, traffic rate and playground size
+                dictates the performance of a particular WSN. In this
+                paper, the performance of an experimental WSN is
+                evaluated using different MAC layer protocols. In this
+                experiment, a WSN is created using OMNeT++ MiXiM
+                network simulator and its performance in terms of packet
+                delivery ratio and mean latency is evaluated. The
+                simulation results show that IEEE 802.11 MAC layer
+                protocol performs better than CSMA, B-MAC and IEEE
+                802.15.4 MAC layer protocols. In the considered scenario,
+                IEEE 802.15.4 is ranked second in performance, followed
+                by CSMA and B-MAC.</p> <a target="_blank" href="papers/15.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="p hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/computer vision.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Novel analysis and optimization of gm-boosted common-gate UWB LNA
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>This paper focuses on the design optimization of gm-boosted common gate (CG) CMOS low-noise
+                amplifier (LNA) for ultra-wideband (UWB) wireless technology. In this regard, a detailed novel analysis of
+                the UWB gm-boosted CG amplifier topology is presented, which includes the finite gds (¼1/reds) effects. For
+                UWB systems, signal-to-noise ratio (SNR) can be defined as the matched filter bound (MFB). Using this
+                definition, the noise performance of the UWB CG LNA in the presence of the gm-boosting gain and the input
+                noise-matching network are analyzed. It is found that the optimal noise factor of the UWB LNA collapses
+                to the published narrowband gm-boosted CG LNA noise factor when an assumption of narrowband is
+                applied. It is also proved that the noise performance of the gm-boosted UWB CG LNA is independent of the
+                bandwidth of the input UWB signal. A new technique is presented for the design of optimal noisematching network using passive components at the input of the UWB CG LNA. In this regard, role of the
+                gm-boosting stage and its effect on the SNR and the gain of the overall system are analyzed, and, in
+                addition, its non-idealities are simulated in detail.</p> <a target="_blank" href="papers/16.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        
+        <div class="r hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              A full-band UWB common-gate band-pass noise matched
+gm-boosted series peaked CMOS differential LNA
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>This paper presents a low-power noise-matched fully-differential common-gate (CG) low noise amplifier (LNA) for ultrawideband receiver operating in the full 3.1–10.6 GHz band. Performance was optimized by employing the transconductance ‘g m ’ boosted CG LNA topology with series peaking along with an input noise matching network. A common source g m -boosting amplifier, in conjunction with an LC T-network, was used to share the bias current with the CG stage. The LNA was demonstrated using a 130 nm IBM CMOS process technology and it consumed 7 mW from a 1 V supply. It exhibited an input return loss (S11) and an output return loss (S22) of −10.5 and −14 dB respectively. In addition, it also achieved a forward power gain (S21) of 14.5 dB and a noise figure between 4.5 and 5.0 dB.</p> <a target="_blank" href="papers/18.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="s hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+            
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                A SERIES PEAKED gm-BOOSTED 3.1–10.6
+GHz CMOS CG UWB LNA FOR WiMEDIA
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>An improved low noise amplifier (LNA) architecture is
+                presented for WiMedia ultrawideband radio frequency frontend. The
+                LNA topology addresses the issue of noise reduction keeping the power
+                consumption to a minimum by employing the transconductance ‘‘gm’’
+                boosted common gate (CG) LNA topology with series peaking, operating
+                in the WiMedia spectrum. This CG LNA utilizes an active gm-boosting
+                stage where the bias current is shared between the gm-boosting stage
+                and the self-biased CG amplifying stage. In conjunction with an LC Tnetwork to further reduce the noise figure (NF) of the CG stage with
+                finite output conductance (gds), inductive series peaking is used to widen
+                the operating pass-band. The proposed LNA is designed using the 130
+                nm IBM CMOS process and achieved an input return loss (S11) and an
+                output return loss (S22) of 10 dB and 14 dB, respectively. The LNA
+                exhibits forward power gain (S21) of around 14 dB with a NF ranging
+                between 3.5 and 4.1 dB. The complete chip dissipates 5 mW from a 1.0
+                V supply with an input referred third order intercept point (IIP3) and an
+                input referred 1-dB compression point (ICP1dB) of 4.8 dBm and 12.1
+                dBm, respectively. VC 2011 Wiley Periodicals, Inc. Microwave Opt
+                Technol Lett 54:532–535, 2012; View this article online at
+                wileyonlinelibrary.com. DOI 10.1002/mop.26573</p> <a target="_blank" href="papers/19.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="t hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+            
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              Series peaked noise matched gm-boosted
+3.1 –10.6 GHz CG CMOS differential LNA for
+UWB WiMedia
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>A low-power noise-matched fully-differential common-gate (CG)
+                low-noise amplifier (LNA) is presented for ultra-wideband (UWB)
+                operating in the 3.1 –10.6 GHz band. Performance was optimised by
+                employing the transconductance ‘gm’-boosted CG LNA topology
+                with series peaking along with an input noise matching network. A
+                common source gm-boosting amplifier, in conjunction with an LC
+                T-network, was used to share the bias current with the CG stage.
+                The LNA was demonstrated using 130 nm CMOS process and consumed
+                7 mW from a 1 V supply. It exhibited an input return loss (S11) and an
+                output return loss (S22) of 210.5 dB and 214 dB, respectively. Also, it
+                achieved a forward power gain (S21) of 14.5 dB and a noise figure
+                between 4.5 and 5.0 dB.</p> <a target="_blank" href="papers/20.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="u hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/computer vision.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                A 3–5 GHz Current-Reuse gm-Boosted CG LNA for ultrawideband in 130nm CMOS
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>This paper presents a low-power CMOS transconductance “ ” boosted common gate (CG) ultrawideband (UWB)
+                low noise amplifier (LNA) architecture, operating in the 3–5
+                GHz range, employing current-reuse technique. This proposed
+                UWB CG LNA utilizes a common source (CS) amplifier as the
+                -boosting stage which shares the bias current with the CG
+                amplifying stage. A detailed mathematical analysis of the LNA is
+                carried out and the different design tradeoffs are analyzed. The
+                LNA circuit was designed and fabricated using the 130-nm IBM
+                CMOS process and it achieved input return loss  and output
+                return loss  variations of respectively 8.4 to 40 dB and
+                14 to 15 dB within the pass-band. The LNA exhibits almost
+                flat forward power gain  of 13 dB and a reverse isolation
+                 variation of 55 dB to 40 dB, along with a noise figure
+                (NF) ranging between 3.5 and 4.5 dB. The complete circuit (with
+                output buffer) draws only 3.4 mW from a 1 V supply</p> <a target="_blank" href="papers/21.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="v hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/computer vision.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                MATLAB Based Implementation of IEEE 802.11b 
+DSSS Transmitter
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Propels in innovation have conveyed to us another
+                type of advanced radio administration called 'Spread Spectrum'.
+                Initially created by the military as an impediment to sticking and
+                listening stealthily (undercover work), the spread-range system
+                handles radio flag uniquely in contrast to different types of
+                advanced radio. It utilizes 2.4 Gigahertz ISM-band of recurrence.
+                DSS Spectrum is essentially a spreading development strategy
+                which is broadly utilized as a part of various WLAN
+                correspondence plans; for example, cellular WiFi frameworks
+                (IEEE 80211b standard), Videoconferencing, Military
+                applications, Utilities like power, oil, gas and water, Global
+                Positioning System (GPS) and LAN/WAN/Internet associations.
+                DSSS deliver a spreading gain in contrast to narrow-band
+                meddling signals and it extents the broadcasted signal across an
+                extensive range so the transmission bear a resemblance to noise
+                to a narrow-band receiver. This DSSS based Transmitter reaches
+                up to 38 meter indoor and 140 meter outside. The philosophy for
+                this examination task in light of computerized sign preparing
+                strategies for being acquainted with the execution of DSSS based
+                Complementary coding keying (CCK), barker succession,
+                DBPSK and DQPSK to accomplish 11 Mbps data rate by IEEE
+                standard chip grouping of channel data transmission 22 MHz
+                bandwidth. The DSSS IEEE802.11b Transmitter has been
+                designed and simulated in MATLAB Simulink environment.</p> <a target="_blank" href="papers/22.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="w hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/computer vision.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                A 3–5 GHz Current-Reuse gm-Boosted CG LNA for Ultrawideband in 130nm CMOS
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>This paper presents a low-power CMOS transconductance “gm” boosted common gate (CG) ultrawideband (UWB)
+                low noise amplifier (LNA) architecture, operating in the 3–5
+                GHz range, employing current-reuse technique. This proposed
+                UWB CG LNA utilizes a common source (CS) amplifier as the
+                -boosting stage which shares the bias current with the CG
+                amplifying stage. A detailed mathematical analysis of the LNA is
+                carried out and the different design tradeoffs are analyzed. The
+                LNA circuit was designed and fabricated using the 130-nm IBM
+                CMOS process and it achieved input return loss  and output
+                return loss  variations of respectively 8.4 to 40 dB and
+                14 to 15 dB within the pass-band. The LNA exhibits almost
+                flat forward power gain  of 13 dB and a reverse isolation
+                 variation of 55 dB to 40 dB, along with a noise figure
+                (NF) ranging between 3.5 and 4.5 dB. The complete circuit (with
+                output buffer) draws only 3.4 mW from a 1 V supply</p> <a target="_blank" href="papers/23.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="x hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/computer vision.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              Plastic Waste Management through the Development of a Low
+Cost and Light Weight Deep Learning Based Reverse
+Vending Machine
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>: The management of the abundant amount of used plastic bottle waste is a major concern
+                nowadays, because it is a major contributor to landfills and overburdens waste processing facilities.
+                Once disposed of, plastic can take centuries to break down, hence, recycling not only manages
+                the waste efficiently, but it reduces the environmental impact and creates economic opportunities,
+                as well. An incentive-based Reverse Vending machine (RVM) is an effective way to involve the
+                general public in the management of plastic waste. The existing solutions are either very expensive,
+                from a computation and cost perspective, or they lack the robustness and durability necessary for
+                deployment. In this research, we have developed an incentive-based low-cost RVM for the collection,
+                identification, classification, and sorting of used plastic bottles with the addition of a reward-based
+                user application. The developed RVM includes a low-cost computing device running a lightweight
+                image processing algorithm, sensors, camera, and a self-designed mechanical arm. To support
+                the low computing device in the RVM, a lightweight MobileNet model has been trained using
+                transfer learning. A dataset of 10,983 pet bottle images was collected using a camera installed inside
+                the machine for the classification model. The results of the study show that MobileNet achieved
+                99.2% testing accuracy, which is better than the existing bottle-classification approaches. Moreover,
+                the weight of the developed model was only 12 Mb, which is fourteen and six times less than
+                inceptionV3 and Res-Net (Residual Neural Networks), respectively. Furthermore, the developed
+                RVM costs a fraction of the price, compared to the existing solutions. Two versions of the machine
+                have been deployed at a University for more than 6 months, collecting over 650 kg of plastic waste.
+                </p> <a target="_blank" href="papers/24.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="y hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Rapid Testing System for Rice Quality Control through
+Comprehensive Feature and Kernel-Type Detection
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>The assessment of food quality is of significant importance as it allows control over
+                important features, such as ensuring adherence to food standards, longer shelf life, and consistency
+                and quality of taste. Rice is the predominant dietary source of half the world’s population, and
+                Pakistan contributes around 80% of the rice trade worldwide and is among the top three of the largest
+                exporters. Hitherto, the rice industry has depended on antiquated methods of rice quality assessment
+                through manual inspection, which is time consuming and prone to errors. In this study, an efficient
+                desktop-application-based rice quality evaluation system, ‘National Grain Tech’, based on computer
+                vision and machine learning, is presented. The analysis is based on seven main features, including
+                grain length, width, weight, yellowness, broken, chalky, and/or damaged kernels for six different
+                types of rice: IRRI-6, PK386, 1121 white and Selah, Super kernel basmati brown, and white rice. The
+                system was tested in rice factories for 3 months and demonstrated 99% accuracy in determining
+                the size, weight, color, and chalkiness of rice kernels. An accuracy of 98.8% was achieved for the
+                classification of damaged and undamaged kernels, 98% for determining broken kernels, and 100%
+                for paddy kernels. The results are significant because the developed system improves the local rice
+                quality testing capacity through a faster, more accurate, and less expensive mechanism in comparison
+                to previous research studies, which only evaluated four features of the singular rice type, rather than
+                the seven features achieved in this study for six rice types
+                </p> <a target="_blank" href="papers/25.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="z hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+            
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                A Lightweight Convolutional Neural Network to Predict Steering
+Angle for Autonomous Driving Using CARLA Simulator
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>End-to-end learning for autonomous driving uses a convolutional neural network (CNN) to predict the steering angle from a raw image input. Most of the solutions available for end-to-end autonomous driving are computationally too expensive, which increases the inference of autonomous driving in real time. Therefore, in this paper, CNN architecture has been trained which is lightweight and achieves comparable results to Nvidia’s PilotNet. The data used to train and evaluate the network is collected from the Car Learning to Act (CARLA) simulator. To evaluate the proposed architecture, the MSE (mean squared error) is used as the performance metric. Results of the experiment shows that the proposed model is 4x lighter than Nvidia’s PilotNet in term of parameters but still attains comparable results to PilotNet. The proposed model has achieved  MSE on testing data while PilotNet MSE was 4.7x10 ^(-4) .
+                </p> <a target="_blank" href="papers/26.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="az hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Impacts of Urbanization on Green Spaces of the Densely Populated City of
+Karachi, Pakistan - An Analysis of 8 Years of Data for Estimating Land Cover
+Changes
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Growing population, uncontrolled migration, and unplanned urbanization are prevalent worldwide and Pakistan is no exception with Karachi ranking as Asia's
+                fifth and the world's eleventh most populous metropolis. Urbanization is occurring at the expense of environmental degradation and a decline in the amount of
+                Urban Green Spaces (UGS). The WHO recommends at least 9 square meters (m2) of green space per person, with a UGS value of 50 m2 per capital as the
+                optimum green space for environmental sustainability. The study region consisted of six districts in Karachi, and their percentage of green space was
+                calculated. Satellite images from the Landsat-8 Surface reflectance Tier-1 satellite program were used in this study. To perform calculations and detect land
+                cover changes, the Normalized Difference Vegetation Index (NDVI), a widely used index to calculate the density of green area for a specific part of the land, is
+                used. The results concluded that Karachi's green land cover has changed from 6.30% in January 2014 to 11.28% in January 2021, at NDVI > 0.3. These
+                statistics of NDVI greater than 0.3 indicate sparse or moderate vegetation hence the possibility of including wild grass and bushes in the analysis is
+                eliminated. Only a five percent (5%) rise over an eight-year period suggests the necessity for drastic action to improve the quantity and condition of UGS in
+                Karachi. This study shows how Karachi's green spaces have been steadily being destroyed by uncontrolled urbanization and the yearly changes in vegetation.
+                This research will help urban planners and policymakers to make wise choices for environmental sustainability in urban areas
+                </p> <a target="_blank" href="papers/27.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="bz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                utonomous vehicle navigation using highdefinition maps through CARLA-ROS simulator
+bridge
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Autonomous vehicles (AV) have garnered significant interest in recent years due to
+                its potential for controlling thousands of accidents that happen yearly due to human error.
+                However, AV bring with it very complex and sophisticated requirements and challenges
+                related to extensive testing of the algorithms and hardware in the physical world. The evolution
+                of automotive simulation tools provides an opportunity to fully test and validate AV
+                architectures without the risk of creating hazardous situations in real world. This research
+                demonstrates the application of HD (High Definition) maps in autonomous vehicle navigation
+                using ROS interface integrated with the CARLA (CAR Learning to Act) simulator. The sensor
+                data includes Light Detection and Ranging (LiDAR), RGB-Depth (RGB-D), and vehicle
+                odometry. HD maps play an important role in robustness of the autonomous systems where due
+                to sensor obstruction or weather conditions the vehicle is unable to perceive the information
+                ahead. It also aids the vehicle to sense its environment even outside from the sensor’s field of
+                view. The research is divided into the three fundamental concepts of Simultaneous
+                Localization and Mapping (SLAM) approach that is, (i) mapping, (ii) localization, and (iii)
+                navigation. Two ROS tools are used for mapping, (a) OctoMap mapping, and (ii) Real-Time
+                Appearance-Based Mapping (RTAB-Map). We demonstrate the effectiveness of localization
+                using RTAB-Map and compare actual path, position and orientation to their estimated
+                equivalents. Our results show acceptable error in XY axes and exemplifies the error
+                accumulated in Z axis.
+                </p> <a target="_blank" href="papers/28.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+  
+        <div class="dz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Integrating Stochastic Geometry and ON/OFF Traffic
+Models: Toward Spatio-Temporal Analysis of
+Wireless Networks With Heterogeneous Services
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Wireless networks (4G, 5G, etc.) of today are
+                witnessing a continuously increasing level of heterogeneity in
+                terms of supported services and applications. Spatio-temporal
+                modeling of wireless networks plays a crucial role, not only in
+                design and analysis but also for critical performance metrics.
+                Therefore, in this work, we develop a joint model for the analysis
+                of wireless networks wherein users can request for different
+                services and can generate multiple flows. By assuming single flow
+                per user for a given service request, we derive the packet arrival
+                probability of the user by using ON/OFF traffic model.
+                Moreover, we derive the probability mass function (pmf) for the
+                number of active users under a base station (BS). By assuming a
+                heterogeneous traffic scenario wherein a user can generate
+                multiple flows for different services, we derive the pmf for the
+                number of active users under a BS. To analyze the performance
+                of wireless network, we derive critical performance metrics
+                which include success probability, mean delay and stable region
+                probability. For computationally efficient implementation of the
+                derived expressions, we also develop a algorithm which takes
+                significantly less time. We benchmark the derived expressions
+                against state-of-the-art literature.
+                </p> <a target="_blank" href="papers/30.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="ez hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              A Deep Learning-Based Sensor Modeling for Smart
+Irrigation System
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>The use of Internet of things (IoT)-based physical sensors to perceive the environment is a
+                prevalent and global approach. However, one major problem is the reliability of physical sensors’
+                nodes, which creates difficulty in a real-time system to identify whether the physical sensor is
+                transmitting correct values or malfunctioning due to external disturbances affecting the system,
+                such as noise. In this paper, the use of Long Short-Term Memory (LSTM)-based neural networks is
+                proposed as an alternate approach to address this problem. The proposed solution is tested for a
+                smart irrigation system, where a physical sensor is replaced by a neural sensor. The Smart Irrigation
+                System (SIS) contains several physical sensors, which transmit temperature, humidity, and soil
+                moisture data to calculate the transpiration in a particular field. The real-world values are taken from
+                an agriculture field, located in a field of lemons near the Ghadap Sindh province of Pakistan. The
+                LM35 sensor is used for temperature, DHT-22 for humidity, and we designed a customized sensor in
+                our lab for the acquisition of moisture values. The results of the experiment show that the proposed
+                deep learning-based neural sensor predicts the real-time values with high accuracy, especially the
+                temperature values. The humidity and moisture values are also in an acceptable range. Our results
+                highlight the possibility of using a neural network, referred to as a neural sensor here, to complement
+                the functioning of a physical sensor deployed in an agriculture field in order to make smart irrigation
+                systems more reliable
+                </p> <a target="_blank" href="papers/31.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="fz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              High Precision Indoor Positioning System for Mobile Asset
+              Management and Safety †
+             </span>
+            </header>
+            <main class="modall__content">
+              <p> Locating a dynamic object in an industrial environment in real time has been a significant
+                scientific problem. The precise localization and positioning of an object are achieved by Satellite
+                communication, Wireless Fidelity (WiFi), Bluetooth technologies, etc. The use of the Global Positioning System (GPS) has been a success for locating an object in an outdoor environment, but indoor
+                positioning has been impractical when using this technology. A good option is to utilize short-range
+                Ultra Wide Band (UWB) technology with Time of Flight, Time Difference of Arrival, and Phase
+                difference of Arrival methods for precise ranging applications. In this research paper, we presented
+                an accurate indoor positioning system using a UWB radio-based embedded system. The system
+                deployed multiple fixed positioning stations called anchors, programmed to detect the position of
+                the dynamic object. The presented system in this paper calculates the object position by using the
+                Time Difference of Arrival (TDOA) method and the triangulation method. The Indoor Positioning
+                System (IPS) is found to effectively locate the dynamic object in three-dimensional space within an
+                error rate of +/−0.07 m.
+                </p> <a target="_blank" href="papers/32.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="gz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Machine Learning and Sampling Techniques to 
+Enhance Radiological Diagnosis of Cerebral 
+Tuberculosis
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Cerebral tuberculosis (TB) is one of the
+                neurological manifestations of tuberculosis infections
+                responsible for devastating sequelae and mortality. It is a 
+                challenge to diagnose as it mimics other infectious and 
+                neoplastic pathologies of the brain. There is a need for a rapid 
+                and accurate diagnostic approaches, in order to prevent the
+                dismal outcomes arising as a result of delayed or incorrect 
+                diagnosis. This paper aims to develop a classifier to diagnose
+                cerebral TB using various radiological features present on 
+                Magnetic Resonance Imaging (MRI) of the brain with the help 
+                of Machine Learning (ML). Cases of TB and non-TB conditions 
+                (including meningiomas, gliomas, fungal and bacterial brain 
+                infection) presenting to Aga Khan University Hospital, Karachi, 
+                Pakistan, were included and divided into training and test
+                datasets. Features were selected using correlation, and besides 
+                age and gender, included multiple radiological features
+                recorded from MRI of the brain. After the application of 
+                Synthetic Minority Over-sampling Technique (SMOTE), 
+                SMOTE-Tomek Links, Edited Nearest Neighbor (ENN) 
+                SMOTE-ENN, and Adaptive Synthetic (ADASYN) techniques
+                for balancing the datasets, classifier accuracy was tested using 
+                two models: logistic regression and random forest. Highest
+                accuracy (90.9%) was achieved using logistic regression along 
+                with SMOTE+TOMEK with 95.4% Area under the Curve
+                while obtaining a F1 score of 92.8%.
+                </p> <a target="_blank" href="papers/33.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="hz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                An Experimental Comparison of IoT-Based and Traditional
+                Irrigation Scheduling on a Flood-Irrigated Subtropical
+                Lemon Farm
+              </span>
+            </header>
+            <main class="modall__content">
+              <p> Over recent years, the demand for supplies of freshwater is escalating with the increasing
+                food demand of a fast-growing population. The agriculture sector of Pakistan contributes to 26% of
+                its GDP and employs 43% of the entire labor force. However, the currently used traditional farming
+                methods such as flood irrigation and rotating water allocation system (Warabandi) results in excess
+                and untimely water usage, as well as low crop yield. Internet of things (IoT) solutions based on
+                real-time farm sensor data and intelligent decision support systems have led to many smart farming
+                solutions, thus improving water utilization. The objective of this study was to compare and optimize
+                water usage in a 2-acre lemon farm test site in Gadap, Karachi, for a 9-month duration, by deploying
+                an indigenously developed IoT device and an agriculture-based decision support system (DSS). The
+                sensor data are wirelessly collected over the cloud and a mobile application, as well as a web-based
+                information visualization, and a DSS system makes irrigation recommendations. The DSS system
+                is based on weather data (temperature and humidity), real time in situ sensor data from the IoT
+                device deployed in the farm, and crop data (Kc and crop type). These data are supplied to the
+                Penman–Monteith and crop coefficient model to make recommendations for irrigation schedules
+                in the test site. The results show impressive water savings (~50%) combined with increased yield
+                (35%) when compared with water usage and crop yields in a neighboring 2-acre lemon farm where
+                traditional irrigation scheduling was employed and where harsh conditions sometimes resulted in
+                temperatures in excess of 50 ◦C.
+                </p> <a target="_blank" href="papers/34.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="iz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/social.jpg">
+              </div>
+           
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Implementation and Evaluation of a Social Media-Based Communication Strategy to Enhance Employee Engagement: Experiences From a Children's Hospital, Pakistan
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Social media can complement organizational communication strategy which is integral to employee engagement. However, successful case studies which can allow replication are limited. The objective of the study is to describe the design, implementation, and evaluation of a social media-based communication strategy in a tertiary care hospital in Pakistan. The leadership of the pediatric service line developed an intervention plan to engage the employees with the newly reframed vision to improve patient and family experience. An online communication platform—Facebook page—was created for all employees of the pediatric service line. The strategy to influence employees was based on Cialdini's six principles of persuasion. Implementation of the strategy between October 2017 and December 2019 was evaluated for reach, discussion themes, and outcomes using the framework by Murdough (2009). Quantitative indicators included total posts, mean comments, and reactions per post. Posts were qualitatively analyzed with an emergent approach for insights into the discussion. The analysis revealed a total of 9,085 posts, with mean reactions per post of 8.4, mean comments of 7.2, and active viewership by 90% members on average. In terms of post types, photos were the highest (4,779), while videos were the lowest (1,163). Qualitative analysis indicated 54% of the posts were of the theme “inspirational and thought provoking,” while the greatest engagement was generated on the theme “challenges and solution.” The authors conclude that the strategy was successfully implemented to maintain active membership, engage employees in meaningful conversations, and have them express intent to execute quality improvement projects.
+                </p> <a target="_blank" href="papers/35.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="kz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/ai.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Autonomous Modulation Classification using Single
+Inception Module based Convolutional Neural
+Network
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Modulation recognition plays a crucial role in noncooperative communication in which receivers have no prior information regarding transmitter modulation scheme. This paper
+                presents a novel convolutional neural network with single Stem
+                and Inception module for autonomous modulation classification
+                from raw I/Q received channels. This addresses the computationally intensive problem of conversion of I/Q channels to
+                constellation image processing. The proposed system is capable
+                of classifying 11 standard modulation schemes with both 2D and
+                3D input array configurations for varying SNR conditions. The
+                performance of proposed system has been evaluated for a realtime communication system simulated with Rician fading channel
+                and AWGN noise model, providing realistic distortion effects. The
+                proposed CNN design achieves an average accuracy of 90% at 10
+                dB and 99% at 20 dB SNR with reduced network learnables and
+                lower training and testing time, which makes it computationally
+                efficient. These attributes make Inception module based CNN a
+                viable solution for modulation classification in practical low cost
+                and portable yet reliable communication systems.
+                </p> <a target="_blank" href="papers/36.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="lz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/computer vision.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Analog Electronic Circuits to Model Cooperativity in Hill
+Process
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>In the field of computational biology, electronic modeling of bio-cellular processes is in vogue for about a couple 
+                of decades. Fast, efficient and scalable electronic mimetics of recurrently found bio-chemical reactions are 
+                expected to provide better electronic circuit simulators that can also be used as bio-sensors or implantable biodevices at cellular levels. This paper presents some possible electronic circuit equivalents to model dynamics of 
+                one such bio-chemical reaction commonly involved in many bio-cellular processes, specifically pathways in 
+                living cells, known as the Hill process. The distinguishing feature of this process is cooperativity which has been 
+                modeled in silicon substrate using a pair of transistors, one transistor driving current in the other the same way 
+                ligand binding to one receptor site controls the binding affinity of the other receptor sites. Two possible circuits 
+                have been proposed and compared to electronically model cooperativity of a Hill reaction. The main idea is to 
+                exploit the natural analogies found between structures and processes of a bio-cell and electronic transistor 
+                mechanics, to efficiently model fundamental bio-chemical reactions found recurring in bio-processes. These 
+                circuits can then be combined and rearranged quickly to form larger, more complex bio-networks, thus 
+                mitigating the intricacies involved in modeling of such systems.
+                </p> <a target="_blank" href="papers/37.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="mz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/computer vision.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              Toward an Automated Data Offloading Framework
+for Multi-RAT 5G Wireless Networks
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>Offloading among multiple radio access technologies
+                (RATs) is an effective solution to tackle some of the key challenges
+                faced by 5G wireless networks. While making an offloading decision, in user-centric offloading schemes, the network context is
+                not taken into account, which limits the full utilization of the
+                potential offered by these techniques. Therefore, in this work,
+                we develop a data offloading framework wherein a user defines
+                a tuple, which includes a request for data service and the associated delay limit, and the user equipment (UE) translates this
+                tuple into an optimal offloading policy by taking into account the
+                network context. The data offloading problem is formulated by
+                assuming a finite horizon Markov decision process (MDP), and
+                an analytical data offloading model is derived by using stochastic geometry for modeling the spatial domain of a multi-RAT
+                wireless network, and by employing Markov process for capturing mobility of users. In order to validate the performance of
+                derived model, we also solve the offloading problem by using policy iteration (PI) algorithm. The results show that the analytical
+                algorithm outperforms the iterative algorithm. We also benchmark the proposed framework against standard data offloading
+                methods.
+                </p> <a target="_blank" href="papers/38.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="nz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Cloning the λ Switch: Digital and
+Markov Representations
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>The lysis-lysogeny switch in E. coli due to
+                infection from lambda phage has been extensively studied and explained by scientists of molecular biology. The
+                bacterium either survives with the viral strand of deoxyribonucleic acid (DNA) or dies producing hundreds of viruses
+                for propagation of infection. Many proteins transcribed after
+                infection by λ phage take part in determining the fate of the
+                bacterium, but two proteins that play a key role in this regard
+                are the cI and cro dimers, which are transcribed off the viral
+                DNA. This paper presents a novel modeling mechanism for
+                the lysis-lysogenyswitch, by transferring the interactions of
+                the main proteins, the lambda right operator and promoter
+                regions and the ribonucleic acid (RNA) polymerase, to a
+                finite state machine (FSM), to determine cell fate. The FSM,
+                and thus derived is implemented in field-programmable gate
+                array (FPGA), and simulations have been run in random
+                conditions. A Markov model has been created for the same
+                mechanism. Steady state analysis has been conducted for
+                the transition matrix of the Markov model, and the results
+                have been generated to show the steady state probability
+                of lysis with various model values. In this paper, it is hoped
+                to lay down guidelines to convert biological processes into
+                computing machines.
+                </p> <a target="_blank" href="papers/39.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="oz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Toward a Unified Framework for Analysis of Multi-RAT
+Heterogeneous Wireless Networks
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Te increased penetration of diferent radio access technologies (RATs) and the growing trend towards their convergence
+                necessitates the investigation of wireless heterogeneous networks (HetNets) from coverage and capacity perspective. Tis paper
+                develops a unifed framework for signal-to-interference-plus-noise ratio and rate coverage analysis of multi-RAT HetNets, with each
+                RAT employing either a contention-free or a contention-based channel access strategy.Te proposed framework adopts tools from
+                stochastic geometry, with the location of APs and mobile users modeled through independent Poisson point processes (PPPs). We
+                specifcally focus on a two-RAT scenario (i.e., cellular and Wi-Fi), where for multi-tier Wi-Fi RAT, with contention-based channel
+                access like CSMA/CA, the location dependent distribution of interfering APs has been approximated through a homogeneous PPP.
+                Moreover, by using some simple yet realistic set of assumptions, the distance to nearest active AP has been defned which results in
+                simplifed expressions. Te medium access probability for a random and a tagged AP under a multi-tier Wi-Fi RAT has also been
+                derived and discussed. By keeping in view the tremendous efect of temporal domain on overall network performance, the stable
+                queue probability has been derived by assuming a non-saturated trafc model. Te results have been validated through extensive
+                simulations and compared with existing approaches. Some useful insights have also been presented that shed light on design and
+                analysis of multi-RAT HetNets and provide motivation for further research in this direction.
+                </p> <a target="_blank" href="papers/40.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="pz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              Robotics Education Methodology for K-12 Students for Enhancing Skill
+Sets Prior to Entering University
+             </span>
+            </header>
+            <main class="modall__content">
+              <p> Due to a visible gap in K-12 education that
+                doesn’t address the importance of imparting technology literacy, project-based learning and transdisciplinary educational
+                activities, there is a deficiency of skill sets harnessed by
+                university students. This study is being initiated as part of
+                an ongoing research to find out the potent educational reforms
+                needed in K-12 years for enhancing skill sets needed by the
+                21st century students prior to their enrollment in universities.
+                Through this study, an open source educational robot - ProBot -
+                and a software - EDVON - have been developed, and a proposed
+                robotics education methodology was implemented in 17 schools,
+                that has shown positive results in K-12 students’ learning and
+                performance. The students were ultimately able to build their
+                own robotics projects from scratch - those that are usually
+                developed at undergraduate level
+                </p> <a target="_blank" href="papers/46.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="qz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+            
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Vibrotactile Stimulation for 3D Printed Prosthetic Hand
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>  Lack of haptic feedback in prostheses is proving
+                to be the bottleneck in the field. Closed loop prostheses
+                should fill the gap for amputees to experience exteroceptive
+                (environmental pressure) or proprioceptive (proper state or
+                joint angles) by means of different sensory feedback. Detailed
+                work is being done on the development of electrotactile and vibrotactile stimulation system. The objective of this research is to
+                generate vibrotactile feedback on a residual arm of an amputee.
+                With this research, it is an endeavor for amputees to possess
+                cognitive response while holding something amid environmental
+                interactions with the help of convenient methodology and with
+                suitable components in hand. To make this design pertinent to
+                the objective, we have used coin shaped vibration motors, 0.5-
+                inch diameter circular FSR provide haptic feedback from the
+                tip of the finger. 3D printed prosthetic hand proved to be the
+                best remedy for lowering the cost. The research was conducted
+                on 6 healthy subjects and one amputee. Experimental results
+                showed the effectiveness of proposed approach.
+                </p> <a target="_blank" href="papers/47.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="rz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              Flexible, Low Cost, and Platinum-Free Counter Electrode for Efficient
+Dye-Sensitized Solar Cells
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>  A platinum-free counter electrode composed of surface modified aligned multiwalled carbon nanotubes
+                (MWCNTs) fibers was fabricated for efficient flexible dye-sensitized solar cells (DSSCs). Surface modification of MWCNTs
+                fibers with simple one step hydrothermal deposition of cobalt selenide nanoparticles, confirmed by scanning electron microscopy
+                and X-ray diffraction, provided a significant improvement (∼2-times) in their electrocatalytic activity. Cyclic voltammetry and
+                electrochemical impedance spectroscopy suggest a photoelectric conversion efficiency of 6.42% for our modified fibers, higher
+                than 3.4% and 5.6% efficeincy of pristine MWCNTs fiber and commonly used Pt wire, respectively. Good mechanical and
+                performance stability after repeated bending and high output voltage for in-series connection suggest that our surface modified
+                MWCNTs fiber based DSSCs may find applications as flexible power source in next-generation flexible/wearable electronics.
+                </p> <a target="_blank" href="papers/48.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="sz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                From Cell to Silicon: Translation of a Genetic Circuit 
+to Finite State Machine Implementation
+              </span>
+            </header>
+            <main class="modall__content">
+              <p> A large body of researchers across the globe has been 
+                moving genetically coded information and cellular processing 
+                techniques to the mathematical domain in terms of analogous 
+                variables and their equations. A recent trend has expanded this 
+                movement further into the realms of electronics. Many different 
+                attempts have been made to create electronic circuits and Boolean 
+                machines that model the internal wirings of genetic circuits. This 
+                paper presents a very well-known yet simple genetic circuit 
+                created to demonstrate bistability in the cellular system. It looks 
+                into the working of the Collins toggle switch (CTS), a synthetically 
+                created system of two repressors and their respective inducers and 
+                a reporter protein. The authors have created a finite state machine 
+                that is defined with variables analogous to the proteins in the CTS 
+                and responds to these variables in exactly the same way as the 
+                plasmids of CTS respond to the original proteins. The finite state 
+                machine analogue helps analyse the genetic circuit with greater 
+                depth and elaboration.
+                </p> <a target="_blank" href="papers/49.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="tz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                A Cost Effective Solution for IoT Enabled
+                Ultrasonic Anemometer Sensor Design
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Internet of Things (IoT) is a fast growing field and
+                its purpose is to connect, objects with other objects or humans
+                through internet and provide some useful data. Exploitation
+                of data, gathered from objects of certain type, can help in
+                making human life easier by making better decisions in business,
+                weather, or any other field of study. Since weather is a very
+                critical and important field of study and its real time analysis
+                is really important for prediction of future trends. Therefore,
+                in this research an IoT enabled ultrasonic anemometer has
+                been designed which calculates wind speed & direction and
+                uploads collected data to cloud. In depth analysis of equations for
+                obtaining average wind speed and direction has been presented
+                in this paper. The proposed design is very simple and cost
+                effective because of chosen components i.e., ultrasonic sensors,
+                ESP module, which are extremely cheap. The testbed of proposed
+                solution was deployed at roof of Computer & Information
+                Systems Engineering (CIS) department, NED UET over week
+                duration. The results have been compared with Mechanical wind
+                speed sensor deployed at top of Industrial & Manufacturing (IM)
+                department of NED UET. Calibration of ultrasonic anemometer
+                has also been carried out by exploiting simple machine learning
+                techniques. Although the response time of two sensors are quite
+                different however just for illustration and a better insight results
+                obtained from two sensors has been compared, after applying
+                ML on designed ultrasonic anemometer. The results obtained
+                are satisfactory since the slope produced by two sensors is almost
+                following the same path with certain bias.
+                </p> <a target="_blank" href="papers/50.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="uz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Cloud based Smart Irrigation for Agricultural Area of Pakistan
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>A beneficial product of Smart Irrigation for Agricultural Area of Pakistan has been 
+                presented in this paper. Pakistan stands in need of a participatory solution that is 
+                efficiently workable, sustainable, and profitable, to develop the way for the 
+                agricultural sector by improving crop productivity with minimum water loss. The 
+                goal of this project is to introduce Cloud support to the Smart Irrigation System for 
+                Agricultural Area of Pakistan. To achieve this objective Wireless Sensor Network 
+                (WSN) is used to determine how much water to apply and when to irrigate. The 
+                system is divided into four main modules, i.e. Sensor node, Coordinator node, 
+                Server Module and Web Application. On the basis of acquired parameters from the 
+                WSN, the software application is programmed to take intelligent decisions increase 
+                the efficiency of the agricultural system
+                </p> <a target="_blank" href="papers/51.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="vz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                A sub-10mW, noise cancelling, wideband LNA for UWB applications
+              </span>
+            </header>
+            <main class="modall__content">
+              <p>Wideband noise cancelling LNAs reported in recent literature consume very large power because of the additional stages required for noise cancelling. This makes them inappropriate for portable applications. Based on this fact, the design of a low power, noise cancelling, wideband LNA is presented in this paper. To demonstrate the proposed circuit, novel use of popular current reuse LNA architecture in combination with the noise cancellation technique is presented. The current reuse architecture aids in obtaining necessary phase difference between signal and noise while providing power optimization. This paper presents detailed mathematical analysis of the modified input impedance, gain and noise figure. The proposed LNA is designed for UWB applications using 130 nm IBM CMOS process. The simulation results demonstrated 3 dB bandwidth of 2.35–9.37 GHz with maximum forward gain (S21) of 10.3 dB and achieved minimum noise figure (NFmin) of 3.68 dB. The simulated input referred third order intercept point (IIP3) and 1 dB compression point (P1dB) are found to be −4 dBm and −12.55 dBm respectively. With a power supply of 1.3 V, the proposed circuit consumes 9.97 mW only.
+                </p> <a target="_blank" href="papers/52.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="wz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+              
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              VLSI Design, Fabrication and Testing of an Ultra-Wideband 
+              Low Noise Amplifier Microchip using Nanometric CMOS 
+              Technology 
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>The wide operating bandwidth of the ultra-wideband (UWB) signal leads to new circuit 
+                design challenges and methodologies. Similar to any other RF system, the most critical 
+                component of the UWB receiver is the low noise amplifier (LNA). Contrary to the narrowband LNAs, the single-tone assumption is not valid for defining the SNR of an UWB LNA 
+                where the input signal encompasses several GHz. Defining the UWB LNA system’s SNR 
+                as the matched filter bound (MFB) is an appropriate approach to deduce its noise figure 
+                (NF). Using this approach, a mathematical model is proposed to achieve optimal NF, 
+                employing the gm-boosted common gate (CG) LNA topology along with a passive noise 
+                matching input network. Besides the low noise performance, the other challenges in the 
+                design of the UWB LNA include adequate input match and forward power gain with low 
+                power dissipation. Considering the superior performance of the gm-boosted CG amplifier 
+                topology for UWB, a new single-ended (SE) gm-boosted CG UWB LNA architecture is 
+                proposed in this research. In the SE LNA architecture, the power dissipation is further 
+                minimized by sharing the bias current between the gm-boosted CG and the active gmboosting amplifier stages in a current-reuse fashion (“piggyback” gm-boosting). The 
+                proposed piggyback gm-boosted CG LNA, operating in 3-5 GHz range, is fabricated using 
+                130nm RFCMOS process with adequate results. The noise optimization mathematical 
+                model proposed in this thesis is applied to the new piggyback gm-boosted CG LNA 
+                architecture by including an intervening noise matching passive network at the input of the 
+                LNA. The bandwidth of the noise matched piggyback gm-boosted CG LNA is extended 
+                using series peaking technique to the complete UWB band from 3.1 to 10.6 GHz. The 
+                proposed full-band noise matched UWB LNA is fabricated in a differential manner using 
+                130nm RFCMOS process and exhibited excellent performance improvements with figure 
+                of merit (FOM) of 2.86.
+                </p> <a target="_blank" href="papers/53.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="xz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+            
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              A 4 mW 3–5 GHz current reuse gm-boosted short channel
+common-gate CMOS UWB LNA
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>A novel architecture is presented to optimize
+                the noise performance and the power consumption of the
+                transconductance ‘gm’ boosted common-gate (CG) ultrawideband (UWB) low-noise amplifier (LNA), operating in
+                the 3–5 GHz range, by employing current reuse technique.
+                This proposed CG LNA utilizes a common source (CS)
+                amplifier as the gm-boosting stage and the bias current is
+                shared between the gm-boosting stage and the CG amplifying stage. The LNA circuit also utilizes the short channel
+                conductance gds in conjunction with an LC T-network to
+                further reduce the noise figure (NF). The proposed LNA
+                architecture has been fabricated using the 130 nm IBM
+                CMOS process. The LNA achieved input return loss (S11)
+                of -8 to -10 dB, and, output return loss (S22) of -12 to
+                -14 dB, respectively. The LNA exhibits almost flat forward voltage gain (S21) of 13 dB, and reverse isolation (S12)
+                of -62 to -49 dB, with a NF ranging between 3.8 and
+                4.6 dB. The measurements indicate an input-referred third
+                order intercept point (IIP3) of -6.1 dBm and an inputreferred 1-dB compression point (ICP1dB) of -15.4 dBm.
+                The complete chip draws 4 mW of DC power from a 1.2 V
+                supply.
+                </p> <a target="_blank" href="papers/54.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="yz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+            
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              A lightweight Convolutional Neural network for End to
+End Autonomous Driving
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>End-to-end learning for autonomous driving uses a convolutional Neural network(CNN) to predict steering angle from a raw image input. Most of the
+                solutions available for end-to-end autonomous driving are computationally too
+                expensive, which increases the inference of autonomous driving in real time.
+                Therefore, in this paper CNN architecture has been trained which is lightweight
+                and achieves comparable results to Nvidia’s PilotNet. The data used to train
+                and evaluate the Network is collected from the Car Learning to Act (CARLA)
+                simulator. To evaluate the proposed architecture the MSE(mean squared error)
+                is used as the performance metric. Results of the experiment shows that the proposed model is 40x lighter than NVIDIA’s pilot net but still attains comparable
+                results to Pilotnet. The proposed model has achieved 5.1 × 10−4 mean-squared
+                error on testing data while Pilotnet MSE was 4.7 × 10−4
+                .
+                
+                </p> <a target="_blank" href="papers/55.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="aaz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+             
+              <h1 class="card__title">ABSTRACT</h1>
+             <span>
+              A Smart Safety Gadget Design to Avoid Accidents in Warehouse Environment
+             </span>
+            </header>
+            <main class="modall__content">
+              <p>  Warehouses are one of the most dangerous places to work because of sudden accidents caused by 
+                automated machinery and vehicles. Such accidents can be prevented by stopping the machinery or alerting the operator 
+                immediately when it is in close proximity of a worker. In this paper we present our design of a smart safety gadget that 
+                can avoid this problem to a greater extent. The device is triggered by an easily accessible emergency rope or switch. 
+                The gadget hosts an ultra-wide band (UWB) radio module for measuring distance between worker and machinery and 
+                generates an alert signal to stop the vehicle if calculated distance is less than a defined programmable value (e.g. 10m). 
+                Gadget also sends a distress signal to other workers within a 150m radius over range radio so that they can come to 
+                assistance of worker. This ranging and alert mechanism has been successfully implemented on the demonstrated 
+                prototype with ±0.3m maximum error.
+                </p> <a target="_blank" href="papers/57.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        <div class="zz hide">
+          <div class="modall__scroll-area">
+            <header class="modall__header">
+              <div class="card__background">
+                <img src="images/agr.jpg">
+              </div>
+            
+              <h1 class="card__title">ABSTRACT</h1>
+              <span>
+                Over-the-air Programming for Low Cost, Small Scale WSNs 
+based on ZigBee Protocol
+              </span>
+            </header>
+            <main class="modall__content">
+              <p> The growth of Internet of Things (IoT) has led to the development of many complex networks built from 
+                simple devices. Due to their many possible applications, each of these devices are required to be easily maintainable 
+                and upgradable. Over-the-air programming (OTAP) is one of the methods to accomplish this. This paper introduces 
+                an implementation of OTAP for the popular Arduino UNO using ZigBee protocol. Programs written in Arduino IDE 
+                can be uploaded to the microcontroller over-the-air and executed without the need of any wired connections. 
+                Evaluation of the implemented protocol showed a linear relationship between the programming latency and file size 
+                whereas a negligible relationship between latency and the distance among the nodes.
+                
+                </p> <a target="_blank" href="papers/56.pdf">Read paper</a>
+            </main>
+          </div>
+        </div>
+        
+        
+            </main>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <hr id="footerRuler mt-5">
+  <div id="footer">
+    <div id="footerLogo">
+      <img src="ned.png" alt="bot1" width="70px">
+      <img src="ncai.png" alt="bot1" width="150px">
+    </div>
+
+    <div id="footerDetails">
+      <div id="address">
+        <i class="fa-solid fa-location-pin"></i>
+        <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+      </div>
+      <div id="emailContact">
+        <div id="email">
+          <i class="fa-solid fa-envelope"></i>
+          <p>smartcity@neduet.edu.pk</p>
+        </div>
+        <div id="contact">
+          <i class="fa-solid fa-address-book"></i>
+          <p>+92 335 3046110</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="footerLinks">
+      <a href="https://facebook.com">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+  <script></script>
+  <script src="main.js"></script>
+  <script>
+    function removing(){
+      let cards=document.getElementsByClassName('card-wrapper');
+      for (let k=0;k<cards.length;k++){
+        cards[k].classList.remove('hidee')
+      }
+    }
+
+ function filter(e){
+ 
+  let allCards=document.getElementsByClassName('card-wrapper')
+  
+  // console.log(allCards)
+  for(let i=0;i<allCards.length;i++){
+    allCards[i].classList.add('hidee')
+    // console.log(allCards[i].classList)
+    if (allCards[i].classList.contains(e)){
+      console.log(allCards[i].classList.contains(e))
+      allCards[i].classList.remove('hidee')
+      
+
+    }
+
+  }
+ }
+
+
+    jQuery('.card-slider').slick({
+      slidesToShow: 3,
+      infinite: true,
+      
+      slidesToScroll: 1,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    let cards = document.querySelectorAll('.card');
+    let card;
+    let modall = document.querySelector('.modall');
+    let closeButton = document.querySelector('.modall__close-button');
+    let page = document.querySelector('.page');
+    const cardBorderRadius = 20;
+    const openingDuration = 600; //ms
+    const closingDuration = 600; //ms
+    const timingFunction = 'cubic-bezier(.76,.01,.65,1.38)';
+
+    var Scrollbar = window.Scrollbar;
+    Scrollbar.init(document.querySelector('.modall__scroll-area'));
+
+
+    function flipAnimation(first, last, options) {
+      let firstRect = first.getBoundingClientRect();
+      let lastRect = last.getBoundingClientRect();
+
+      let deltas = {
+        top: firstRect.top - lastRect.top,
+        left: firstRect.left - lastRect.left,
+        width: firstRect.width / lastRect.width,
+        height: firstRect.height / lastRect.height
+      };
+
+      return last.animate([{
+        transformOrigin: 'top left',
+        borderRadius: `
+    ${cardBorderRadius / deltas.width}px / ${cardBorderRadius / deltas.height}px`,
+        transform: `
+      translate(${deltas.left}px, ${deltas.top}px) 
+      scale(${deltas.width}, ${deltas.height})
+    `
+      }, {
+        transformOrigin: 'top left',
+        transform: 'none',
+        borderRadius: `${cardBorderRadius}px`
+      }], options);
+    }
+
+    cards.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        jQuery('.card-slider').slick('slickPause');
+        card = e.currentTarget;
+        page.dataset.modalState = 'opening';
+        card.classList.add('card--opened');
+        card.style.opacity = 0;
+        document.querySelector('body').classList.add('no-scroll');
+
+        let animation = flipAnimation(card, modall, {
+          duration: openingDuration,
+          easing: timingFunction,
+          fill: 'both'
+        });
+
+        animation.onfinish = () => {
+          page.dataset.modalState = 'open';
+          animation.cancel();
+        };
+      });
+    });
+
+    closeButton.addEventListener('click', (e) => {
+      page.dataset.modalState = 'closing';
+      document.querySelector('body').classList.remove('no-scroll');
+
+      let animation = flipAnimation(card, modall, {
+        duration: closingDuration,
+        easing: timingFunction,
+        direction: 'reverse',
+        fill: 'both'
+      });
+
+      animation.onfinish = () => {
+        page.dataset.modalState = 'closed';
+        card.style.opacity = 1;
+        card.classList.remove('card--opened');
+        jQuery('.card-slider').slick('slickPlay');
+        animation.cancel();
+      };
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("ul.navbar-nav > li>a").click(function (e) {
+        $("ul.navbar-nav > li>a").removeClass("activen");
+        $(this).addClass("activen");
+      });
+    });
+
+
+    function change_text() {
+      var text = $(event.target).text();
+      document.getElementById('head').innerHTML = text;
+    }
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+
+  <script>
+
+function myfunc(e){
+  console.log(e)
+  var removingActives=document.querySelectorAll(".active")
+    if (removingActives !== null){
+      for (let i=0; i<removingActives.length;i++){
+        removingActives[i].classList.remove("active")
+      }
+    }
+    if (e!==null){
+
+        makingClass="."+e;
+        var myclass=document.querySelector(makingClass)
+        myclass.classList.add("active")
+    }
+  }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="bars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vehicle Detection System</title>
+    <style>
+        #navbar a:nth-child(4){
+    border-bottom: 4px solid #00313C;
+    }
+    
+    </style>
+</head>
+<body>
+    <style>
+        h2 {
+            margin-left: 4rem !important;
+        }
+
+        .right img {
+            max-width: 100%;
+            height: 35% !important;
+        }
+
+        .left {
+            width: 70%;
+            height: 100vh;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+
+        .right {
+            width: 26%;
+
+            height: auto;
+        }
+
+        .blog-page {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .right a {
+            display: block;
+            text-align: left;
+            margin: 0 0 16px 16px;
+        }
+
+        @media only screen and (max-width: 769px) {
+            .blog-page {
+                display: flex !important;
+                flex-direction: column !important;
+
+            }
+
+            .right {
+                width: 80% !important;
+            }
+
+            .left {
+                width: 100% !important;
+                height: auto;
+            }
+
+
+        }
+    </style>
+    <!-- HEADER -->
+    <div id="header">
+        <div id="leftHeader">
+            <a href="home.html"><img src="images/logo.jpg" alt="robot" width="200px" height="55px"></a>
+        </div>
+        <div id="rightHeader">
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="search" placeholder="Search..." id="searchBar">
+                        </td>
+                        <td>
+                            <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                        </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>
+                            <input type="submit"> &nbsp;
+                            <input type="radio" name="options">Web &nbsp;
+                            <input type="radio" name="options">People
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- responsive search -->
+    <div id="responsiveSearch">
+        <form action="#">
+            <dialog open id="d1" style="display:none;">
+                <h4>RCAI LAB SEARCH</h4>
+                <input type="search" placeholder="Search..." id="searchBar">
+                <br>
+                <input type="submit"> &nbsp;
+                <input type="radio" name="options">Web &nbsp;
+                <input type="radio" name="options">People
+                <br>
+                <button onclick="closed()">Close</button>
+            </dialog>
+        </form>
+    </div>
+
+    <nav>
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="visions.html">The Rcai</a>
+            <a href="researchareas.html">Research</a>
+            <a href="director.html">Leadership/Organization</a>
+            <a href="blogs.html">Newsletters</a>
+        </div>
+
+        <div id="responsiveNavbar">
+            <a href="#" style="width:90%" id="resnav">Navigation</a>
+            <img src="images/search.png" alt="search" width="20px" height="20px" id="resSearch">
+        </div>
+        <div id="resDiv" style="display:none;">
+            <a href="visions.html">The Rcai</a>
+            <hr>
+            <a href="researchareas.html">Research Areas</a>
+            <hr>
+            <a href="director.html">Leadership/Organization</a>
+            <hr>
+            <a href="blogs.html">Newsletters</a>
+            <hr>
+        </div>
+    </nav>
+    <h2 class="mt-3 mb-3 container">Ratcheting up security using Vehicle Detection System</h2>
+    <div class="container blog-page  ">
+        <div class="left pr-5">
+            <p>
+                The Smart City Lab at NED University has successfully developed a module of number plate detection using their own data set. The module gives 85 percent of accuracy and can be used for security and effective management.Through the module of the number plate detection, a record of all the vehicles passing by the camera can be stored. The module is extremely effective for government agencies, police departments, buildings, shopping malls and parking area.
+                
+            </p>
+            <p>In the police department the number plate detection can be used to keep a track on the vehicles. It helps to detect the stolen vehicles and help in executing felony warrants. Police can easily track the criminals and identify any suspicious activity through the detection of number plate. It helps to detect the black and the white listed cars, track the uninsured vehicles, solve cases of terrorism and other organized crimes.
+
+            </p>
+            <p>The number plate detection can be used for government agencies and buildings where there is secured and gated entrances. It helps to identify the vehicles which are permitted to enter the premises making the work of the security personnel easy.
+            </p>
+            <p>The number plate detection can be used in shopping plaza and parking area by informing about the crowded parking so that the management can know where there is need to expand the facility. It helps in effective management by helping the staff to know where the facility needs to be strong. The module helps to detect the heavy traffic flow of the vehicles.</p>
+
+        </div>
+        <div class="right p-2 text-center" style="background-color: #eee;">
+            <img class="responsive-img mt-4 " src="images/ratcheting-up-security-using-vehicle-detection-system.jpg" alt="">
+            <span class=" text-muted state-of-lab mt-3">Published on: 9th July 2019 </span>
+
+
+        </div>
+
+
+
+    </div>
+    <!-- footer -->
+    <hr id="footerRuler " class="mt-5
+    ">
+    <div id="footer">
+        <div id="footerLogo">
+            <img src="ned.png" alt="bot1" width="70px">
+            <img src="ncai.png" alt="bot1" width="150px">
+        </div>
+
+        <div id="footerDetails">
+            <div id="address">
+                <i class="fa-solid fa-location-pin"></i>
+                <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+            </div>
+            <div id="emailContact">
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>smartcity@neduet.edu.pk</p>
+                </div>
+                <div id="contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>+92 335 3046110</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footerLinks">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

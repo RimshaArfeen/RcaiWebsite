@@ -1,0 +1,154 @@
+@media only screen and (min-width:768px) and (max-width:1700px) {
+
+    #responsiveSnaps {
+        display: none;
+    }
+
+    #rcaiTable td:nth-child(3) {
+        background-color: rgb(177, 176, 176);
+    }
+
+    /* snapshot content */
+    #snapshotcontent {
+        width: 65%;
+        margin: auto;
+        /* text-align: center; */
+    }
+
+    #navbar a:nth-child(1) {
+        border-bottom: 4px solid #00313C;
+    }
+
+    #snapshotcontent h4 {
+        color: grey;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        line-height: 30px;
+    }
+
+    #snapshotFlex {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #snapshotFlex div {
+        margin: 30px auto;
+        border-left: 5px solid #00313C;
+        width: 20%;
+        display: inline-block;
+        padding: 10px;
+    }
+
+
+    #snapshotstatus {
+        margin-top: 40px;
+    }
+    #snapshotstatus p{
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+
+    #snapshotstatus div {
+        display: flex;
+        align-items: center;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        width: 70%;
+        border-bottom: 1px solid grey;
+    }
+
+    /* research fields */
+    #researchFields {
+        margin-top: 20px;
+        line-height: 30px;
+    }
+
+    #researchFields ul {
+        padding-left: 30px;
+        color: #00313C;
+        font-size: 20px;
+    }
+
+    #researchFields span {
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+
+
+
+    /* snapshot content */
+    #snapshotcontent {
+        width: 90%;
+        margin: auto;
+    }
+
+    #snapshotcontent h4 {
+        color: grey;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        line-height: 30px;
+    }
+
+    #snapshotFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    #snapshotFlex div {
+        border-bottom: 5px solid #00313C;
+        width: 30%;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    #snapshotstatus {
+        margin-top: 40px;
+    }
+
+    #snapshotstatus div {
+        padding-bottom: 25px;
+        padding-top: 25px;
+        line-height: 30px;
+        width: 90%;
+        border-bottom: 1px solid grey;
+    }
+
+    /* research fields */
+    #researchFields {
+        margin-top: 20px;
+        line-height: 30px;
+    }
+
+    #researchFields ul {
+        padding-left: 30px;
+        color: #00313C;
+        font-size: 20px;
+    }
+
+    #researchFields span {
+        color: black;
+    }
+
+    #responsiveSnaps {
+        width: 90%;
+        margin: 20px auto;
+        /* margin-bottom: 20px; */
+    }
+}

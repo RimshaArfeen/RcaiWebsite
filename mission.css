@@ -1,0 +1,247 @@
+@media only screen and (min-width:768px) and (max-width:1700px){
+    #responsiveMision{
+        display: none;
+    }
+
+    #rcaiTable td:nth-child(2){
+        background-color:rgb(177, 176, 176);
+    }
+  #navbar a:nth-child(1){
+    border-bottom: 4px solid #00313C;
+  }
+    /* Mission Content */
+    #missionContent {
+        width: 65%;
+        margin: auto;
+    }
+
+    #para1 {
+        color: grey;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #para2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .para3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .quotes {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        background-color: rgb(194, 194, 218,0.3);
+        /* border-left: 5px solid  #00313C; */
+        border-left: 5px solid  #98b2c9;
+    }
+
+    .quotes>img {
+        width: 50px;
+        height: 50px;
+        margin-top: -30px;
+    }
+
+    .mainQuote {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .qid {
+        color: grey;
+        position: relative;
+        left: 15%;
+    }
+
+    /* slider */
+    .images {
+        width: 100%;
+    }
+
+    .images img {
+        width: 100%;
+        height: 500px;
+        border: 2px solid whitesmoke;
+    }
+
+    .images {
+        z-index: -1;
+        display: none;
+    }
+
+    #slider {
+        display: flex;
+    }
+
+    #missionSlider {
+        margin: 60px 0px;
+    }
+
+    #missionSlider button {
+        padding: 10px;
+        font-size: 20px;
+        background-color: #00313C;
+        border: none;
+        color: white;
+    }
+
+    .buttons {
+        display: inline-block;
+        position: relative;
+        top: -50px;
+        left: 80%;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    #sliderText p {
+        color: grey;
+        border-left: 4px solid #00313C;
+        padding-top: 30px;
+        margin-top: -60px;
+        padding-left: 5px;
+        margin-left: 2px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:767px){
+  
+
+    /* Mission Content */
+    #missionContent {
+        width: 90%;
+        margin: auto;
+    }
+
+    #para1 {
+        color: grey;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #para2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .para3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .quotes {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px auto;
+    }
+
+    .quotes>img {
+       display: none;
+    }
+
+    .mainQuote {
+        border-left: 5px solid #00313C;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .qid {
+        color: grey;
+        position: relative;
+        left: 10%;
+    }
+
+    /* slider */
+    .images {
+        width: 100%;
+    }
+
+    .images img {
+        width: 100%;
+        height: 300px;
+        border: 2px solid whitesmoke;
+    }
+
+    .images {
+        z-index: -1;
+        display: none;
+    }
+
+    #slider {
+        display: flex;
+    }
+
+    #missionSlider {
+        margin: 60px 0px;
+    }
+
+    #missionSlider button {
+        padding: 10px;
+        font-size: 20px;
+        background-color: #00313C;
+        border: none;
+        color: white;
+    }
+
+    .buttons {
+        background-color: blue;
+        display: inline-block;
+        position: relative;
+        top: -50px;
+        left: 80%;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    #sliderText p {
+        color: grey;
+        border-left: 4px solid #00313C;
+        padding-top: 30px;
+        margin-top: -60px;
+        padding-left: 5px;
+        margin-left: 2px;
+    }
+
+    #responsiveMision{
+        width:90%;
+        margin:20px auto;
+    }
+}

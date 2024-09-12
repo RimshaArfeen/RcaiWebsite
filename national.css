@@ -1,0 +1,18 @@
+@media only screen and (min-width:768px) and (max-width:1700px) {
+
+    #navbar a:nth-child(2) {
+        border-bottom: 4px solid #00313C;
+    }
+
+    #rcaiTable td {
+        border-right: 3px solid white;
+    }
+
+    #rcaiTable td:nth-child(6) {
+        background-color:rgb(177, 176, 176);
+    }
+
+    #responsiveNational {
+        display: none;
+    }
+}

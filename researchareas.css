@@ -1,0 +1,162 @@
+   /* main */
+   #navbar a:nth-child(2) {
+       border-bottom: 4px solid #00313C;
+   }
+
+   #rcaiTable td:nth-child(4) {
+       background-color: rgb(177, 176, 176);
+   }
+
+   .flip-card {
+       background-color: transparent;
+       width: 335px;
+       height: 320px;
+       border: 1px solid #f1f1f1;
+       perspective: 1000px;
+       margin: auto;
+       /* Remove this if you don't want the 3D effect */
+   }
+ 
+
+   /* This container is needed to position the front and back side */
+   .flip-card-inner {
+       position: relative;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       transition: transform 0.8s;
+       transform-style: preserve-3d;
+   }
+
+   .flip-card-front,
+   .flip-card-back {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       -webkit-backface-visibility: hidden;
+       backface-visibility: hidden;
+
+   }
+
+   .flip-card:hover .flip-card-back {
+       background-color: rgb(177, 176, 176);
+       cursor: pointer;
+       color: white;
+   }
+
+   /* Style the front side (fallback if image is missing) */
+   .flip-card-front {
+       background-color: #bbb;
+       color: black;
+   }
+
+   .flip-card-back p {
+       /* text-align: justify; */
+       /* text-align: left; */
+       padding: 30px;
+       color: black;
+   }
+
+   .flip-card-back h3 {
+       color: black;
+       margin-top: 20px;
+       margin-bottom: -10px;
+   }
+
+   /* Style the back side */
+   .flip-card-back {
+       background-color: #555555;
+
+       color: white;
+
+       transform: rotateY(180deg);
+   }
+
+   #parent-div {
+       width: 70%;
+       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 20px;
+       /* padding: 10px 100px; */
+   }
+
+   .flip-card-inner img {
+       width: 335px;
+       height: 320px;
+       opacity: 0.7;
+   }
+
+   .flip-card:hover .flip-card-inner {
+       transform: rotateY(180deg);
+   }
+
+   #researchFields {
+       margin-top: 20px;
+       line-height: 30px;
+   }
+
+   #researchFields ul {
+       padding-left: 30px;
+       color: #00313C;
+       font-size: 20px;
+   }
+
+   #researchFields span {
+       color: black;
+   }
+
+   #responsiveResearch {
+       display: none;
+   }
+
+
+   @media only screen and (max-width: 600px) {
+       #parent-div {
+           width: 100%;
+           grid-template-columns: repeat(1, 1fr);
+           gap: 30px;
+           padding: 0px 0px;
+       }
+
+       #responsiveResearch {
+           display: block;
+           margin: 10px;
+       }
+   }
+
+   @media only screen and (min-width: 600px) {
+       #parent-div {
+           grid-template-columns: repeat(1, 1fr);
+           gap: 20px;
+           padding: 0px 0px;
+
+       }
+   }
+
+   @media only screen and (min-width: 768px) {
+       #parent-div {
+           grid-template-columns: repeat(2, 1fr);
+           gap: 20px;
+           padding: 0px 0px;
+
+       }
+   }
+
+   @media only screen and (min-width: 992px) {
+       #parent-div {
+           grid-template-columns: repeat(2, 1fr);
+           gap: 20px;
+           padding: 0px 0px;
+       }
+   }
+
+   @media only screen and (min-width: 1200px) {
+       #parent-div {
+           grid-template-columns: repeat(3, 1fr);
+           gap: 20px;
+           padding: 10px 100px;
+
+       }
+
+   }

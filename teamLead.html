@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+    <script src="https://kit.fontawesome.com/93d0f16795.js" crossorigin="anonymous"></script>
+    <!-- style sheets -->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="bars.css">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Team Lead</title>
+    <style>
+        #navbar a:nth-child(3) {
+            border-bottom: 4px solid #00313C;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <div id="leftHeader">
+            <a href="home.html"><img src="images/logo.jpg" alt="robot" width="200px" height="55px"></a>
+        </div>
+        <div id="rightHeader">
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="search" placeholder="Search..." id="searchBar">
+                        </td>
+                        <td>
+                            <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                        </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>
+                            <input type="submit"> &nbsp;
+                            <input type="radio" name="options">Web &nbsp;
+                            <input type="radio" name="options">People
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- responsive search -->
+    <div id="responsiveSearch">
+        <form action="#">
+            <dialog open id="d1" style="display:none;">
+                <h4>RCAI LAB SEARCH</h4>
+                <input type="search" placeholder="Search..." id="searchBar">
+                <br>
+                <input type="submit"> &nbsp;
+                <input type="radio" name="options">Web &nbsp;
+                <input type="radio" name="options">People
+                <br>
+                <button onclick="closed()">Close</button>
+            </dialog>
+        </form>
+    </div>
+    <nav>
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="visions.html">The Rcai</a>
+            <a href="researchareas.html">Research</a>
+            <a href="director.html">Leadership/Organization</a>
+            <a href="blogs.html">Newsletters</a>
+        </div>
+
+        <div id="responsiveNavbar">
+            <a href="#" style="width:90%" id="resnav">Navigation</a>
+            <img src="images/search.png" alt="search" width="20px" height="20px" id="resSearch">
+        </div>
+        <div id="resDiv" style="display:none;">
+            <a href="visions.html">The Rcai</a>
+            <hr>
+            <a href="researchareas.html">Research Areas</a>
+            <hr>
+            <a href="director.html">Leadership/Organization</a>
+            <hr>
+            <a href="blogs.html">Newsletters</a>
+            <hr>
+        </div>
+    </nav>
+
+
+
+
+    <nav class="navbar navbar-expand-lg  ">
+
+        <div class="container-fluid ">
+
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <p id="head">Team Lead</p>
+                <span style="margin-top: 5px;"><i class="fa fa-thin fa-chevron-down"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-lg-0">
+                    <li class="nav-item " onclick=" change_text()">
+                        <a id="rn1" class="nav-link " aria-current="page" href="director.html">Director</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn2" class="nav-link activen" aria-current="page" href="teamLead.html">Team Lead</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn3" class="nav-link" href="ResearchAssociates.html">Research Associates</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn4" class="nav-link" href="SeniorRAs.html">Research Assistants</a>
+
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn5" class="nav-link" href="orgChart.html">Organizational Chart</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div id="tooltips">
+        <div id="t1" class="tools">Director</div>
+        <div id="t2" class="tools">Team Lead</div>
+        <div id="t3" class="tools">Research Associates</div>
+        <div id="t4" class="tools">Senior Research Assistants</div>
+        <div id="t5" class="tools">Organizational Chart</div>
+
+    </div>
+    <div class="container  director-section mt-5">
+        <div class="roww d-flex">
+            <div class=" bio">
+                <div class="container ">
+                    <h2 class="directorname-header">Sundus Fatima</h2>
+                    <span class="directorname-header " style=" font-style: italic;"><i
+                            class="fa-solid fa-id-card-clip me-2"></i>Team Lead</span>
+                    <p style="margin-top: 1rem; text-align: justify; margin-left: 30px; margin-right: 30px;">
+                        Sundus Fatima has been actively helping Smart City Lab in expanding its technological
+                        capabilities with keen insight and creative ideas. She has over six years of experience &
+                        expertise in artificial intelligence, machine learning, embedded systems, application
+                        development, and automation technologies. Sundus is currently a Team head, leading a team of 25+
+                        scientists and developers at the research center. She has been actively involved in bridging the
+                        gap between academia and industries by applying research ideas to practical problems. In line
+                        with that, she is responsible for overseeing new expansions of technology in the health,
+                        agriculture, environmental, and social sectors. She has worked closely with leading research
+                        institutes locally and around the world to conduct research and innovation in a highly dynamic
+                        environment for the benefit of the society.
+                    </p>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">She has earned her Bachelor's
+                        degree in Computer and Information Systems from Sir Syed University of Engineering & Technology.
+                        Masters in the same field from NED University of Engineering & Technology
+                    </p>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">
+                        Some of her major contributions in the development of artificial intelligence, machine learning
+                        products, software, and other solutions for commercial and educational purposes are listed
+                        below.
+                    </p>
+                </div>
+                <div id="projects" style="text-align: justify; margin-left: 43px; margin-right: 30px;">
+                    <p> <a href="weedbot.html" style="font-weight: bold;font-size:15px">Autonomous weeding robot: </a> &nbsp  She was successful in securing DAAD funding for the development of an autonomous laser-based weed-killing robot through the German-Pakistani Research Collaboration Program. The robot was created in close collaboration with the DFKI, the German Research Centre for Artificial Intelligence. She oversaw the design and development of weedbot by leading the mechanical design team and a team of AI engineers working on intelligent weed detection systems.
+                    </p>
+                    <p> <a href="RiceQuality.html" style="font-weight: bold;font-size:15px">Rice Quality Analyzer: </a> &nbsp She was actively involved in the development of a rice quality analyzer, another DAAD-funded project. The project uses artificial intelligence to identify and distinguish high-quality rice grains, making an otherwise difficult task easier for workers. This project was carried out in collaboration with Abu Dhabi University's College of Engineering.
+                    </p>
+                    <p> <a href="rvm.html" style="font-weight: bold;font-size:15px">Reverse vending machine (RVM): </a> &nbsp She led the development of Smart reverse vending machine (RVM), which is a great initiative under the 3R concept (reduce, reuse and recycle). The advanced and updated features of the e-bin, such as the provision of incentives when inserting a plastic bottle, will encourage users to use it instead of dumping in the conventional bins.
+                    </p>
+                    <p> <a href="user_engagement.html" style="font-weight: bold;font-size:15px">Prediction of user engagement: </a> &nbsp She collaborated with Aga Khan University Hospital to develop a system that can help provide healthier workspaces for employees. In the development of the system she was closely involved in enhancing deep-learning systems and associated algorithms for better natural language processing. 
+                    </p>
+                    <p> <a href="ssi.html" style="font-weight: bold;font-size:15px">Surgical Site Infections: </a> &nbsp She worked on another project in collaboration with Agha Khan university hospital for  the development of ML models to predict the type of surgical site infections (SSI) and the postoperative weak changes in tissues. The system also compares the risk variables for superficial and deep SSI after a variety of surgical operations. 
+                    </p>
+                    <p> <a href="Radiological.html" style="font-weight: bold;font-size:15px">Enhanced radiological diagnosis of cerebral tuberculosis using machine learning: </a> &nbsp She worked in collaboration with medical professionals from Agha Khan University Hospitals on the development of an AI predictive scoring system for diagnosis, treatment, and classification of cerebral tuberculosis. The technique was created as an effective means of diagnosing and treating cerebral TB, a rare and difficult to diagnose condition.
+                    </p>
+                    <p> <a href="adas.html" style="font-weight: bold;font-size:15px">Lightweight segmentation for ADAS on resource constraint devices</a> &nbsp Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum suscipit excepturi quaerat iusto quisquam fugiat corrupti eveniet eligendi! Possimus magnam est unde incidunt? Tempore nisi iste nemo blanditiis cumque et commodi quis provident quam animi. Rerum nulla ipsam totam?</p>
+                    <p> <a href="autonomous.html" style="font-weight: bold;font-size:15px">Automated extraction of fetal Doppler velocity waveforms:</a> &nbsp In close collaboration with Aga Khan University Hospital, she has worked on the development of a system for the automatic extraction of fetal velocity waveforms using image processing. DICOM is the international standard to transmit, store, retrieve, print, process, and display medical imaging information. Using dicom files she used spectral ultrasound images to extract velocity waveforms for further analysis and computation. 
+                    </p>
+                    <p> <a href="autonomous.html" style="font-weight: bold;font-size:15px">Carla: </a> &nbsp She also performed few case studies on the CARLA simulator to understand the behaviour of self-driving cars for real-time implementations.</p>
+                    <p> <a href="waterResources.html" style="font-weight: bold;font-size:15px">WSN for water resource management: </a> &nbsp She worked on another project in collaboration with Prof. Andreas Dengel's research group in DFKI, on Smart Data and Knowledge Services. The developed system provides farmers with predictive insights on the ideal watering schedule for their crops based on the seasons, soil type.
+                    </p>
+                </div>
+            </div>
+            <div class=" side">
+                <div class="container side-bar">
+                    <img src="https://www.lbl.gov/wp-content/uploads/2021/08/Mike_Witherell_sm_2.jpg" alt="director-img"
+                        class="responsive-img director-img">
+                    <span class="text-muted state-of-lab">More on the TEAM LEAD</span>
+
+                    <a href="#" class="welcome-message">Welcome message</a>
+                    <span class="text-muted state-of-lab">STATE OF THE LAB: OCT. 29, 2020</span>
+                    <iframe class="dir-video"
+                        src="https://www.youtube.com/embed/PRLKi8IfARY?enablejsapi=1&amp;origin=https:%2F%2Fwww.lbl.gov"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" id="widget2" data-gtm-yt-inspected-15="true" data-gtm-yt-inspected-21="true"
+                        title="Video Replay: State of the Lab Town Hall"></iframe>
+                    <span class="text-muted state-of-lab">INCLUSION, DIVERSITY, EQUITY & ACCOUNTABILITY</span>
+
+                    <iframe class="dir-video"
+                        src="https://www.youtube.com/embed/PRLKi8IfARY?enablejsapi=1&amp;origin=https:%2F%2Fwww.lbl.gov"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" id="widget2" data-gtm-yt-inspected-15="true" data-gtm-yt-inspected-21="true"
+                        title="Video Replay: State of the Lab Town Hall"></iframe>
+                    <iframe class="dir-video"
+                        src="https://www.youtube.com/embed/PRLKi8IfARY?enablejsapi=1&amp;origin=https:%2F%2Fwww.lbl.gov"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" id="widget2" data-gtm-yt-inspected-15="true" data-gtm-yt-inspected-21="true"
+                        title="Video Replay: State of the Lab Town Hall"></iframe>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <hr id="footerRuler">
+    <div id="footer">
+        <div id="footerLogo">
+            <img src="ned.png" alt="bot1" width="70px">
+            <img src="ncai.png" alt="bot1" width="150px">
+        </div>
+
+        <div id="footerDetails">
+            <div id="address">
+                <i class="fa-solid fa-location-pin"></i>
+                <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+            </div>
+            <div id="emailContact">
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>smartcity@neduet.edu.pk</p>
+                </div>
+                <div id="contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>+92 335 3046110</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footerLinks">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("ul.navbar-nav > li>a").click(function (e) {
+                $("ul.navbar-nav > li>a").removeClass("activen");
+                $(this).addClass("activen");
+            });
+        });
+
+
+        function change_text() {
+            var text = $(event.target).text();
+            document.getElementById('head').innerHTML = text;
+        }
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+</body>
+
+</html>

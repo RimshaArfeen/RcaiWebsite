@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        #rcaiNavbar {
+            width: 65%;
+            margin: 40px auto;
+        }
+
+        #rcaiTable {
+            /* width:100%; */
+            text-align: center;
+            /* border:1px solid black; */
+            padding:10px;
+        }
+
+        #rcaiNavbar p {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        #rcaiTable td {
+            /* padding: 10px;
+            background-color: #abb8c3; */
+        }
+
+        #rcaiTable td:hover {
+            cursor: pointer;
+        }
+
+        #rcaiTable a {
+
+            color: white;
+            padding: 13px 20px;
+            background-color: #abb8c3;
+        }
+
+        #rcaiTable a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .tools{
+            background-color: white;
+            color:black;
+            border:1px solid black;
+            display: inline-block;
+            padding:5px;
+            position: relative;
+            font-size: 13px;
+            color:grey;
+            top:2px;
+        }
+        .tools:first-child{
+            display: none;
+           left:9%;
+        }
+        .tools:nth-child(2){
+            display: none;
+            left:20%;
+        }
+        .tools:nth-child(3){
+            display: none;
+            left:30%;
+        }
+        .tools:nth-child(4){
+            display: none;
+            left:40%;
+        }
+        .tools:nth-child(5){
+            display: none;
+            left:55%;
+        }
+        .tools:nth-child(6){
+            display: none;
+            left:65%;
+        }
+        .tools:nth-child(7){
+            display: none;
+            left:78%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="rcaiNavbar">
+        <p>About the Lab</p>
+        <table id="rcaiTable">
+            <tr>
+                <td>
+                    <a href="#" id="rn1">About the lab</a>
+                </td>
+                <td>
+                    <a href="#" id="rn2">Snapshots</a>
+                </td>
+                <td>
+                    <a href="#" id="rn3">Mission</a>
+                </td>
+                <td>
+                    <a href="#" id="rn4">Our Visions</a>
+                </td>
+                <td>
+                    <a href="#" id="rn5">Research Areas</a>
+                </td>
+                <td>
+                    <a href="#" id="rn6">In Focus</a>
+                </td>
+                <td>
+                    <a href="#" id="rn7">National Solutions</a>
+                </td>
+            </tr>
+        </table>
+        <div id="tooltips">
+            <div id="t1" class="tools">organisms,mission,history</div>
+            <div id="t2" class="tools">organisms</div>
+            <div id="t3" class="tools">mission</div>
+            <div id="t4" class="tools">organisms,history</div>
+            <div id="t5" class="tools">history</div>
+            <div id="t6" class="tools">organisms,history</div>
+            <div id="t7" class="tools">mission,history</div>
+           
+        </div>
+    </div>
+    <script>
+        // toolTips
+        let rn1=document.getElementById("rn1");
+        let rn2=document.getElementById("rn2");
+        let rn3=document.getElementById("rn3");
+        let rn4=document.getElementById("rn4");
+        let rn5=document.getElementById("rn5");
+        let rn6=document.getElementById("rn6");
+        let rn7=document.getElementById("rn7");
+        rn1.onmouseenter=function(){
+           let t1=document.getElementById("t1");
+           t1.style.display="inline-block";
+        }
+        rn1.onmouseleave=function(){
+           let t1=document.getElementById("t1");
+           t1.style.display="none";
+        }
+        rn2.onmouseenter=function(){
+           let t2=document.getElementById("t2");
+           t2.style.display="inline-block";
+        }
+        rn2.onmouseleave=function(){
+           let t2=document.getElementById("t2");
+           t2.style.display="none";
+        }
+        rn3.onmouseenter=function(){
+           let t3=document.getElementById("t3");
+           t3.style.display="inline-block";
+        }
+        rn3.onmouseleave=function(){
+           let t3=document.getElementById("t3");
+           t3.style.display="none";
+        }
+        rn4.onmouseenter=function(){
+           let t4=document.getElementById("t4");
+           t4.style.display="inline-block";
+        }
+        rn4.onmouseleave=function(){
+           let t4=document.getElementById("t4");
+           t4.style.display="none";
+        }
+        rn5.onmouseenter=function(){
+           let t5=document.getElementById("t5");
+           t5.style.display="inline-block";
+        }
+        rn5.onmouseleave=function(){
+           let t5=document.getElementById("t5");
+           t5.style.display="none";
+        }
+        rn6.onmouseenter=function(){
+           let t6=document.getElementById("t6");
+           t6.style.display="inline-block";
+        }
+        rn6.onmouseleave=function(){
+           let t6=document.getElementById("t6");
+           t6.style.display="none";
+        }
+        rn7.onmouseenter=function(){
+           let t7=document.getElementById("t7");
+           t7.style.display="inline-block";
+        }
+        rn7.onmouseleave=function(){
+           let t7=document.getElementById("t7");
+           t7.style.display="none";
+        }
+    </script>
+</body>
+
+</html>

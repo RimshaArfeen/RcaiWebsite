@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dropdown {
+            width: 50%;
+            margin: auto;
+        }
+        #dropdown>div{
+            border-bottom: 1px solid grey;
+        }
+        .droplink {
+            padding: 10px;
+        }
+
+        .droplink a {
+            display: inline-block;
+            float: right;
+            margin-top: 12px;
+        }
+
+        .droplink h4 {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .extend {
+            display: none;
+            /* border: 2px solid black; */
+            /* background-color: grey; */
+            /* visibility: hidden; */
+        }
+
+        @keyframes first {
+            from {
+                height: 0px;
+                opacity: 0;
+            }
+            to {
+                height: 90px;
+                opacity: 1;
+            }
+        }
+        @keyframes second {
+            from {
+                height:90px;
+                opacity: 0.3;
+            }
+
+            to {
+                height:1px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dropdown">
+        <div id="dd1">
+            <div id="ddshow1" class="droplink">
+                <h4>DROPDOWN1</h4>
+                <a href="#"><img src="ddown.png" width="30px" height="30px" id="d1"></a>
+            </div>
+            <div class="extend" id="ex1">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, adipisci repudiandae impedit
+                    explicabo nisi voluptatibus perferendis soluta assumenda nemo illo accusamus sint, itaque ab
+                    reprehenderit porro non et, asperiores ut. Lorem ipsum dolor sit.
+                </p>
+            </div>
+        </div>
+        <div id="dd2">
+            <div id="ddshow2" class="droplink">
+                <h4>DROPDOWN1</h4>
+                <a href="#"><img src="ddown.png" width="30px" height="30px" id="d2"></a>
+            </div>
+            <div class="extend" id="ex2">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, adipisci repudiandae impedit
+                    explicabo nisi voluptatibus perferendis soluta assumenda nemo illo accusamus sint, itaque ab
+                    reprehenderit porro non et, asperiores ut. Lorem ipsum dolor sit.
+                </p>
+            </div>
+        </div>
+        <div id="dd3"></div>
+    </div>
+
+    <script>
+        let d1 = document.getElementById("d1");
+        let count = 0;
+        d1.onclick = function () {
+            if (count == 0) {
+                let ex1 = document.getElementById("ex1");
+                ex1.style.display = "block";
+                ex1.style.animationName = "first";
+                ex1.style.animationDuration = "1s";
+                ex1.style.animationTimingFunction = "ease";
+                d1.style.transform = "rotate(180deg)";
+                d1.style.transitionProperty="transform";
+                d1.style.transitionDuration="1s";
+                d1.style.transitionTimingFunction="ease";
+                count = 1;
+            }
+            else if (count == 1) {
+                let ex1 = document.getElementById("ex1");
+                
+                d1.style.transform = "rotate(360deg)";
+                d1.style.transitionProperty="transform";
+                d1.style.transitionDuration="1s";
+                d1.style.transitionTimingFunction="ease";
+
+                // ex1.style.transform = "rotate(360deg)";
+                ex1.style.transitionProperty="display";
+                ex1.style.transitionDuration="1s";
+                ex1.style.transitionTimingFunction="ease";
+
+                ex1.style.display = "none";
+                count = 0;
+            }
+        }
+    </script>
+</body>
+
+</html> -->

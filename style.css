@@ -1,0 +1,351 @@
+@media only screen and (min-width:768px) and (max-width:1700px){
+
+    /* body */
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* slideshow */
+    .images {
+        width: 100%;
+    }
+
+    .images img {
+        width: 100%;
+        height: 400px;
+        border: 2px solid whitesmoke;
+    }
+
+    .images {
+        display: none;
+    }
+
+    #slider {
+        display: flex;
+    }
+
+    button {
+        padding: 20px;
+        font-size: 20px;
+        background-color: rgb(255, 255, 255, 0.3);
+        border: none;
+    }
+
+    #btn1 {
+        position: absolute;
+        visibility: hidden;
+        top: 300px;
+    }
+    
+    #btn2 {
+        visibility: hidden;
+        position: absolute;
+        top: 310px;
+        left: 54.5%;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* main */
+    #mains {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+
+    #leftLanding {
+        width: 55%;
+    }
+
+    #rightLanding {
+        width: 25%;
+        padding: 20px 10px;
+    }
+
+    #rightLanding a {
+        text-decoration: none;
+    }
+
+    /* main content */
+    #mainLanding {
+        width: 80%;
+        margin: 20px auto;
+        /* border:2px solid black; */
+    }
+
+    #sliderTable {
+        /* border:2px solid black; */
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #sliderTable td {
+        padding: 5px 10px;
+    }
+
+    #sliderTable a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* 4 divs */
+    #mainLandingDivs {
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    #mainLandingDivs a {
+        text-decoration: none;
+    }
+
+    #mainLandingDivs a span {
+        background-color: white;
+        box-shadow: 1px 1px 5px grey;
+        color: black;
+        position: relative;
+        top: -49px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    #mainLandingDivs a span:hover{
+        text-decoration: underline;
+    }
+    #rightLanding a:hover{
+        text-decoration: underline;
+    }
+   
+    /* rightLanding Content */
+    #rightLanding h4 {
+        padding: 5px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+        margin-top: 20px;
+        color: grey;
+        font-size: 14px;
+    }
+
+    #rightLanding a {
+        font-size: 19px;
+        padding: 10px;
+        line-height: 30px;
+    }
+
+    @keyframes second {
+        from {
+            opacity: 0.1;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes third {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0.1;
+        }
+    }
+
+    @keyframes firstOne{
+        from{
+            opacity:0.2;
+        }
+        to{
+            opacity:1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px){
+    /* body */
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* slideshow */
+    .images {
+        width: 100%;
+        /* border:1px solid black; */
+    }
+
+    .images img {
+        width: 100%;
+        height: 350px;
+        border: 2px solid whitesmoke;
+    }
+
+    .images {
+        display: none;
+    }
+
+    #slideShow button {
+        padding: 10px;
+        font-size: 20px;
+        background-color: rgb(255, 255, 255, 0.4);
+        border: none;
+    }
+
+    #btn1 {
+        position: relative;
+        top: 400px;
+    }
+
+    #btn2 {
+        position: relative;
+        top: 357px;
+        left:30px;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* main */
+    #mains {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+
+    #leftLanding {
+        /* border:2px solid black;        */
+        width: 100%;
+    }
+
+    #rightLanding {
+        width: 100%;
+        /* border:2px solid black; */
+        padding: 20px 10px;
+    }
+
+    #rightLanding a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+    /* main content */
+    #mainLanding {
+        width: 80%;
+        margin: 20px auto;
+        /* border:2px solid black; */
+    }
+
+    #sliderTable {
+        /* border:2px solid black; */
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #sliderTable td {
+        padding: 5px 10px;
+    }
+
+    #sliderTable a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* 4 divs */
+    #mainLandingDivs {
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    #mainLandingDivs a {
+        text-decoration: none;
+    }
+
+    #mainLandingDivs a span {
+        background-color: white;
+        box-shadow: 1px 1px 5px grey;
+        color: black;
+        position: relative;
+        top: -49px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    /* rightLanding Content */
+    #rightLanding h4 {
+        padding: 5px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+        margin-top: 20px;
+        color: grey;
+        font-size: 14px;
+    }
+
+    #rightLanding a {
+        font-size: 19px;
+        padding: 10px;
+        line-height: 30px;
+    }
+
+    @keyframes second {
+        from {
+            opacity: 0.1;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes third {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0.1;
+        }
+    }
+}

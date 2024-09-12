@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .two {
+            display: none;
+        }
+
+        .three {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="search">
+    <button onclick="sear()">Search</button>
+    <div class="two" id="07/01/2022">1</div>
+    <div class="two" id="05/25/2022">2</div>
+    <div class="two" id="12/01/2022">3</div>
+    <div class="three">4</div>
+    <script>
+        function sear() {
+            let clas = document.getElementById("search").value;
+            let r = document.getElementsByClassName(clas);
+            let size = r.length;
+            let ar = new Array();
+            for (let i = 0; i < size; i++) {
+                ar[i] = Date.parse(r[i].id);
+            }
+            
+            let ar1=ar.sort();
+            
+            let a=""; 
+            for (let i = 0; i < size; i++) {
+                for (let j = 0; j < size; j++) {
+                    if (ar1[i]==Date.parse(r[j].id)) {
+                        a=a+r[j].id+" ";
+                    }
+                }
+            }
+            document.write(a);
+        }
+    </script>
+</body>
+
+</html>

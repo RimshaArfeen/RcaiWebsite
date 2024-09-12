@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mission.css">
+    <link rel="stylesheet" href="navigation.css">
+    <style>
+         @import url(//fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <!-- HEADER -->
+        <div id="header">
+            <div id="headerContent">
+                <div id="leftHeader">
+                    <a href="home.html"><img src="logo.jpg" alt="robot" width="200px" height="55px"></a>
+                </div>
+                <div id="rightHeader">
+
+                    <form action="#">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="search" placeholder="Search..." id="searchBar">
+                                </td>
+                                <td>
+                                    <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                                </td>
+                            </tr>
+                            <tr id="tr2">
+                                <td>
+                                    <input type="submit"> &nbsp;
+                                    <input type="radio" name="options">Web &nbsp;
+                                    <input type="radio" name="options">People
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- responsive search -->
+        <div id="responsiveSearch">
+            <form action="#">
+                <dialog open id="d1" style="display:none;">
+                    <h4>RCAI LAB SEARCH</h4>
+                    <input type="search" placeholder="Search..." id="searchBar">
+                    <br>
+                    <input type="submit"> &nbsp;
+                    <input type="radio" name="options">Web &nbsp;
+                    <input type="radio" name="options">People
+                    <br>
+                    <button onclick="closed()">Close</button>
+                </dialog>
+            </form>
+        </div>
+
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="visions.html">The RCAI</a>
+            <a href="researchareas.html">Research</a>
+            <a href="director.html">Leadership/Organization</a>
+            <a href="blogs.html">Newsletters</a>
+        </div>
+
+        <div id="responsiveNavbar">
+            <a href="#" style="width:90%" id="resnav">Navigation</a>
+            <img src="search1.png" alt="search" width="20px" height="20px" id="resSearch">
+        </div>
+        <div id="resDiv" style="display:none;">
+            <div>
+                <a href="visions.html">The RCAI</a>
+            </div>
+            <div>
+                <a href="researchareas.html">Research Areas</a>
+            </div>
+            <div>
+                <a href="director.html">Leadership/Organization</a>
+            </div>
+            <div>
+                <a href="blogs.html">Newsletters</a>
+            </div>
+        </div>
+
+        <!-- navbar for rcai -->
+        <div id="rcaiNavbar">
+            <table id="rcaiTable" cellpadding="10px" cellspacing="3px">
+                <tr>
+                    <td>
+                        <a href="visions.html" id="rn1">Our Technology</a>
+                    </td>
+                    <td>
+                        <a href="missions.html" id="rn2">Mission</a>
+                    </td>
+                    <td>
+                        <a href="snapshots.html" id="rn3">Snapshots</a>
+                    </td>
+                    <td>
+                        <a href="researchareas.html" id="rn4">Research Areas</a>
+                    </td>
+                    <td>
+                        <a href="trial.html" id="rn5">In Focus</a>
+                    </td>
+                    <td>
+                        <a href="index.html" id="rn6">National Solutions</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="responsiveMision">
+            <form action="#">
+                <select name="select" id="select" onchange="location=this.value">
+                    <option value="visions.html">Our Technology</option>
+                    <option value="missions.html">Mission</option>
+                    <option value="snapshots.html">Snapshots</option>
+                    <option value="researchareas.html">Research Areas</option>
+                    <option value="trial.html">In Focus</option>
+                    <option value="index.html">National Solutions</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="tooltips">
+            <div id="t1" class="tools">Technology</div>
+            <div id="t2" class="tools">Mission</div>
+            <div id="t3" class="tools">Snapshots</div>
+            <div id="t4" class="tools">Research Areas</div>
+            <div id="t5" class="tools">In Focus</div>
+            <div id="t6" class="tools">National Solutions</div>
+        </div>
+
+
+        <!-- mission main content  -->
+        <div id="missionContent">
+            <h1>Mission</h1>
+            <h3 id="para1">The NED University of Engineering & Technology has entrusted the RCAI with the role of advancing knowledge for the benefit of society. The research centre seeks to accomplish this national mission while respecting ethical rules and showing commitment to professional equality.
+            </h3>
+            <div class="quotes">
+                <p class="mainQuote">To identify and conduct, alone or with its partners, research that is in the interest of science as well as the technological, social, and cultural advancement of the country.</p>
+                <img src="qblue.png" alt="quote">
+                <p class="qid">Mission entrusted by the NED University of Engineering & Technology to the RCAI, decree of January,01, 2016</p>
+            </div>
+            <!-- 5 missions -->
+            <div id="missions5">
+                <h2>A five-pronged mission</h2>
+                <h3 style="margin-top:50px">1. Conduct scientific research</h3>
+                <p>The RCAI conducts "research in the interest of science as well as the country's technological, social, and cultural advancement." This research approach is multidisciplinary in nature, long-term in outlook, and open to the unknown, and is oriented toward the common good.
+                </p>
+
+                <h3 style="margin-top:50px">2. Transfer research results</h3>
+                <p>The RCAI's aim is for society to benefit from its advances, whether in technology, sustainable development, or societal issues. Numerous technology transfer and application measures, particularly with industrial partners, have been implemented to that end.
+                </p>
+
+                <h3 style="margin-top:50px">3. Share knowledge</h3>
+                <p>The RCAI provides access to research results and data because they are part of our collective heritage. This knowledge sharing is intended for a variety of audiences, including the scientific community, industries, and the general public.
+                </p>
+
+                <h3 style="margin-top:50px">4. Train through research</h3>
+                <p>The CNRS conducts “research that is in the interest of science as well as the technological, social,
+                    and cultural advancement of the country”. Oriented toward the common good, this research approach is
+                    multidisciplinary in nature, long-term in outlook, and open to the unknown.</p>
+
+                <h3 style="margin-top:50px">5. Contribute to scientific policy</h3>
+                <p>The RCAI collaborates with its partners in the national & global research strategy. It also conducts scientific evaluations and expert assessments.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <hr id="footerRuler">
+        <div id="footer">
+            <div id="footerLogo">
+                <img src="ned.png" alt="bot1" width="70px">
+                <img src="ncai.png" alt="bot1" width="150px">
+            </div>
+
+            <div id="footerDetails">
+                <div id="address">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+                </div>
+                <div id="emailContact">
+                    <div id="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>smartcity@neduet.edu.pk</p>
+                    </div>
+                    <div id="contact">
+                        <i class="fa-solid fa-address-book"></i>
+                        <p>+92 335 3046110</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="footerLinks">
+                <a href="https://facebook.com">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="missions.js">
+    </script>
+
+</body>
+
+</html>

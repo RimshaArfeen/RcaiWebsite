@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="bars.css">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IoT devices developed by the Smart City Lab</title>
+    <style>
+        #navbar a:nth-child(4){
+    border-bottom: 4px solid #00313C;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <style>
+        h2 {
+            margin-left: 4rem !important;
+        }
+
+        .right img {
+            max-width: 100%;
+            height: 35% !important;
+        }
+
+        .left {
+            width: 70%;
+            height: 100vh;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+
+        .right {
+            width: 26%;
+
+            height: auto;
+        }
+
+        .blog-page {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .right a {
+            display: block;
+            text-align: left;
+            margin: 0 0 16px 16px;
+        }
+
+        @media only screen and (max-width: 769px) {
+            .blog-page {
+                display: flex !important;
+                flex-direction: column !important;
+
+            }
+
+            .right {
+                width: 80% !important;
+            }
+
+            .left {
+                width: 100% !important;
+                height: auto;
+            }
+
+
+        }
+    </style>
+    <!-- HEADER -->
+    <div id="header">
+        <div id="leftHeader">
+            <a href="home.html"><img src="images/logo.jpg" alt="robot" width="200px" height="55px"></a>
+        </div>
+        <div id="rightHeader">
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="search" placeholder="Search..." id="searchBar">
+                        </td>
+                        <td>
+                            <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                        </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>
+                            <input type="submit"> &nbsp;
+                            <input type="radio" name="options">Web &nbsp;
+                            <input type="radio" name="options">People
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- responsive search -->
+    <div id="responsiveSearch">
+        <form action="#">
+            <dialog open id="d1" style="display:none;">
+                <h4>RCAI LAB SEARCH</h4>
+                <input type="search" placeholder="Search..." id="searchBar">
+                <br>
+                <input type="submit"> &nbsp;
+                <input type="radio" name="options">Web &nbsp;
+                <input type="radio" name="options">People
+                <br>
+                <button onclick="closed()">Close</button>
+            </dialog>
+        </form>
+    </div>
+
+    <nav>
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="visions.html">The Rcai</a>
+            <a href="researchareas.html">Research</a>
+            <a href="director.html">Leadership/Organization</a>
+            <a href="blogs.html">Newsletters</a>
+        </div>
+
+        <div id="responsiveNavbar">
+            <a href="#" style="width:90%" id="resnav">Navigation</a>
+            <img src="images/search.png" alt="search" width="20px" height="20px" id="resSearch">
+        </div>
+        <div id="resDiv" style="display:none;">
+            <a href="visions.html">The Rcai</a>
+            <hr>
+            <a href="researchareas.html">Research Areas</a>
+            <hr>
+            <a href="director.html">Leadership/Organization</a>
+            <hr>
+            <a href="blogs.html">Newsletters</a>
+            <hr>
+        </div>
+    </nav>
+    <h2 class="mt-3 mb-3 container">IoT devices developed by the Smart City Lab are making Smart Irrigation cost effective</h2>
+    <div class="container blog-page  ">
+        <div class="left pr-5">
+            <p>
+                The latest technological advancement is making people more dependant on machines. The machines are designed in such a way that it can perform multiple functions using the Internet of Things (IoT), which helps in bringing the diverse information together.
+            </p>
+            <p>The Engineers at the Smart City Lab has developed the IoT devices that can be used to make the products cost efficient and improve its performance. These IoT devices are deployed as part of Aqua Agro Smart Irrigation System. The IoT devices when deployed in the field, helps in the transfer of data through sensors from one device to another along with accumulated data uploading to internet by central hub device. This is also known as the Wireless Sensors Network (WSN).
+            </p>
+            <p>The IoT devices make Aqua Agro more durable and extremely beneficial for the users. Through these devices, farmers can check the soil before growing the crops. Farmers can get information about the type of the land and the crops suitable to grow. The devices can easily monitor the environmental conditions and soil parameters such as ambient temperature, humidity, soil temperature, soil moisture and soil EC. The devices are capable of covering multiple crops in a particular area.</p>
+            <p>The AI model involved in the system help the farmers to get updates about the irrigation requirements. The IoT devices will make the remote monitoring easy by giving live updates about the crops and the soil on the mobile application. The cloud computing in the system makes data analysis easier.</p>
+            <p>
+                The smart irrigation devices with IoT will reduce human efforts and save time. These devices will manage large area with a limited cost. The investment per acre is also reduced. The devices help to nourish the crops. It also helps to combat water crisis by harvesting more crops with smaller amount of water resources.</p>
+
+        </div>
+        <div class="right p-2 text-center" style="background-color: #eee;">
+            <img class="responsive-img mt-4 " src="images/smart-irrigation-cost-effective-iot-device.jpg" alt="">
+            <span class=" text-muted state-of-lab mt-3">Published on:  26th July 2019 </span>
+
+
+        </div>
+
+
+
+    </div>
+    <!-- footer -->
+    <hr id="footerRuler " class="mt-5">
+    <div id="footer">
+        <div id="footerLogo">
+            <img src="ned.png" alt="bot1" width="70px">
+            <img src="ncai.png" alt="bot1" width="150px">
+        </div>
+
+        <div id="footerDetails">
+            <div id="address">
+                <i class="fa-solid fa-location-pin"></i>
+                <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+            </div>
+            <div id="emailContact">
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>smartcity@neduet.edu.pk</p>
+                </div>
+                <div id="contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>+92 335 3046110</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footerLinks">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+@import url(//fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden !important;
+    font-family: 'Open Sans Hebrew Condensed', sans-serif !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: underline;
+}
+
+/* director section */
+
+.responsive-img {
+    width: auto;
+    height: auto;
+}
+
+.side {
+    /* border: 2px solid red; */
+    height: auto;
+    width: 30%;
+    float: right;
+
+
+}
+
+.bio {
+    /* border: 2px solid green; */
+    height: auto;
+    width: 70%;
+    float: left;
+}
+
+.state-of-lab {
+    display: block;
+    line-height: 2.2;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans Hebrew Condensed', sans-serif;
+    font-size: 13px !important;
+    color: #787878;
+    font-size: 1.25rem;
+    font-weight: 700 !important;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+    margin: 0 0 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.director-img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline;
+    float: left;
+    margin: 0 24px 24px 0;
+
+
+}
+.directorname-header{
+    font-family: 'Open Sans Hebrew Condensed', sans-serif !important;
+    margin-left: 30px !important;
+
+}
+.fa-id-card-clip{
+    color: #787878;
+}
+img {
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
+}
+
+.dir-video {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline;
+    float: left;
+    margin: 0 24px 24px 0;
+
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    z-index: 74;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    transition: opacity .25s cubic-bezier(0, 0, 0.2, 1)
+}
+
+
+
+.container{
+    /* margin: 2rem; */
+}
+.table-spacing{
+    border-spacing:5px;
+ }
+
+.roww {
+    display: flex;
+    flex-direction: row !important;
+}
+
+
+
+.side-bar {
+    display: flex;
+    justify-items: center;
+    flex-direction: column !important;
+
+}
+
+.director-section {
+    /* border: 2px solid black; */
+}
+.bio p{
+    margin-bottom: 1.3rem;
+    line-height: 1.625;
+    margin: 0 0 10px;
+    font-family: 'Open Sans Hebrew Condensed', sans-serif !important;
+    overflow-wrap: break-word;
+    padding: 0;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+}
+.welcome-message{
+    padding: 0;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'open sans';
+}
+
+/* associates */
+.associate-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.box{
+    width: 50% ;
+    margin: 10px;
+    background-color: #eee;
+    height: auto;
+    padding: 12px
+}
+.box p{
+    line-height: 23px;
+}
+h2{
+    margin-left: 12px;
+}
+.leftbox img{
+    float: left;
+    margin: 10px;
+    margin-top: 16px !important;
+}
+
+
+/* Senior RAs */
+.ra-box{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly;
+
+}
+.boxx{
+    display: flex;
+    padding: 12px;
+    flex-direction: row !important;
+    margin-bottom: 10px;
+    width: 90%;
+    
+}
+.boxx p{
+    padding-top: 15px;
+}
+
+/* organizational chart */
+.org p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.org p a{
+    color: #0088cc;
+    text-decoration: none;
+}
+
+
+
+
+
+/* for navbar button. do it later you alligator */
+@media only screen and (max-width: 769px) {
+    .roww {
+        display: flex !important;
+        flex-direction: column !important;
+        
+    }
+    
+    .side {
+        
+        width: 75% !important;}
+    .dir-video{
+        width: 60vw !important;
+    }
+    .bio{
+        width: 100% !important;
+    }
+    .text{
+        padding-left: 0px !important;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .associate-box{
+        flex-direction: column !important;
+    }
+    .box{
+        width: 100% !important ;
+        
+    }
+    .text{
+        padding-right: 20px !important;
+    }
+
+}

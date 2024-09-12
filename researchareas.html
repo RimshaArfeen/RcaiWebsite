@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Areas</title>
+  <link rel="stylesheet" href="researchareas.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="navigation.css">
+  <style>
+    @import url(//fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+  </style>
+
+</head>
+ 
+<body>
+  <div id="main">
+    <!-- HEADER -->
+    <div id="header">
+      <div id="headerContent">
+        <div id="leftHeader">
+          <a href="home.html"><img src="logo.jpg" alt="robot" width="200px" height="55px"></a>
+        </div>
+        <div id="rightHeader">
+
+          <form action="#">
+            <table>
+              <tr>
+                <td>
+                  <input type="search" placeholder="Search..." id="searchBar">
+                </td>
+                <td>
+                  <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                </td>
+              </tr>
+              <tr id="tr2">
+                <td>
+                  <input type="submit"> &nbsp;
+                  <input type="radio" name="options">Web &nbsp;
+                  <input type="radio" name="options">People
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- responsive search -->
+    <div id="responsiveSearch">
+      <form action="#">
+        <dialog open id="d1" style="display:none">
+          <h4>RCAI LAB SEARCH</h4>
+          <input type="search" placeholder="Search..." id="searchBar">
+          <br>
+          <input type="submit"> &nbsp;
+          <input type="radio" name="options">Web &nbsp;
+          <input type="radio" name="options">People
+          <br>
+          <button onclick="closed()">Close</button>
+        </dialog>
+      </form>
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="navbar">
+      <a href="visions.html">The RCAI</a>
+      <a href="researchareas.html">Research</a>
+      <a href="director.html">Leadership/Organization</a>
+      <a href="blogs.html">Newsletters</a>
+    </div>
+
+    <div id="responsiveNavbar">
+      <a href="#" style="width:90%" id="resnav">Navigation</a>
+      <img src="search1.png" alt="search" width="20px" height="20px" id="resSearch">
+    </div>
+    <div id="resDiv" style="display:none;">
+      <div>
+        <a href="visions.html">The RCAI</a>
+      </div>
+      <div>
+        <a href="researchareas.html">Research Areas</a>
+      </div>
+      <div>
+        <a href="director.html">Leadership/Organization</a>
+      </div>
+      <div>
+        <a href="blogs.html">Newsletters</a>
+      </div>
+    </div>
+
+
+         <!-- navbar for rcai -->
+         <div id="rcaiNavbar">
+          <table id="rcaiTable" cellpadding="10px" cellspacing="3px">
+              <tr>
+                  <td>
+                      <a href="visions.html" id="rn1">Our Technology</a>
+                  </td>
+                  <td>
+                      <a href="missions.html" id="rn2">Mission</a>
+                  </td>
+                  <td>
+                      <a href="snapshots.html" id="rn3">Snapshots</a>
+                  </td>
+                  <td>
+                      <a href="researchareas.html" id="rn4">Research Areas</a>
+                  </td>
+                  <td>
+                      <a href="trial.html" id="rn5">In Focus</a>
+                  </td>
+                  <td>
+                      <a href="index.html" id="rn6">National Solutions</a>
+                  </td>
+              </tr>
+          </table>
+      </div>
+
+
+      <div id="responsiveResearch">
+          <form action="#">
+              <select name="select" id="select" onchange="location=this.value">
+                  <option value="visions.html">Our Technology</option>
+                  <option value="missions.html">Mission</option>
+                  <option value="snapshots.html">Snapshots</option>
+                  <option value="researchareas.html">Research Areas</option>
+                  <option value="trial.html">In Focus</option>
+                  <option value="index.html">National Solutions</option>
+              </select>
+          </form>
+      </div>
+
+      <div id="tooltips">
+          <div id="t1" class="tools">Technology</div>
+          <div id="t2" class="tools">Mission</div>
+          <div id="t3" class="tools">Snapshots</div>
+          <div id="t4" class="tools">Research Areas</div>
+          <div id="t5" class="tools">In Focus</div>
+          <div id="t6" class="tools">National Solutions</div>
+      </div>
+    <div>
+      <div id="parent-div">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Projects/1. PRECISION AGRICULTURE/Precision agriculture.jpg" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h3>PRECISION AGRICULTURE</h3>
+              <p>We have introduced the concept of sustainable and autonomous farms as an attempt to deal with the
+                growing demand for food caused due to increasing population. Our focused technologies include robotic
+                weed control, soil probes, satellite imagery, smart irrigation, and disease detection to make farming
+                sustainable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Projects/2. SMART  HEALTH CARE/Enhanced radiological diagnosis of Cerebral tuberculosis using Machine Learning/Cerebraltuberculosis.jpg" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h3>SMART HEALTHCARE</h3>
+              <p>Artificial Intelligence is serving the purpose to enhance and complement the very interaction of health
+                care providers and patients through its applications in decision support, image analyses and patient
+                triage. Our goal is to develop efficient disease prediction and decision support systems through patient
+                MRI or Xray scans.
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Projects/6. ROBOTICS/RoboMan/robot2.jpeg" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h3>ROBOTICS</h3>
+              <p>Robots are being widely used for various applications including security, space exploration,
+                entertainment, agriculture and healthcare. We are currently developing weed-removing robots and humanoid
+                robots as part of our efforts to offer robotic solutions in agricultural and service sectors.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Projects/4. INTELLIGENT CYBER- PHYSICAL SYSTEMS- IoT/IOT.png" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h3>
+                INTELLIGENT-CYBER-PHYSICAL-SYSTEMS <br>(IoT)
+              </h3>
+              <p>Our IoT solutions are designed to accurately gather, display, evaluate, and store the data you choose
+                to receive from your surroundings. We intend to take the lead in developing cutting-edge IoT solutions
+                that enhance people's lives globally.We have developed smart IoT devices for Home Automation, industrial
+                monitoring and smart indoor navigation systems.
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Projects/intelligentTransport.jpg" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h3>INTELLIGENT TRANSPORT</h3>
+              <p>AI is transforming the transportation industry by promoting safety through autonomous vehicles,
+                congestion control through AI based traffic management and delay prediction, and organisational
+                efficiency through fleet management. Our scientists are working to
+                develop advanced driving assistance (ADAS) devices compatible with local vehicles to assist the driver
+                during driving, and thereby improve drivers’ performance.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Projects/socials.jpg" alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+              <h3>SOCIAL & ENVIRONMENT INNOVATION</h3>
+              <p>At their core, ‘AI for Social Good’ projects use artificial intelligence (AI)
+                technologies to positively impact the  planet – and they span most,
+                 of the United Nations Sustainable Development Goals (SDGs).We are focused on the
+                applications of state of the art technologies to promote productive and healthier workspaces, cleaner
+                environment, and capacity building of farming communities and youth.
+
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <hr id="footerRuler">
+    <div id="footer">
+      <div id="footerLogo">
+        <img src="ned.png" alt="bot1" width="70px">
+        <img src="ncai.png" alt="bot1" width="150px">
+      </div>
+
+      <div id="footerDetails">
+        <div id="address">
+          <i class="fa-solid fa-location-pin"></i>
+          <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+        </div>
+        <div id="emailContact">
+          <div id="email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>smartcity@neduet.edu.pk</p>
+          </div>
+          <div id="contact">
+            <i class="fa-solid fa-address-book"></i>
+            <p>+92 335 3046110</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="footerLinks">
+        <a href="https://facebook.com">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let res = document.getElementById("resnav");
+    kcount = 0
+    res.onclick = function () {
+      if (kcount == 0) {
+        let resdiv = document.getElementById("resDiv")
+        resdiv.style.display = "block";
+        kcount = 1;
+      }
+      else if (kcount == 1) {
+        let resdiv = document.getElementById("resDiv")
+        resdiv.style.display = "none";
+        kcount = 0;
+      }
+    }
+
+    // responsive search
+    let resSearch = document.getElementById("resSearch");
+    resSearch.onclick = function () {
+      let d1 = document.getElementById("d1");
+      let nav = document.getElementById("responsiveNavbar");
+      let h = document.getElementById("header");
+      let m = document.getElementById("missionContent");
+      let p = document.getElementById("parent-div");
+
+      d1.style.display = "block";
+      nav.style.opacity = "0.6";
+      h.style.opacity = "0.6";
+      p.style.marginTop = "170px";
+    }
+    function closed() {
+      let d1 = document.getElementById("d1");
+      let nav = document.getElementById("responsiveNavbar");
+      let h = document.getElementById("header");
+      let m = document.getElementById("missionContent");
+      let p = document.getElementById("parent-div");
+
+      d1.style.display = "none";
+      nav.style.opacity = "1";
+      h.style.opacity = "1";
+      p.style.marginTop = "10px";
+    }
+
+
+    let search1 = document.getElementById("rightHeader");
+    search1.onmouseenter = function () {
+      let searchbar = document.getElementById("searchBar");
+      let tr2 = document.getElementById("tr2");
+      searchbar.style.visibility = "visible";
+      tr2.style.visibility = "visible";
+      tr2.style.animationName = "second";
+      tr2.style.animationDuration = "2s";
+      tr2.style.animationTimingFunction = "ease";
+      searchbar.style.animationName = "second";
+      searchbar.style.animationDuration = "2s";
+      searchbar.style.animationTimingFunction = "ease";
+    }
+    search1.onmouseleave = function () {
+      let searchbar = document.getElementById("searchBar");
+      let tr2 = document.getElementById("tr2");
+      searchbar.style.visibility = "hidden";
+      tr2.style.visibility = "hidden";
+
+      tr2.style.animationName = "third";
+      tr2.style.animationDuration = "4s";
+      tr2.style.animationTimingFunction = "ease-in";
+      searchbar.style.animationName = "third";
+      searchbar.style.animationDuration = "4s";
+      searchbar.style.animationTimingFunction = "ease-in";
+    }
+
+    let rn1 = document.getElementById("rn1");
+    let rn2 = document.getElementById("rn2");
+    let rn3 = document.getElementById("rn3");
+    let rn4 = document.getElementById("rn4");
+    let rn5 = document.getElementById("rn5");
+    rn1.onmouseenter = function () {
+      let t1 = document.getElementById("t1");
+      t1.style.visibility = "visible";
+    }
+    rn1.onmouseleave = function () {
+      let t1 = document.getElementById("t1");
+      t1.style.visibility = "hidden";
+    }
+    rn2.onmouseenter = function () {
+      let t2 = document.getElementById("t2");
+      t2.style.visibility = "visible";
+    }
+    rn2.onmouseleave = function () {
+      let t2 = document.getElementById("t2");
+      t2.style.visibility = "hidden";
+    }
+    rn3.onmouseenter = function () {
+      let t3 = document.getElementById("t3");
+      t3.style.visibility = "visible";
+    }
+    rn3.onmouseleave = function () {
+      let t3 = document.getElementById("t3");
+      t3.style.visibility = "hidden";
+    }
+    rn4.onmouseenter = function () {
+      let t4 = document.getElementById("t4");
+      t4.style.visibility = "visible";
+    }
+    rn4.onmouseleave = function () {
+      let t4 = document.getElementById("t4");
+      t4.style.visibility = "hidden";
+    }
+    rn5.onmouseenter = function () {
+      let t5 = document.getElementById("t5");
+      t5.style.visibility = "visible";
+    }
+    rn5.onmouseleave = function () {
+      let t5 = document.getElementById("t5");
+      t5.style.visibility = "hidden";
+    }
+    rn6.onmouseenter = function () {
+      let t6 = document.getElementById("t6");
+      t6.style.visibility = "visible";
+    }
+    rn6.onmouseleave = function () {
+      let t6 = document.getElementById("t6");
+      t6.style.visibility = "hidden";
+    }
+    rn7.onmouseenter = function () {
+      let t7 = document.getElementById("t7");
+      t7.style.visibility = "visible";
+    }
+    rn7.onmouseleave = function () {
+      let t7 = document.getElementById("t7");
+      t7.style.visibility = "hidden";
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>

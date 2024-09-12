@@ -1,0 +1,127 @@
+.navbar-collapse {
+    display: flex;
+    font-size: 18px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    width: 100% !important;
+    justify-content: space-evenly !important;
+
+}
+
+nav p {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.navbar-collapse ul li a {
+    background-color: #abb8c3;
+    margin: 10px 1px;
+    color: white !important;
+
+    text-decoration: none;
+    width: 157px;
+
+    padding: 10px 15px !important;
+    font-size: 0.8125em;
+    text-align: center;
+    font-family: 'Open Sans Hebrew Condensed', sans-serif !important;
+
+}
+
+.navbar-collapse ul li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#nav-link {
+    padding: 6px;
+}
+
+.navbar-nav>.active>a {
+    /* background-color: #999; */
+    color: white;
+}
+
+#head {
+    color: black;
+    font-size: 14px;
+
+}
+
+#headd {
+    color: black;
+    font-size: 14px;
+
+}
+
+.activen {
+    background-color: #999 !important;
+    color: white !important;
+}
+
+.h {
+    margin-top: 30px !important;
+}
+
+@media only screen and (max-width : 992px) {
+    #footer i {
+        color: grey;
+        margin-left: 30px;
+    }
+
+    .navbar-toggler {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin: 0;
+        display: block;
+        background-color: white;
+        background-color: white;
+        color: #333;
+
+    }
+
+
+    .navbar-nav>.active {
+        background-color: #999;
+        color: white;
+
+
+    }
+
+    .navbar-nav {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: #333;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    .navbar-collapse ul li a {
+        margin: 1px 14px;
+        background-color: transparent;
+        color: #333 !important;
+    }
+
+    .h {
+        width: 100% !important;
+        margin-left: 13px !important;
+    }
+}

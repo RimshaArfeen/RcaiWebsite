@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    
+        <script src="https://kit.fontawesome.com/93d0f16795.js" crossorigin="anonymous"></script>
+    <!-- css links -->
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="bars.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>The RCAI</title>
+    <style>
+        #navbar a:nth-child(3){
+    border-bottom: 4px solid #00313C;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <div id="leftHeader">
+            <a href="home.html"><img src="images/logo.jpg" alt="robot" width="200px" height="55px"></a>
+        </div>
+        <div id="rightHeader">
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="search" placeholder="Search..." id="searchBar">
+                        </td>
+                        <td>
+                            <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+                        </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>
+                            <input type="submit"> &nbsp;
+                            <input type="radio" name="options">Web &nbsp;
+                            <input type="radio" name="options">People
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- responsive search -->
+    <div id="responsiveSearch">
+        <form action="#">
+            <dialog open id="d1" style="display:none;">
+                <h4>RCAI LAB SEARCH</h4>
+                <input type="search" placeholder="Search..." id="searchBar">
+                <br>
+                <input type="submit"> &nbsp;
+                <input type="radio" name="options">Web &nbsp;
+                <input type="radio" name="options">People
+                <br>
+                <button onclick="closed()">Close</button>
+            </dialog>
+        </form>
+    </div>
+
+    <nav>
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a href="visions.html">The Rcai</a>
+            <a href="researchareas.html">Research</a>
+            <a href="director.html">Leadership/Organization</a>
+            <a href="blogs.html">Newsletters</a>
+        </div>
+
+        <div id="responsiveNavbar">
+            <a href="#" style="width:90%" id="resnav">Navigation</a>
+            <img src="images/search.png" alt="search" width="20px" height="20px" id="resSearch">
+        </div>
+        <div id="resDiv" style="display:none;">
+            <a href="visions.html">The Rcai</a>
+            <hr>
+            <a href="researchareas.html">Research Areas</a>
+            <hr>
+            <a href="director.html">Leadership/Organization</a>
+            <hr>
+            <a href="blogs.html">Newsletters</a>
+            <hr>
+        </div>
+    </nav>
+ 
+
+    <!-- navbar for rcai -->
+    <nav class="navbar navbar-expand-lg  " >
+       
+        <div class="container-fluid ">
+    
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <p id="head">Director</p>
+                <span style="margin-top: 5px;" ><i class="fa fa-thin fa-chevron-down"></i></span>
+            </button>
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-lg-0">
+                    <li class="nav-item " onclick=" change_text()">
+                        <a id="rn1" class="nav-link activen" aria-current="page" href="director.html">Director</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn2" class="nav-link " aria-current="page" href="teamLead.html">Team Lead</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn3" class="nav-link" href="ResearchAssociates.html">Research Associates</a>
+                    </li>
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn4" class="nav-link" href="SeniorRAs.html">Research Assistants</a>
+                    </li>
+                  
+                    <li class="nav-item" onclick="change_text()">
+                        <a id="rn5" class="nav-link" href="orgChart.html">Organizational Chart</a>
+                    </li>
+                    
+    
+    
+                </ul>
+    
+            </div>
+        </div>
+    </nav>
+    <div id="tooltips">
+        <div id="t1" class="tools">Director</div>
+        <div id="t2" class="tools">Team Lead</div>
+        <div id="t3" class="tools">Research Associates</div>
+        <div id="t4" class="tools">Senior Research Assistants</div>
+        <div id="t5" class="tools">Organizational Chart</div>
+       
+    </div>
+    <div class="container  director-section mt-5">
+        <div class="roww ">
+            <div class=" bio">
+                <div class="container ">
+                    <h2  class="ms-0 directorname-header">NCAI Lab Director Dr. Muhammad Khurram</h2>
+                   <span class="ms-0 directorname-header " style=" font-style: italic;"><i class="fa-solid fa-id-card-clip me-2" ></i>Director</span>
+                    <p style="margin-top: 1rem; text-align: justify; margin-left: 30px; margin-right: 30px;">
+                        Dr. Muhammad Khurram is a Professor at the Ned University of Engineering & Technology and also serves as Co-chair of the Computer and Information Systems Engineering Department.  In addition, he holds a regional directorate position in the National Center for Artificial Intelligence (NCAI). In addition to being a Principal Investigator of Smart City Lab, an NCAI-affiliated research center, he is also serving as a director of the Research Center for Artificial Intelligence (RCAI). Prior to that, he was the regional head of the Kosher Foundation, a non-profit organisation based in the United States. His expertise and contributions are in the areas of AI, IoT, computer vision, on-chip bio-systems, embedded systems, digital signal processing, and VLSI system design.
+                    </p>
+                    <p style="text-align: justify; margin-left: 30px; margin-right: 30px;">He has 18+ years of academic experience with leading various R&D projects. Muhammad Khurram has Produced two Phd graduates and currently Supervising Four (02) PhD Students in the field of On-chip biological system modelling, neuromorphic hardware design and 5G Networks. As well Supervising various research-based projects at postgraduate and undergraduate levels. He has earned his Bachelor's and Master's degree in Computer and Information Systems from NED University of Engineering & Technology. Ph.D. in science from Massey University in New Zealand.
+                    </p>
+                </div>
+                <div id="fundedProjects" style="text-align: justify; margin-left: 43px; margin-right: 30px;">
+                    <h5>Funded Projects</h5>
+                    <ul type="square">
+                        <li>
+                            Won funding of Rs. 170 Million for establishing two affiliated labs of National Center of Artificial Intelligence at NEDUET
+                        </li>
+                        <li>
+                            Won funding of Rs. 5Million, a Technology Development Funding Grant from HEC
+                        </li>
+                        <li>
+                            Won funding worth Rs500000/- for the project “Entrepreneurship Awareness and Leadership Development Programme for School children” under Social Integration and Outreach Programme of Higher Education Commission of Pakistan
+                        </li>
+                        <li>
+                            Won funding worth Euros 100000/- for the project “Water Resource Management for Agricultural Areas of Pakistan” from DAAD – Germany under ‘German-Pakistani Research Collaboration Programme’
+                        </li>
+                        <li>
+                            Won funding worth Rs375000/- for the project “Pakistan Student Satellite Programme” from SUPARCO
+                        </li>
+                    </ul>
+                </div>
+                <div id="honorsAwards" style="text-align: justify; margin-left: 43px; margin-right: 30px;">
+                    <h5>Honors and Awards</h5>
+                    <ul type="square">
+                        <li>
+                            Founder of Aqua Agro , a leading agri-data company in Pakistan to address water resource management and smart irrigation through Artificial Intelligence and Internet of Things. The startup company was incubated and graduated from the 1st batch of the National Incubation Center, Karachi. The company has been incorporated with SECP in 2018 and now in business.
+                        </li>
+                        <li>
+                            Head of IEEE student branch of NED University and take care of different activities of this student branch related to research, development and training.
+                        </li>
+                        <li>
+                            Co-Chair of the IEEE Robotics and Automation Society, Karachi Section.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" side">
+                <div class="container side-bar">
+                    <img src="https://www.lbl.gov/wp-content/uploads/2021/08/Mike_Witherell_sm_2.jpg" alt="director-img"
+                        class="responsive-img director-img">
+                    <span class="text-muted state-of-lab">More on the director</span>
+
+                    <a href="#" class="welcome-message">Welcome message</a>
+                    <span class="text-muted state-of-lab">STATE OF THE LAB: OCT. 29, 2020</span>
+                    <iframe class="dir-video"
+                        src="https://www.youtube.com/embed/PRLKi8IfARY?enablejsapi=1&amp;origin=https:%2F%2Fwww.lbl.gov"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" id="widget2" data-gtm-yt-inspected-15="true" data-gtm-yt-inspected-21="true"
+                        title="Video Replay: State of the Lab Town Hall"></iframe>
+                    <span class="text-muted state-of-lab">INCLUSION, DIVERSITY, EQUITY & ACCOUNTABILITY</span>
+
+                    <iframe class="dir-video"
+                        src="https://www.youtube.com/embed/PRLKi8IfARY?enablejsapi=1&amp;origin=https:%2F%2Fwww.lbl.gov"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" id="widget2" data-gtm-yt-inspected-15="true" data-gtm-yt-inspected-21="true"
+                        title="Video Replay: State of the Lab Town Hall"></iframe>
+                    <iframe class="dir-video"
+                        src="https://www.youtube.com/embed/PRLKi8IfARY?enablejsapi=1&amp;origin=https:%2F%2Fwww.lbl.gov"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="" id="widget2" data-gtm-yt-inspected-15="true" data-gtm-yt-inspected-21="true"
+                        title="Video Replay: State of the Lab Town Hall"></iframe>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <hr id="footerRuler">
+    <div id="footer">
+        <div id="footerLogo">
+            <img src="images/ned.png" alt="bot1" width="70px">
+            <img src="images/ncai.png" alt="bot1" width="150px">
+        </div>
+
+        <div id="footerDetails">
+            <div id="address">
+                <i class="fa-solid fa-location-pin"></i>
+                <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+            </div>
+            <div id="emailContact">
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>smartcity@neduet.edu.pk</p>
+                </div>
+                <div id="contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>+92 335 3046110</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="footerLinks">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("ul.navbar-nav > li>a").click(function (e) {
+                $("ul.navbar-nav > li>a").removeClass("activen");
+                $(this).addClass("activen");
+            });
+        });
+  
+  
+        function change_text() {
+            var text = $(event.target).text();
+            document.getElementById('head').innerHTML = text;
+        }
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+</body>
+
+</html>

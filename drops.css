@@ -1,0 +1,239 @@
+@media only screen and (min-width:768px) and (max-width:1700px) {
+    .dropdown-menu a {
+        border-bottom: 1px solid white;
+    }
+
+    .navbar {
+        width: 66%;
+        margin: auto;
+        display: flex;
+        margin: 40px auto;
+    }
+
+    .navbar a {
+        margin-right: 5px;
+        background-color: #abb8c3;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    #navbarDropdown {
+        color: white;
+        padding: 13px 35px;
+    }
+
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+    }
+
+    @import url(fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+    body {
+        font-family: 'Open Sans Hebrew Condensed', sans-serif;
+    }
+
+
+    #features {
+        width: 380px;
+        background-color: rgb(194, 194, 218, 0.3);
+        font-family: 'Open Sans Hebrew Condensed', sans-serif;
+        padding: 30px;
+        font-size: 16px;
+    }
+
+    #features i {
+        color: #00313C;
+        margin-right: 15px;
+    }
+
+    .con {
+        float: left;
+        margin-top: 5px;
+    }
+
+    .text {
+        float: left;
+        width: 90%
+    }
+
+    p {
+
+        text-align: justify;
+        text-justify: inter-word;
+        word-spacing: 0.08cm;
+        font-size: 16px;
+    }
+
+    #mainContent {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #img>img {
+        width: 100%;
+        max-width: 90%;
+        box-shadow: 10px 10px 5px #555555;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width:817px) {
+    #parent-div {
+        width: 90%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+}
+
+@media only screen and (max-width:441px) {
+    #boxes {
+        display: block;
+
+    }
+
+    #header1 {
+
+        height: 50px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:440px) {
+    #parent-div {
+        /* margin-right: 5%;
+        margin-left: 5%; */
+    }
+
+    #boxes {
+        display: block;
+
+    }
+
+    #header1 {
+
+        height: 50px;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    #desc {
+        width: 380px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:361px) {
+    #parent-div {
+        /* margin-right: 5%;
+        margin-left: 5%; */
+
+    }
+
+    #boxes {
+        display: block;
+
+    }
+
+    #header1 {
+
+        height: 50px;
+    }
+
+    #desc {
+        width: 360px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:1008px) {
+    #header1 {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:870px) {
+    #header1 {
+        width: 300px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:852px) {
+    #header1 {
+        width: 280px;
+
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:740px) {
+    #header1 {
+        width: 170px;
+
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width:651px) {
+    #boxes {
+        display: block;
+
+    }
+
+    #header1 {
+        width: 500px;
+        height: 50px;
+    }
+
+    #img {
+        width: 550px;
+    }
+
+    #features {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:546px) {
+    #boxes {
+        display: block;
+
+    }
+
+    #header1 {
+        width: 500px;
+        height: 50px;
+    }
+
+    #img {
+        width: 550px;
+    }
+
+    #features {
+        width: 500px;
+    }
+
+    #desc {
+        width: 500px;
+    }
+}

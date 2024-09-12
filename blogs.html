@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <script src="https://kit.fontawesome.com/93d0f16795.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <link rel="stylesheet" href="newsCenter.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="styling.css">
+  <link rel="stylesheet" href="bars.css">
+
+
+  <title>Blogs</title>
+  <style>
+    #navbar a:nth-child(4){
+border-bottom: 4px solid #00313C;
+}
+
+</style>
+</head>
+
+<body>
+  <style>
+    .fa {
+      margin-left: 0 !important;
+      color: #333 !important;
+    }
+  </style>
+  <div id="header">
+    <div id="leftHeader">
+      <a href="home.html"><img src="images/logo.jpg" alt="robot" width="200px" height="55px"></a>
+    </div>
+    <div id="rightHeader">
+
+      <form action="#">
+        <table>
+          <tr>
+            <td>
+              <input type="search" placeholder="Search..." id="searchBar">
+            </td>
+            <td>
+              <img src="search1.png" alt="search" width="20px" height="20px" id="search">
+            </td>
+          </tr>
+          <tr id="tr2">
+            <td>
+              <input type="submit"> &nbsp;
+              <input type="radio" name="options">Web &nbsp;
+              <input type="radio" name="options">People
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+  <!-- responsive search -->
+  <div id="responsiveSearch">
+    <form action="#">
+      <dialog open id="d1" style="display:none;">
+        <h4>RCAI LAB SEARCH</h4>
+        <input type="search" placeholder="Search..." id="searchBar">
+        <br>
+        <input type="submit"> &nbsp;
+        <input type="radio" name="options">Web &nbsp;
+        <input type="radio" name="options">People
+        <br>
+        <button onclick="closed()">Close</button>
+      </dialog>
+    </form>
+  </div>
+  <nav>
+    <!-- NAVBAR -->
+    <div id="navbar">
+      <a href="visions.html">The RCAI</a>
+      <a href="researchareas.html">Research</a>
+      <a href="director.html">Leadership/Organization</a>
+      <a href="blogs.html">Newsletters</a>
+    </div>
+
+    <div id="responsiveNavbar">
+      <a href="#" style="width:90%" id="resnav">Navigation</a>
+      <img src="images/search.png" alt="search" width="20px" height="20px" id="resSearch">
+    </div>
+    <div id="resDiv" style="display:none;">
+      <a href="visions.html">The Rcai</a>
+      <hr>
+      <a href="researchareas.html">Research Areas</a>
+      <hr>
+      <a href="director.html">Leadership/Organization</a>
+      <hr>
+      <a href="blogs.html">Newsletters</a>
+      <hr>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+        <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <p id="head">CaseStudies</p>
+            <span style="margin-top: 5px;" ><i class="fa fa-thin fa-chevron-down"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-lg-0">
+                <li class="nav-item " onclick=" change_text()">
+                    <a class="nav-link activen" aria-current="page" href="blogs.html">CaseStudies</a>
+                </li>
+                <li class="nav-item" onclick="change_text()">
+                    <a class="nav-link " aria-current="page" href="publication.html">Publications</a>
+                </li>
+                <li class="nav-item" onclick="change_text()">
+                    <a class="nav-link" href="we_offer.html">We Offer</a>
+                </li>
+                
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+  
+
+  <div class="container">
+    <div class="rowww">
+      <div class="blogs-div ">
+        <div id="ds" class="ds hide active">
+          <h2 class="text-center mt-2">Agriculture</h2>
+          <div class="crds">
+
+
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image responsive-img" src="images/face-detection-using-ai.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Face Detection
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The development of technology is helping people to adopt new methods for management among thoes one method is through face detection.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#" id="myBtn1" onclick="FD()" class="btnn">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image" src="images/daryan-shamkhali-s2mdS_xZKe8-unsplash.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Vehicle Detection System
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The Smart City Lab at NED University has successfully developed a module of number plate detection using their own data set.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                   
+                    <button  onclick="VD()" class="btnn">read More</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image" src="images/vinicius-henrique-photography-CD1em55AhEs-unsplash.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Vehicle Detection And Classification
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The module of vehicle detection based on deep learning is extremely effective for roads with heavy traffic flow, hospitals, educational institutes, parks and malls where managing traffic is difficult.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="VDC()" id="myBtn2 " class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rvm" class="rvm hide ">
+          <h2 class="text-center mt-2">Autonoums Vehicle</h2>
+          <div class="crds">
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image" src="images/images (1).jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Reverse Vending Machine
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  Vending Machines were introduced because it is hard to pick out plastic from a pile of trash and recycle or use it for beneficial purposes.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <button onclick="rvm()" class="btnn">read More</button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+        <div id="iot" class="iot hide ">
+          <h2 class="text-center mt-2">IoT</h2>
+          <div class="crds">
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image" src="images/iot (1).jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Iot Devices
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                 The machines are designed in such a way that it can perform multiple functions using the Internet of Things (IoT).
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="iot()" id="myBtn1" class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image" src="images/downloa.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Water and Sanitation Logistics (WASL)
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  WASL is a cost- effective solution to obtain real-time data, get accurate readings, and monitor the timely consumption of the water plant.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="wasl()" id="myBtn1" class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="cv" class="cv hide ">
+          <h2 class="text-center mt-2">Computer Vision</h2>
+          <div class="crds">
+
+
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img  class="crd__image" src="images/daryan-shamkhali-s2mdS_xZKe8-unsplash.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  collision avoidance module
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The Smart City Lab - NCAI is working on such projects which are needed in our daily lives and beneficial to educational institutes, healthcare and industrial sectors.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="CAM()" id="myBtn1" class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image" src="images/maps.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Geographic Information Systems
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The Engineers in the National Center of Artifical Intelligence are constantly working on different techniques which can be used by organizations to achieve strategic planning.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="GIS()" id="myBtn2 " class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div id="hc" class="hc hide ">
+          <h2 class="text-center mt-2">AI in Health Care</h2>
+          <div class="crds">
+
+
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img  class="crd__image" src="images/daryan-shamkhali-s2mdS_xZKe8-unsplash.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  collision avoidance module
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The Smart City Lab - NCAI is working on such projects which are needed in our daily lives and beneficial to educational institutes, healthcare and industrial sectors.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="CAM()" id="myBtn1" class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image" src="images/maps.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Geographic Information Systems
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The Engineers in the National Center of Artifical Intelligence are constantly working on different techniques which can be used by organizations to achieve strategic planning.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="GIS()" id="myBtn2 " class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div id="sp" class="sp hide ">
+          <h2 class="text-center mt-2">Social Projects</h2>
+          <div class="crds">
+
+
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img  class="crd__image" src="images/daryan-shamkhali-s2mdS_xZKe8-unsplash.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  collision avoidance module
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The Smart City Lab - NCAI is working on such projects which are needed in our daily lives and beneficial to educational institutes, healthcare and industrial sectors.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="CAM()" id="myBtn1" class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="crd">
+              <div class="crd__image-holder">
+                <img class="crd__image" src="images/maps.jpg" alt="beach" />
+              </div>
+              <div class="crd-title">
+                <a href="#" class="toggle-info btnn">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                </a>
+                <h2>
+                  Geographic Information Systems
+
+                </h2>
+                <span style="color: grey !important;">
+
+                  <i class=" fa fa-clock  fa-xs" style="text-transform: lowercase !important;"> 3 min read</i>
+                </span>
+              </div>
+              <div class="crd-flap flap1">
+                <div class="crd-description">
+                  The Engineers in the National Center of Artifical Intelligence are constantly working on different techniques which can be used by organizations to achieve strategic planning.
+                </div>
+                <div class="crd-flap flap2">
+                  <div class="crd-actions">
+
+                    <a href="#myModal1" onclick="GIS()" id="myBtn2 " class="btnn modal-button">Read more</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+
+     
+      <div class="container btn-div">
+        
+        <button class=" ds" id="sq-button" onclick="addClas(this.className)" ><i class="fa fa-solid fa-tractor"></i> <br> Agriculture</button>
+        
+        <button class=" rvm" id="sq-button" onclick="addClas(this.className)" ><i class="fa fa-solid fa-car"></i><br> Autonomous <br> Vehicle</button>
+
+          <button class=" iot" id="sq-button" onclick="addClas(this.className)" ><i class="fa fa-solid fa-circle-half-stroke"></i> <br> IoT</button>
+
+          <button class=" cv" id="sq-button" onclick="addClas(this.className)" ><i class="fa-solid fa-robot"></i><br> Robotics</button>
+
+          <button class=" hc" id="sq-button" onclick="addClas(this.className)" ><i class="fa fa-thin fa-robot"></i> <br> AI in <br> health care</button>
+          <button class=" sp" id="sq-button" onclick="addClas(this.className)" ><i class="fa fa-solid fa-people-arrows"></i> <br> Social <br> Projects</button>
+      
+      </div>
+    </div>
+</div>
+
+<div style="background-color: black; margin:0 !important;">
+
+  <hr id="footerRuler" >
+  <div id="footer" style="margin: 0px !important; ">
+      <div id="footerLogo">
+          <img src="ned.png" alt="bot1" width="70px">
+          <img src="ncai.png" alt="bot1" width="150px">
+      </div>
+
+      <div id="footerDetails">
+          <div id="address">
+              <i class="fa-solid fa-location-pin"></i>
+              <p>1st Floor-HPCC Building NEDUET, University <br>Road, Gulistan-e-Johar, Karachi(75270)-Sindh</p>
+          </div>
+          <div id="emailContact">
+              <div id="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>smartcity@neduet.edu.pk</p>
+              </div>
+              <div id="contact">
+                  <i class="fa-solid fa-address-book"></i>
+                  <p>+92 335 3046110</p>
+              </div>
+          </div>
+
+      </div>
+
+
+      <div id="footerLinks">
+          <a href="https://facebook.com">
+              <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com">
+              <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com">
+              <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com">
+              <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+      </div>
+  </div>
+
+
+    <!-- footer -->
+    
+    
+    <script src="main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+          $("ul.navbar-nav > li>a").click(function (e) {
+              $("ul.navbar-nav > li>a").removeClass("activen");
+              $(this).addClass("activen");
+          });
+      });
+
+
+      function change_text() {
+          var text = $(event.target).text();
+          document.getElementById('head').innerHTML = text;
+      }
+      $('.navbar-nav>li>a').on('click', function () {
+          $('.navbar-collapse').collapse('hide');
+      });
+  </script>
+    <script>
+      
+      $(document).ready(function () {
+        var zindex = 10;
+
+        $("div.crd").click(function (e) {
+          e.preventDefault();
+
+          var isShowing = false;
+
+          if ($(this).hasClass("show")) {
+            isShowing = true
+          }
+
+          if ($("div.crds").hasClass("showing")) {
+            // a card is already in view
+            $("div.crd.show")
+              .removeClass("show");
+
+            if (isShowing) {
+              // this card was showing - reset the grid
+              $("div.crds")
+                .removeClass("showing");
+            } else {
+              // this card isn't showing - get in with it
+              $(this)
+                .css({ zIndex: zindex })
+                .addClass("show");
+
+            }
+
+            zindex++;
+
+          } else {
+            // no cards in view
+            $("div.crds")
+              .addClass("showing");
+            $(this)
+              .css({ zIndex: zindex })
+              .addClass("show");
+
+            zindex++;
+          }
+
+        });
+      });
+
+      function addClas(e) {
+      
+        var elems = document.querySelector(".active");
+        if (elems !== null) {
+          elems.classList.remove("active");
+        }
+               
+        var ele =document.getElementsByClassName(e)
+     
+        $(ele[0]).addClass("active");}
+
+        function rvm(){
+          window.location = "rvmBlog.html"  }  
+         setTimeout('redirect1()', 5000);
+        function wasl(){
+          window.location = "WASLBlog.html"  }  
+         setTimeout('redirect1()', 5000);
+        function CAM(){
+          window.location = "collisionavoidancemoduleBlog.html"  }  
+         setTimeout('redirect1()', 5000);
+        function iot(){
+          window.location = "IoTdevicesBlog.html"  }  
+         setTimeout('redirect1()', 5000);
+        
+        function GIS(){
+          window.location = "strategic_planningBlog.html"  }  
+         setTimeout('redirect1()', 5000);
+        
+        function FD(){
+          window.location = "Face_Detectionblog.html"  }  
+         setTimeout('redirect1()', 5000);
+        
+        function VD(){
+          window.location = "vehicleDetectionBlog.html"  }  
+         setTimeout('redirect1()', 5000);
+        
+        function TC(){
+          window.location = "Traffic ConjestionBlog.html"  }  
+         setTimeout('redirect1()', 5000);
+        
+        function VDC(){
+          window.location = "Vehicle Detection And Classification Blog.html"  }  
+         setTimeout('redirect1()', 5000);
+       
+        
+
+
+
+     
+
+
+
+
+    </script>
+
+</body>
+
+</html>
